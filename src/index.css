@@ -1,3 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  @apply transition-all duration-300;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.navbar-link {
+  @apply mr-[2.25rem] relative active:scale-75;
+}
+.navbar-link::after {
+  content: "";
+  @apply block w-0 h-[2px] bg-black absolute bottom-0 left-0
+    transition-all duration-500;
+}
+.navbar-link:hover::after {
+  @apply w-full;
+}
+
+.statistics h2 {
+  @apply text-4xl font-black;
+}
+.statistics p {
+  @apply flex font-normal ml-4 items-center after:bg-[#FF3F3A] after:w-[8px] after:h-[8px] after:ml-14 after:block after:rounded-[50%];
+}
+
+.whoWeAre-list li {
+  list-style-image: url(./images/homepage/whoWeAre/check.svg);
+  @apply mb-4;
+}
