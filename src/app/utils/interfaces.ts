@@ -4,4 +4,5 @@ export interface ICourse {
   price: number;
   author: string;
   imgName: string;
+  id: number;
 }
