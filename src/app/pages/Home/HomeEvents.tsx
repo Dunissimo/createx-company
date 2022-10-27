@@ -1,4 +1,7 @@
 import React, { FC } from "react";
+import FillButton from "../../components/Buttons/FillButton";
+
+import Event from "../Events/Event";
 
 const Events: FC = () => {
   return (
@@ -10,7 +13,15 @@ const Events: FC = () => {
             Lectures & workshops
           </h2>
         </div>
-        <ul className="events-list"></ul>
+        <ul className="events-list">
+          <Event />
+          <Event />
+          <Event />
+        </ul>
+        <div className="row flex mt-16 items-center justify-center">
+          <h3 className="text-3xl mr-10">Do you want more?</h3>
+          <FillButton text="Explore all events" />
+        </div>
       </div>
     </section>
   );

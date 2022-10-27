@@ -4,7 +4,9 @@ import Header from "./Header";
 import WhoWeAre from "./WhoWeAre";
 import HomeCourses from "./HomeCourses";
 import Benefits from "./Benefits";
-import Events from "./Events";
+import Events from "./HomeEvents";
+import Certificate from "./Certificate";
+import Team from "./Team";
 
 const Home: FC = () => {
   return (
@@ -14,6 +16,8 @@ const Home: FC = () => {
       <HomeCourses />
       <Benefits />
       <Events />
+      <Certificate />
+      <Team />
     </section>
   );
 };

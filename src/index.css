@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+
 * {
   @apply transition-all duration-300;
 }
@@ -56,4 +62,42 @@ body {
 }
 .benefits-list li:nth-child(4)::before {
   content: url(/public/images/homepage/benefits/layers.svg);
+}
+
+.team {
+  z-index: 100;
+}
+.team .img {
+  background: url(/public/images/homepage/team/background-team.png);
+  z-index: 100;
+}
+
+.team .bg {
+  background: url(/public/images/homepage/team/gradient-team.png);
+  animation: fade 0.5s linear;
+}
+.team ul {
+  animation: fade 0.5s linear;
+}
+.team svg {
+  fill: white;
+  transition: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.team .img:hover .bg,
+.team .img:hover ul {
+  display: flex;
+}
+
+.team ul li:hover svg {
+  fill: black;
 }
