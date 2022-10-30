@@ -1,13 +1,18 @@
 import React, { FC } from "react";
 import CircleButton from "../../components/Buttons/CircleButton";
+import Title from "../../components/Title";
 
 const Testimonials: FC = () => {
   return (
     <section className="pb-24 bg-[#F4F5F7]">
       <div className="container max-w-[70%] mx-auto">
-        <div className="title text-center">
-          <h3 className="uppercase tracking-[1px]">TESTIMONIALS</h3>
-          <h2 className="font-black text-4xl">What our students say</h2>
+        <div className="text-center mb-16">
+          <Title
+            text={{
+              h3: "TESTIMONIALS",
+              h2: "What our students say",
+            }}
+          />
         </div>
 
         <div className="testimonials bg-white mt-20 px-16 py-16 relative">

@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import FillButton from "../../components/Buttons/FillButton";
+import Title from "../../components/Title";
 
 import Event from "../Events/Event";
 
@@ -7,11 +8,13 @@ const Events: FC = () => {
   return (
     <section className="events bg-[#FEDDD1] py-20">
       <div className="container mx-auto">
-        <div className="title text-center">
-          <h3 className="uppercase">Our Events</h3>
-          <h2 className="text-5xl mt-4 font-black mb-14">
-            Lectures & workshops
-          </h2>
+        <div className="text-center mb-16">
+          <Title
+            text={{
+              h3: "OUR EVENTS",
+              h2: "Lectures & workshops",
+            }}
+          />
         </div>
         <ul className="events-list">
           <Event />

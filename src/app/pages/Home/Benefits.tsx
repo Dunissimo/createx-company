@@ -1,13 +1,14 @@
 import React, { FC } from "react";
+import Title from "../../components/Title";
 
 const Benefits: FC = () => {
   return (
     <section className="benefits mb-28">
       <div className="container mx-auto">
-        <div className="title text-center">
-          <h3 className="uppercase">Our benefits</h3>
-          <h2 className="text-5xl font-black mb-16">That's how we do it</h2>
+        <div className="text-center mb-16">
+          <Title text={{ h3: "Our benefits", h2: "That’s how we do it" }} />
         </div>
+
         <ul className="benefits-list mb-20 row flex items-center justify-between w-full">
           <li className="border border-[#FF3F3A] text-[#FF3F3A] px-12 py-3">
             Experienced Tutors

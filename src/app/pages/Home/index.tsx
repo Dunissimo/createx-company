@@ -14,7 +14,7 @@ import Footer from "../../components/Footer";
 
 const Home: FC = () => {
   return (
-    <section style={{ scrollBehavior: "smooth" }}>
+    <section>
       <Header />
       <WhoWeAre />
       <HomeCourses />

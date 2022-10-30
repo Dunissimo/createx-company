@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import FillButton from "../../components/Buttons/FillButton";
+import Title from "../../components/Title";
 import Post from "../Blog/Post";
 
 const HomePosts: FC = () => {
@@ -7,10 +8,12 @@ const HomePosts: FC = () => {
     <section className="py-32">
       <div className="container mx-auto">
         <div className="row flex justify-between items-end">
-          <div className="title">
-            <h3 className="uppercase tracking-[1px]">Our blog</h3>
-            <h4 className="mt-2 text-4xl font-black">Latest posts</h4>
-          </div>
+          <Title
+            text={{
+              h3: "Our blog",
+              h2: "Latest posts",
+            }}
+          />
           <div className="btn">
             <FillButton text="Go to blog" />
           </div>

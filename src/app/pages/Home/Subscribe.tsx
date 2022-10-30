@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import FillButton from "../../components/Buttons/FillButton";
+import Title from "../../components/Title";
 
 const Subscribe: FC = () => {
   return (
@@ -10,11 +11,13 @@ const Subscribe: FC = () => {
         alt=""
       />
       <div className="container mx-auto">
-        <div className="title text-center">
-          <h3 className="uppercase tracking-[1px]">Don`t miss anything</h3>
-          <h4 className="text-4xl mt-2 font-black">
-            Subscribe to the Createx School <br /> announcements
-          </h4>
+        <div className="text-center mb-16 w-[75%] mx-auto">
+          <Title
+            text={{
+              h3: "DON`T MISS ANYTHING",
+              h2: "Subscribe to the Createx School announcements",
+            }}
+          />
         </div>
         <form
           action="post"
@@ -27,9 +30,7 @@ const Subscribe: FC = () => {
             placeholder="Your working email"
             className="mr-6 h-full rounded min-w-[30%] px-4 outline-none focus:border focus:border-[#555454]"
           />
-          <button type="submit">
-            <FillButton text="Subscribe" />
-          </button>
+          <FillButton text="Subscribe" />
         </form>
       </div>
       <img

@@ -1,15 +1,18 @@
 import React, { FC } from "react";
+import Title from "../../components/Title";
 
 const Certificate: FC = () => {
   return (
     <section className="relative">
       <div className="container py-24 mx-auto">
         <div className="left w-1/3 ">
-          <h3 className="uppercase  tracking-[1px]">Createx certificate</h3>
-          <h2 className="text-5xl font-black mt-2 mb-12">
-            Your expertise will be confirmed
-          </h2>
-          <p className="text-[#424551] font-normal">
+          <Title
+            text={{
+              h3: "CREATEX CERTIFICATE",
+              h2: "Your expertise will be confirmed",
+            }}
+          />
+          <p className="text-[#424551] font-normal mt-16">
             We are accredited by international professional organizations and
             institutes:
           </p>

@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
+import Title from "../../components/Title";
 
 const WhoWeAre: FC = () => {
   return (
@@ -11,9 +12,13 @@ const WhoWeAre: FC = () => {
             <img src="./images/homepage/whoWeAre/who.png" alt="whoweare" />
           </div>
           <div className="right w-1/2 ml-20">
-            <h3 className="uppercase tracking-[1px]">Who we are</h3>
-            <h2 className="text-5xl font-black mb-10">Why Createx?</h2>
-            <ul className="whoWeAre-list w-2/3 pl-6">
+            <Title
+              text={{
+                h3: "WHO WE ARE",
+                h2: "Why Createx?",
+              }}
+            />
+            <ul className="whoWeAre-list w-2/3 pl-6 mt-16">
               <li>
                 A fermentum in morbi pretium aliquam adipiscing donec tempus.
               </li>
