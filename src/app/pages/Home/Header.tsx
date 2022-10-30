@@ -9,9 +9,9 @@ const Header: FC = () => {
     <header className="bg-[#FEDDD1]" id="top">
       <Navbar />
       <div className="container mx-auto">
-        <div className="body py-32 flex items-center">
-          <div className="text w-1/2">
-            <div className="showreel flex items-center mb-12">
+        <div className="body py-32 lg:flex items-center">
+          <div className="text lg:w-1/2">
+            <div className="showreel flex items-center justify-center lg:justify-start mb-12 ">
               <button
                 onClick={() => alert("Пока что недоступно!")}
                 className="bg-[#FEC8C1] px-3 py-3 rounded-[50%] flex justify-center"
@@ -25,10 +25,10 @@ const Header: FC = () => {
               <p>Play showreel</p>
             </div>
 
-            <h1 className="mb-16 text-6xl font-black">
+            <h1 className="w-full text-center mb-16 text-2xl lg:text-6xl font-black">
               Enjoy studying <br /> with Createx <br /> Online Courses
             </h1>
-            <div className="row flex items-center">
+            <div className="row flex items-center justify-center ">
               <Link to="/about" className="mr-8">
                 <UnFillButton text="About us" />
               </Link>
@@ -37,7 +37,7 @@ const Header: FC = () => {
               </Link>
             </div>
           </div>
-          <div className="img w-1/2">
+          <div className="img w-[85%] mx-auto lg:w-1/2 mt-8 lg:mt-0">
             <img
               src="./images/homepage/header/header-illustration.png"
               className="w-full h-full"
@@ -45,20 +45,20 @@ const Header: FC = () => {
             />
           </div>
         </div>
-        <div className="statistics flex justify-between pb-20">
-          <div className="col flex items-center">
+        <div className="statistics flex flex-col lg:flex-row items-center lg:justify-between pb-20">
+          <div className="col flex items-center mb-4 lg:mb-0 ">
             <h2>1200</h2>
             <p>Students graduated</p>
           </div>
-          <div className="col flex items-center">
+          <div className="col flex items-center mb-4 lg:mb-0">
             <h2>84</h2>
             <p>Completed courses</p>
           </div>
-          <div className="col flex items-center">
+          <div className="col flex items-center mb-4 lg:mb-0">
             <h2>16</h2>
             <p>Qualified tutors</p>
           </div>
-          <div className="col flex items-center">
+          <div className="col flex items-center mb-4 lg:mb-0">
             <h2>5</h2>
             <p>Years of experience</p>
           </div>

@@ -4,7 +4,7 @@ import Title from "../../components/Title";
 
 import Event from "../Events/Event";
 
-const Events: FC = () => {
+const HomeEvents: FC = () => {
   return (
     <section className="events bg-[#FEDDD1] py-20">
       <div className="container mx-auto">
@@ -21,8 +21,8 @@ const Events: FC = () => {
           <Event />
           <Event />
         </ul>
-        <div className="row flex mt-16 items-center justify-center">
-          <h3 className="text-3xl mr-10">Do you want more?</h3>
+        <div className="row flex flex-col md:flex-row gap-4 md:gap-0 mt-16 items-center justify-center">
+          <h3 className="text-3xl md:mr-10">Do you want more?</h3>
           <FillButton text="Explore all events" />
         </div>
       </div>
@@ -30,4 +30,4 @@ const Events: FC = () => {
   );
 };
 
-export default Events;
+export default HomeEvents;

@@ -4,7 +4,7 @@ import Header from "./Header";
 import WhoWeAre from "./WhoWeAre";
 import HomeCourses from "./HomeCourses";
 import Benefits from "./Benefits";
-import Events from "./HomeEvents";
+import HomeEvents from "./HomeEvents";
 import Certificate from "./Certificate";
 import Team from "./Team";
 import Testimonials from "./Testimonials";
@@ -19,13 +19,13 @@ const Home: FC = () => {
       <WhoWeAre />
       <HomeCourses />
       <Benefits />
-      <Events />
+      <HomeEvents />
       <Certificate />
-      <Team />
-      <Testimonials />
-      <HomePosts />
-      <Subscribe />
-      <Footer />
+      {/* <Team /> */}
+      {/* <Testimonials /> */}
+      {/* <HomePosts /> */}
+      {/* <Subscribe /> */}
+      {/* <Footer /> */}
     </section>
   );
 };

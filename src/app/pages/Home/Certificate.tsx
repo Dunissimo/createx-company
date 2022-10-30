@@ -4,8 +4,8 @@ import Title from "../../components/Title";
 const Certificate: FC = () => {
   return (
     <section className="relative">
-      <div className="container py-24 mx-auto">
-        <div className="left w-1/3 ">
+      <div className="container py-24 mx-2 xl:mx-auto">
+        <div className="left lg:w-1/3 ">
           <Title
             text={{
               h3: "CREATEX CERTIFICATE",
@@ -30,9 +30,12 @@ const Certificate: FC = () => {
         </div>
       </div>
       <img
-        className="absolute top-0 right-0 mt-24"
+        className="hidden lg:block absolute top-0 right-0 mt-24 w-[60%] h-[60%] xl:w-auto xl:h-auto "
+        // className="w-[60%] h-[60%] xl:w-auto xl:h-auto"
         src="./images/homepage/certificate/certificate.png"
         alt="certificate"
+        // width="50%"
+        // height="50%"
       />
     </section>
   );

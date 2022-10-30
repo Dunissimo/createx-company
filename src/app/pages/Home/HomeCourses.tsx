@@ -8,14 +8,16 @@ const HomeCourses: FC = () => {
   return (
     <section className="courses pb-32">
       <div className="container mx-auto">
-        <div className="row w-full flex justify-between items-center">
-          <Title
-            text={{
-              h3: "Ready to learn?",
-              h2: "Featured Courses",
-            }}
-          />
-          <Link to="/courses">
+        <div className="row w-full lg:flex mx-4 lg:mx-0 justify-between items-center">
+          <div className="mb-4 lg:mb-0">
+            <Title
+              text={{
+                h3: "Ready to learn?",
+                h2: "Featured Courses",
+              }}
+            />
+          </div>
+          <Link to="/courses" className="mt-8">
             <UnFillButton text="View All Courses" />
           </Link>
         </div>

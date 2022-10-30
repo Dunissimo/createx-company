@@ -15,15 +15,18 @@ svg path {
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
   font-weight: 700;
 }
 
 .navbar-link {
-  @apply mr-[2.25rem] relative active:scale-75;
+  @apply relative active:scale-75;
 }
+
 .navbar-link::after {
   content: "";
   @apply block w-0 h-[2px] bg-black absolute bottom-0 left-0
@@ -46,7 +49,7 @@ body {
 }
 
 .benefits-list li:not(:first-child) {
-  @apply w-1/4 text-center text-[gray];
+  @apply md:w-1/4 text-center text-[gray];
 }
 
 .benefits-list li::before {

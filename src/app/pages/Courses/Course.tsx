@@ -17,20 +17,24 @@ const Course: FC<IProps> = ({ isFlex, course }) => {
     Development: "bg-[#7772F1]",
   };
 
-  const cardClass = isFlex ? "flex items-start" : "";
-  const infoClass = `info ${isFlex ? "py-8 ml-10" : ""}`;
+  const cardClass = isFlex
+    ? "text-center md:text-left lg:flex items-start"
+    : "";
+  const infoClass = `info ${isFlex ? "py-8 lg:ml-10 px-4" : ""}`;
 
   return (
     <>
       <div
-        className={`course-card shadow-md rounded cursor-pointer hover:shadow-xl hover:scale-95 ${cardClass}`}
+        className={`course-card w-[70%] lg:w-full mx-auto lg:mx-0 mb-8 lg:mb-0 shadow-md rounded cursor-pointer hover:shadow-xl hover:scale-95 ${cardClass}`}
       >
-        <img
-          src={`./images/homepage/courses/${imgName}`}
-          className="h-full object-center object-cover"
-          width="40%"
-          alt=""
-        />
+        <div className="lg:h-full">
+          <img
+            src={`./images/homepage/courses/${imgName}`}
+            className="h-full w-full sm:w-auto object-center object-cover"
+            height={"100%"}
+            alt=""
+          />
+        </div>
         <div className={infoClass}>
           <h4
             className={`inline text-white rounded py-2 px-2 ${
@@ -40,7 +44,7 @@ const Course: FC<IProps> = ({ isFlex, course }) => {
             {type}
           </h4>
           <h3 className="my-6 text-xl">{title}</h3>
-          <div className="row flex items-center text-lg">
+          <div className="row flex justify-center items-center text-lg md:justify-start">
             <p className="text-[#FF4242] ">${price}</p>
             <p className="opacity-50 before:w-[1px] ml-4 before: before:h-full before:absolute before:top-0 before:left-[-0.5rem] relative before:bg-black">
               {author}

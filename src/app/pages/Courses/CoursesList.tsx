@@ -28,9 +28,9 @@ const CoursesList: FC<IProps> = ({ count, isFlex }) => {
   return (
     <section>
       <div
-        className={`courses-list mt-16 grid gap-8`}
+        className="courses-list mt-16 md:grid gap-8"
         style={{
-          gridTemplateColumns: `repeat(${count / 3}, minmax(0, 1fr))`,
+          gridTemplateColumns: `repeat(2, minmax(0, 1fr))`,
           gridTemplateRows: "repeat(auto, minmax(0, 1fr))",
         }}
       >
