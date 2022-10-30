@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import CircleButton from "../../components/Buttons/CircleButton";
 import TeamCard from "../../components/TeamCard";
 
 const Team: FC = () => {
@@ -12,9 +13,9 @@ const Team: FC = () => {
             </h3>
             <h2 className="font-black text-5xl mt-2">Meet our team</h2>
           </div>
-          <div className="slider-controls">
-            <button>{"<"}</button>
-            <button>{">"}</button>
+          <div className="slider-controls flex">
+            <CircleButton />
+            <CircleButton isRotate />
           </div>
         </div>
         <div className="team flex items-center justify-between">

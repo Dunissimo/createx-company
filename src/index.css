@@ -13,7 +13,9 @@ svg path {
 * {
   @apply transition-all duration-300;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -100,4 +102,28 @@ body {
 
 .team ul li:hover svg {
   fill: black;
+}
+
+button:hover svg {
+  fill: #fff;
+}
+
+.testimonials .wrapper::before {
+  content: url(/public/images/homepage/testimonials/braces.png);
+  margin-right: 2rem;
+  position: absolute;
+  top: 0;
+  left: -7%;
+}
+
+.dot.active {
+  background: #424551;
+}
+
+footer .links a:hover {
+  @apply underline;
+}
+
+.signUp input {
+  background-color: rgba(255, 255, 255, 0.12);
 }

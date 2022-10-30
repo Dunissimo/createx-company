@@ -23,7 +23,7 @@ const Course: FC<IProps> = ({ isFlex, course }) => {
   return (
     <>
       <div
-        className={`course-card shadow-md rounded cursor-pointer hover:shadow-xl ${cardClass}`}
+        className={`course-card shadow-md rounded cursor-pointer hover:shadow-xl hover:scale-95 ${cardClass}`}
       >
         <img
           src={`./images/homepage/courses/${imgName}`}

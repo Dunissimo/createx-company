@@ -6,7 +6,7 @@ import Navbar from "../../components/Navbar";
 
 const Header: FC = () => {
   return (
-    <header className="bg-[#FEDDD1]">
+    <header className="bg-[#FEDDD1]" id="top">
       <Navbar />
       <div className="container mx-auto">
         <div className="body py-32 flex items-center">
