@@ -4,14 +4,14 @@ import Title from "../../components/Title";
 
 const Subscribe: FC = () => {
   return (
-    <section className="bg-[#FEDBD4] py-32 relative overflow-y-hidden">
+    <section className="bg-[#FEDBD4] text-center md:text-left py-32 relative overflow-y-hidden">
       <img
-        className="scale-75 absolute bottom-[-2rem] left-[-2rem]"
+        className="hidden lg:block scale-75 absolute bottom-[-2rem] left-[-2rem]"
         src="./images/homepage/subscribe/subscribe.png"
         alt=""
       />
       <div className="container mx-auto">
-        <div className="text-center mb-16 w-[75%] mx-auto">
+        <div className="text-center mb-16 md:w-[75%] mx-auto">
           <Title
             text={{
               h3: "DON`T MISS ANYTHING",
@@ -34,7 +34,7 @@ const Subscribe: FC = () => {
         </form>
       </div>
       <img
-        className="scale-75 absolute bottom-[-2rem] right-[-2rem]"
+        className="scale-75 hidden lg:block absolute bottom-[-2rem] right-[-2rem]"
         src="./images/homepage/subscribe/subscribe.png"
         alt=""
       />

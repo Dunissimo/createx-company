@@ -9,13 +9,19 @@ const Benefits: FC = () => {
           <Title text={{ h3: "Our benefits", h2: "That’s how we do it" }} />
         </div>
 
-        <ul className="benefits-list w-full lg:mx-8 mb-20 text-center flex flex-col gap-4 md:flex-row md:gap-0 items-center justify-between">
-          <li className="w-1/2 md:w-auto border border-[#FF3F3A] text-[#FF3F3A] rounded md:mx-4 px-2 py-1 xl:px-12 xl:py-3">
+        <ul className="benefits-list w-full  mb-20 text-center flex flex-col gap-4 md:flex-row md:gap-0 items-center justify-around">
+          <li className="border border-[#FF3F3A] text-[#FF3F3A] rounded px-2 py-1 xl:px-12 xl:py-3 before:content-[url(/public/images/homepage/benefits/star.svg)]">
             Experienced Tutors
           </li>
-          <li>Feedback & Support</li>
-          <li>24/7 Online Library</li>
-          <li>Community</li>
+          <li className="before:content-[url(/public/images/homepage/benefits/like.svg)]">
+            Feedback & Support
+          </li>
+          <li className="before:content-[url(/public/images/homepage/benefits/chat.svg)]">
+            24/7 Online Library
+          </li>
+          <li className="before:content-[url(/public/images/homepage/benefits/layers.svg)]">
+            Community
+          </li>
         </ul>
         <div className="body mx-4 lg:mx-0 flex flex-col md:flex-row items-center">
           <div className="text-center md:text-left md:w-1/2">

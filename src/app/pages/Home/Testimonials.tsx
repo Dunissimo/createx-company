@@ -5,7 +5,7 @@ import Title from "../../components/Title";
 const Testimonials: FC = () => {
   return (
     <section className="pb-24 bg-[#F4F5F7]">
-      <div className="container max-w-[70%] mx-auto">
+      <div className="container lg:max-w-[70%] mx-auto">
         <div className="text-center mb-16">
           <Title
             text={{
@@ -16,10 +16,10 @@ const Testimonials: FC = () => {
         </div>
 
         <div className="testimonials bg-white mt-20 px-16 py-16 relative">
-          <div className="slider-controls absolute top-1/2 left-[-10%]">
+          <div className="slider-controls absolute top-1/2 left-0 lg:left-[-10%]">
             <CircleButton />
           </div>
-          <div className="wrapper w-[75%] mx-auto relative">
+          <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
             <p className="mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
               amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar
@@ -35,7 +35,7 @@ const Testimonials: FC = () => {
               </div>
             </div>
           </div>
-          <div className="slider-controls absolute top-1/2 right-[-10%]">
+          <div className="slider-controls absolute top-1/2 right-0 lg:right-[-10%]">
             <CircleButton isRotate />
           </div>
         </div>

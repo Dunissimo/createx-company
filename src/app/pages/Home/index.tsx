@@ -21,11 +21,13 @@ const Home: FC = () => {
       <Benefits />
       <HomeEvents />
       <Certificate />
-      {/* <Team /> */}
-      {/* <Testimonials /> */}
-      {/* <HomePosts /> */}
-      {/* <Subscribe /> */}
-      {/* <Footer /> */}
+      {/* TODO: сделать адаптивный слайдер */}
+      <Team />
+      {/* TODO: тоже сделать адаптивный слайдер */}
+      <Testimonials />
+      <HomePosts />
+      <Subscribe />
+      <Footer />
     </section>
   );
 };

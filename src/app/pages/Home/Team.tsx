@@ -7,7 +7,7 @@ const Team: FC = () => {
   return (
     <section className="bg-[#F4F5F7] py-32">
       <div className="container mx-auto">
-        <div className="row flex items-end justify-between my-16">
+        <div className="row flex flex-col items-center text-center lg:text-left  lg:flex-row lg:items-end justify-between my-16">
           <Title
             text={{
               h3: "BEST TUTORS ARE ALL HERE",
