@@ -199,7 +199,7 @@ const Footer: FC = () => {
         </div>
       </div>
       <div className="py-4 bg-[#292C37] ">
-        <div className="container w-[80%] xl:w-auto mx-auto flex text-xs lg:text-base items-center justify-between">
+        <div className="container w-[90%] xl:w-auto mx-auto flex text-xs lg:text-base items-center justify-between">
           <p className="flex">
             © All rights reserved. Made with{" "}
             <img

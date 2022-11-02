@@ -25,10 +25,10 @@ const Header: FC = () => {
               <p>Play showreel</p>
             </div>
 
-            <h1 className="w-full text-center mb-16 text-2xl lg:text-6xl font-black">
+            <h1 className="w-full text-center lg:text-left mb-16 text-2xl lg:text-6xl font-black">
               Enjoy studying <br /> with Createx <br /> Online Courses
             </h1>
-            <div className="row flex items-center justify-center ">
+            <div className="row flex items-center justify-center lg:justify-start">
               <Link to="/about" className="mr-8">
                 <UnFillButton text="About us" />
               </Link>
