@@ -6,3 +6,6 @@ export interface ICourse {
   imgName: string;
   id: number;
 }
+
+export interface IEvent {}
+export interface IPost {}

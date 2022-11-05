@@ -1,5 +1,7 @@
-import React, { FC, useEffect, useState } from "react";
-import { ICourse } from "../../utils/interfaces";
+import React, { FC, useEffect } from "react";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+
+// import { getData } from "../../utils/api";
 
 import Course from "./Course";
 
@@ -9,21 +11,21 @@ interface IProps {
 }
 
 const CoursesList: FC<IProps> = ({ count, isFlex }) => {
-  const [data, setData] = useState<ICourse[]>([]);
-
-  const getData = () => {
-    fetch(`https://api.npoint.io/66466e607109c64c28f2/courses`)
-      .then((res) => res.json())
-      .then((data) => {
-        data.length = count;
-        setData(data);
-      })
-      .catch((reason) => console.log(reason));
-  };
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
-    getData();
+    // getData(dispatch);
   }, []);
+
+  const data = useAppSelector((state) => state.courses);
+  const { courses, loading, error } = data;
+
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+  if (error) {
+    return <h2>Error!</h2>;
+  }
 
   return (
     <section>
@@ -34,9 +36,10 @@ const CoursesList: FC<IProps> = ({ count, isFlex }) => {
           gridTemplateRows: "repeat(auto, minmax(0, 1fr))",
         }}
       >
-        {data.map((course) => (
-          <Course course={course} isFlex={isFlex} key={course.id} />
-        ))}
+        {courses.map((course, id) => {
+          if (id >= count) return;
+          return <Course course={course} isFlex={isFlex} key={course.id} />;
+        })}
       </div>
     </section>
   );

@@ -1,12 +1,8 @@
 import React, { FC } from "react";
 import Navbar from "../../components/Navbar";
 
-const Events: FC = () => {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
+const EventsList: FC = () => {
+  return <div></div>;
 };
 
-export default Events;
+export default EventsList;
