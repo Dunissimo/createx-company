@@ -21,7 +21,7 @@ const HomeCourses: FC = () => {
             <UnFillButton text="View All Courses" />
           </Link>
         </div>
-        <CoursesList count={6} isFlex />
+        <CoursesList />
       </div>
     </section>
   );

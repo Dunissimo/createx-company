@@ -8,6 +8,25 @@
   @apply transition-all duration-300;
 }
 
+html,
+body {
+  scrollbar-color: #ebeef1 #9a9a9a;
+  scrollbar-width: auto;
+}
+::-webkit-scrollbar {
+  width: 14px;
+  height: 4px;
+  background-color: #ebeef1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #9a9a9a;
+  border-radius: 10px;
+  /* box-shadow: inset 1px 1px 10px #f3faf7; */
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -21,6 +40,7 @@ body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
   font-weight: 700;
+  scroll-behavior: smooth;
 }
 
 svg path {

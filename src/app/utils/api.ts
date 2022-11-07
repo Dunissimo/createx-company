@@ -1,25 +1,31 @@
 import {
-  fetchCourses,
-  loadCourses,
-  errorCourses,
-} from "../../redux/coursesSlice";
+  ActionCreatorWithoutPayload,
+  ActionCreatorWithPayload,
+} from "@reduxjs/toolkit";
+
 import { AppDispatch } from "../../redux/store";
-import { ICourse, IEvent, IPost } from "./interfaces";
 
-const URL = "https://api.npoint.io/66466e607109c64c28f2";
+export const BASE_URL = "https://api.npoint.io/66466e607109c64c28f2";
 
-// function getData(dispatch: AppDispatch, url: string) {
-//   fetch(url)
-//     .then((res) => {
-//       dispatch(fetchCourses());
-//       return res.json();
-//     })
-//     .then((data: ICourse[] | IEvent[] | IPost) => loadCourses(data))
-//     .catch((reason) => {
-//       console.error(`Something went wrong!`, reason);
-//       errorCourses();
-//     });
-// }
+interface IGet {
+  fetchAction: ActionCreatorWithoutPayload;
+  loadAction: ActionCreatorWithPayload<any[], string>;
+  errorAction: ActionCreatorWithoutPayload;
+}
 
-// TODO Похоже, придется делать для каждого типа данных свой запрос с копированием кода.
-// TODO Пока не понимаю, как сделать по принципам DRY
+export const get = (
+  url: string,
+  dispatch: AppDispatch,
+  { fetchAction, loadAction, errorAction }: IGet
+) => {
+  fetch(url)
+    .then((res) => {
+      dispatch(fetchAction());
+      return res.json();
+    })
+    .then((data: any) => dispatch(loadAction(data)))
+    .catch((reason) => {
+      dispatch(errorAction());
+      console.error(`Something went wrong!`, reason);
+    });
+};

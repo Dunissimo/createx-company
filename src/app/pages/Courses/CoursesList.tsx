@@ -1,20 +1,23 @@
 import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
-
-// import { getData } from "../../utils/api";
-
+import {
+  fetchCourses,
+  loadCourses,
+  errorCourses,
+} from "../../../redux/slices/coursesSlice";
+import { get, BASE_URL } from "../../utils/api";
 import Course from "./Course";
 
-interface IProps {
-  count: number;
-  isFlex: boolean;
-}
-
-const CoursesList: FC<IProps> = ({ count, isFlex }) => {
+const CoursesList: FC = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    // getData(dispatch);
+    get(`${BASE_URL}/courses`, dispatch, {
+      fetchAction: fetchCourses,
+      loadAction: loadCourses,
+      errorAction: errorCourses,
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const data = useAppSelector((state) => state.courses);
@@ -36,9 +39,9 @@ const CoursesList: FC<IProps> = ({ count, isFlex }) => {
           gridTemplateRows: "repeat(auto, minmax(0, 1fr))",
         }}
       >
-        {courses.map((course, id) => {
-          if (id >= count) return;
-          return <Course course={course} isFlex={isFlex} key={course.id} />;
+        {courses.map((course) => {
+          if (course.id > 6) return null;
+          return <Course course={course} key={course.id} isFlex />;
         })}
       </div>
     </section>

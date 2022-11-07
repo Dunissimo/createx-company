@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ICourse } from "../app/utils/interfaces";
+import { ICourse } from "../../app/utils/interfaces";
 
 interface IInitial {
   courses: ICourse[];
@@ -8,7 +8,7 @@ interface IInitial {
 }
 
 const initialState: IInitial = {
-  loading: false,
+  loading: true,
   courses: [],
   error: false,
 };

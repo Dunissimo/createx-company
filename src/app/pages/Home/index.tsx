@@ -6,7 +6,7 @@ import HomeCourses from "./HomeCourses";
 import Benefits from "./Benefits";
 import HomeEvents from "./HomeEvents";
 import Certificate from "./Certificate";
-import Team from "./Team";
+import HomeTeam from "./HomeTeam";
 import Testimonials from "./Testimonials";
 import HomePosts from "./HomePosts";
 import Subscribe from "./Subscribe";
@@ -21,9 +21,9 @@ const Home: FC = () => {
       <Benefits />
       <HomeEvents />
       <Certificate />
-      {/* TODO: сделать адаптивный слайдер */}
-      <Team />
-      {/* TODO: тоже сделать адаптивный слайдер */}
+      {/* TODO сделать адаптивный слайдер */}
+      <HomeTeam />
+      {/* TODO тоже сделать адаптивный слайдер */}
       <Testimonials />
       <HomePosts />
       <Subscribe />

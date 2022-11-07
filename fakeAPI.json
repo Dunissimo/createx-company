@@ -182,5 +182,150 @@
       },
       "id": 9
     }
+  ],
+  "team": [
+    {
+      "imgName": "image-4.png",
+      "name": "Dianne Russell",
+      "job": "Founder and CEO",
+      "id": 1
+    },
+    {
+      "imgName": "image-3.png",
+      "name": "Jerome Bell",
+      "job": "Founder and Program Director",
+      "id": 2
+    },
+    {
+      "imgName": "image-2.png",
+      "name": "Kristin Watson",
+      "job": "Marketer, Curator of Marketing Course",
+      "id": 3
+    },
+    {
+      "imgName": "image-1.png",
+      "name": "Marvin McKinney",
+      "job": "PM, Curator of Management Course",
+      "id": 4
+    },
+    {
+      "imgName": "image-7.png",
+      "name": "Leslie Alexander Li",
+      "job": "Curator of HR & Recruting Course",
+      "id": 5
+    },
+    {
+      "imgName": "image-6.png",
+      "name": "Kathryn Murphy",
+      "job": "Kathryn Murphy",
+      "id": 6
+    },
+    {
+      "imgName": "image-5.png",
+      "name": "Brooklyn Simmons",
+      "job": "Curator of Development Course",
+      "id": 7
+    },
+    {
+      "imgName": "image-8.png",
+      "name": "Cody Fisher",
+      "job": "UX Designer, Curator of Design Course",
+      "id": 8
+    }
+  ],
+  "posts": [
+    {
+      "type": "podcast",
+      "imgName": "image-post-8.png",
+      "details": {
+        "theme": "marketing",
+        "date": "September 4, 2020",
+        "duration": "36 min"
+      },
+      "title": "What is traffic arbitrage and does it really make money?",
+      "p": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+      "id": 1
+    },
+    {
+      "type": "article",
+      "imgName": "image-post-7.png",
+      "details": {
+        "theme": "development",
+        "date": "September 1, 2020"
+      },
+      "title": "How to choose the first programming language for a beginner",
+      "p": "Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...",
+      "id": 2
+    },
+    {
+      "type": "video",
+      "imgName": "image-post-6.png",
+      "details": {
+        "theme": "design",
+        "date": "August 8, 2020",
+        "duration": "40 min"
+      },
+      "title": "Should you choose a creative profession if you are attracted to creativity?",
+      "p": "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...",
+      "id": 3
+    },
+    {
+      "type": "article",
+      "imgName": "image-post-5.png",
+      "details": {
+        "theme": "HR & Recruting",
+        "date": "August 3, 2020"
+      },
+      "title": "HR statistics: job search,  interviews, hiring and recruiting",
+      "p": "Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...",
+      "id": 4
+    },
+    {
+      "type": "video",
+      "imgName": "image-post-4.png",
+      "details": {
+        "theme": "management",
+        "date": "August 2, 2020",
+        "duration": "45 min"
+      },
+      "title": "What to do and who to talk to if you want to get feedback on the product",
+      "p": "Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus. Curabitur nisl tincidunt eros venenatis...",
+      "id": 5
+    },
+    {
+      "type": "podcast",
+      "imgName": "image-post-3.png",
+      "details": {
+        "theme": "design",
+        "date": "July 28, 2020",
+        "duration": "36 min"
+      },
+      "title": "What are color profiles and how they work in graphic design",
+      "p": "Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...",
+      "id": 6
+    },
+    {
+      "type": "video",
+      "imgName": "image-post-2.png",
+      "details": {
+        "theme": "management",
+        "date": "July 15, 2020",
+        "duration": "45 min"
+      },
+      "title": "Startup: how to build a team that will live longer than a year",
+      "p": "Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in nisi, urna...",
+      "id": 7
+    },
+    {
+      "type": "article",
+      "imgName": "image-post-1.png",
+      "details": {
+        "theme": "marketing",
+        "date": "July 9, 2020"
+      },
+      "title": "How to get customers to love your business from the start",
+      "p": "Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus, pellentesque etiam arcu tristique ac...",
+      "id": 8
+    }
   ]
 }

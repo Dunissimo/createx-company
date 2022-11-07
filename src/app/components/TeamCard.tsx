@@ -1,12 +1,17 @@
 import React, { FC } from "react";
+import { ITeam } from "../utils/interfaces";
 
-const TeamCard: FC = () => {
+interface IProps {
+  team: ITeam;
+}
+
+const TeamCard: FC<IProps> = ({ team }) => {
   return (
     <div className="team rounded text-center">
-      <div className="img relative">
-        <img src="./images/homepage/team/image-2.png" alt="" />
-        <div className="hidden bg absolute top-0 left-0 w-full h-full"></div>
-        <ul className="hidden items-center gap-4 text-white absolute bottom-2 right-2">
+      <div className="img relative px-6 pt-6">
+        <div className="hidden bg absolute bottom-[-0.25rem] left-0 w-full h-full"></div>
+        <img src={`./images/homepage/team/${team.imgName}`} alt="" />
+        <ul className="hidden items-center gap-4 text-white absolute bottom-3 right-2">
           <li>
             <a href="/">
               <svg
@@ -46,8 +51,8 @@ const TeamCard: FC = () => {
         </ul>
       </div>
 
-      <h3 className="text-black mt-4">Dianne Russell</h3>
-      <h4 className="text-[#787A80]">Founder and CEO</h4>
+      <h3 className="text-black mt-4">{team.name}</h3>
+      <h4 className="text-[#787A80]">{team.job}</h4>
     </div>
   );
 };
