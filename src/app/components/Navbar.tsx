@@ -1,11 +1,11 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import FillButton from "./Buttons/FillButton";
 
 const Navbar: FC = () => {
   return (
-    <nav className="px-8 pt-[2.25rem]">
+    <nav className="px-8 py-[2.25rem]" id="top">
       <div className="container mx-auto lg:flex items-center justify-between">
         <div className="left flex">
           <Link to="/" className="logo mb-4 lg:mb-0 lg:mr-[3.75rem]">
@@ -13,19 +13,24 @@ const Navbar: FC = () => {
           </Link>
           <ul className="links hidden lg:flex gap-4 xl:gap-12">
             <li className="navbar-link">
-              <Link to="/about">About Us</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active" : "")}
+                to="/about"
+              >
+                About Us
+              </NavLink>
             </li>
             <li className="navbar-link">
-              <Link to="/courses">Courses</Link>
+              <NavLink to="/courses">Courses</NavLink>
             </li>
             <li className="navbar-link">
-              <Link to="/events">Events</Link>
+              <NavLink to="/events">Events</NavLink>
             </li>
             <li className="navbar-link">
-              <Link to="/blog">Blog</Link>
+              <NavLink to="/blog">Blog</NavLink>
             </li>
             <li className="navbar-link">
-              <Link to="/contacts">Contacts</Link>
+              <NavLink to="/contacts">Contacts</NavLink>
             </li>
           </ul>
         </div>
@@ -38,7 +43,7 @@ const Navbar: FC = () => {
             to="/logIn"
             className="flex flex-col items-center justify-center"
           >
-            <button className="logIn lg:ml-2 text-base md:text-lg relative hover:text-[#caa5a5] active:scale-75 before:content-[url('/public/images/homepage/header/Person.png')] before:mr-4 before:absolute before:top-[20%] before:left-[-25%]">
+            <button className="logIn lg:ml-2 text-base md:text-lg relative hover:text-[#565454] active:scale-75 before:content-[url('/public/images/homepage/header/Person.png')] before:absolute before:top-[15%] before:left-[-20%]">
               Log in / Register
             </button>
           </Link>

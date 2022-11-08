@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import UnFillButton from "../../components/Buttons/unFillButton";
 import Title from "../../components/Title";
-import CoursesList from "../Courses/CoursesList";
+import CoursesList from "../../components/CoursesList";
 
 const HomeCourses: FC = () => {
   return (
@@ -21,7 +21,7 @@ const HomeCourses: FC = () => {
             <UnFillButton text="View All Courses" />
           </Link>
         </div>
-        <CoursesList />
+        <CoursesList count={6} gridStyles="grid-rows-3 grid-cols-2" isFlex />
       </div>
     </section>
   );

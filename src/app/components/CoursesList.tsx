@@ -1,14 +1,20 @@
 import React, { FC, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import {
   fetchCourses,
   loadCourses,
   errorCourses,
-} from "../../../redux/slices/coursesSlice";
-import { get, BASE_URL } from "../../utils/api";
+} from "../../redux/slices/coursesSlice";
+import { get, BASE_URL } from "../utils/api";
 import Course from "./Course";
 
-const CoursesList: FC = () => {
+interface IProps {
+  count: number;
+  gridStyles: string;
+  isFlex: boolean;
+}
+
+const CoursesList: FC<IProps> = ({ count, gridStyles, isFlex }) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -31,20 +37,14 @@ const CoursesList: FC = () => {
   }
 
   return (
-    <section>
-      <div
-        className="courses-list mt-16 md:grid gap-8"
-        style={{
-          gridTemplateColumns: `repeat(2, minmax(0, 1fr))`,
-          gridTemplateRows: "repeat(auto, minmax(0, 1fr))",
-        }}
-      >
+    <div className="container mx-auto py-20">
+      <div className={`lg:grid gap-8 ${gridStyles}`}>
         {courses.map((course) => {
-          if (course.id > 6) return null;
-          return <Course course={course} key={course.id} isFlex />;
+          if (course.id > count) return null;
+          return <Course course={course} key={course.id} isFlex={isFlex} />;
         })}
       </div>
-    </section>
+    </div>
   );
 };
 

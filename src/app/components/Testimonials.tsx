@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-import CircleButton from "../../components/Buttons/CircleButton";
-import Title from "../../components/Title";
+import CircleButton from "./Buttons/CircleButton";
+import Title from "./Title";
 
 const Testimonials: FC = () => {
   return (
-    <section className="pb-24 bg-[#F4F5F7]">
+    <section className="py-24 bg-[#F4F5F7]">
       <div className="container lg:max-w-[70%] mx-auto">
         <div className="text-center mb-16">
           <Title

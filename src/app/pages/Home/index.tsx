@@ -5,11 +5,11 @@ import WhoWeAre from "./WhoWeAre";
 import HomeCourses from "./HomeCourses";
 import Benefits from "./Benefits";
 import HomeEvents from "./HomeEvents";
-import Certificate from "./Certificate";
+import Certificate from "../../components/Certificate";
 import HomeTeam from "./HomeTeam";
-import Testimonials from "./Testimonials";
+import Testimonials from "../../components/Testimonials";
 import HomePosts from "./HomePosts";
-import Subscribe from "./Subscribe";
+import Subscribe from "../../components/Subscribe";
 import Footer from "../../components/Footer";
 
 const Home: FC = () => {

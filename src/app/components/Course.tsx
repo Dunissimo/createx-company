@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ICourse } from "../../utils/interfaces";
+import { ICourse } from "../utils/interfaces";
 
 interface IProps {
   course: ICourse;
@@ -18,24 +18,29 @@ const Course: FC<IProps> = ({ isFlex, course }) => {
   };
 
   const cardClass = isFlex
-    ? "text-center md:text-left lg:flex items-start"
+    ? "text-center md:text-left lg:flex items-center"
     : "";
-  const infoClass = `info ${isFlex ? "py-8 lg:ml-10 px-4" : ""}`;
 
   return (
     <>
       <div
-        className={`course-card w-[70%] lg:w-full mx-auto lg:mx-0 mb-8 lg:mb-0 shadow-md rounded cursor-pointer hover:shadow-xl hover:scale-95 ${cardClass}`}
+        className={`course-card w-[70%] lg:max-h-[500px] lg:w-full mx-auto lg:mx-0 mb-8 lg:mb-0 shadow-md rounded cursor-pointer hover:shadow-xl hover:scale-95 ${cardClass}`}
       >
-        <div className="lg:h-full">
+        <div
+          className={
+            isFlex ? "h-full lg:mb-0" : "w-full h-2/4 flex justify-center"
+          }
+        >
           <img
             src={`./images/homepage/courses/${imgName}`}
-            className="h-full w-full sm:w-auto object-center object-cover"
+            className={`${
+              isFlex ? "h-full w-full" : "h-full w-full"
+            } object-center rounded`}
             height={"100%"}
             alt=""
           />
         </div>
-        <div className={infoClass}>
+        <div className="info py-8 px-4">
           <h4
             className={`inline text-white rounded py-2 px-2 ${
               types[type as keyof typeof types]
@@ -44,7 +49,7 @@ const Course: FC<IProps> = ({ isFlex, course }) => {
             {type}
           </h4>
           <h3 className="my-6 text-xl">{title}</h3>
-          <div className="row flex justify-center items-center text-lg md:justify-start">
+          <div className="row flex justify-center  items-center text-lg md:justify-start">
             <p className="text-[#FF4242] ">${price}</p>
             <p className="opacity-50 before:w-[1px] ml-4 before: before:h-full before:absolute before:top-0 before:left-[-0.5rem] relative before:bg-black">
               {author}
