@@ -17,47 +17,61 @@ const Course: FC<IProps> = ({ isFlex, course }) => {
     Development: "bg-[#7772F1]",
   };
 
-  const cardClass = isFlex
-    ? "text-center md:text-left lg:flex items-center"
-    : "";
-
+  const flexStyles = `flex flex-col text-center items-center gap-8 mb-8 md:mb-0 md:max-w-none md:flex-row md:text-left`;
+  const notFlexStyles = `flex flex-col items-center justify-start gap-8 min-w-[325px] text-center`;
   return (
-    <>
+    <div
+      className={`course shadow-lg max-w-[80%] mx-auto py-4 px-4 rounded  ${
+        isFlex ? flexStyles : notFlexStyles
+      }`}
+    >
+      <div className={`img ${isFlex ? "w-2/3 md:w-1/3" : "w-2/3"}`}>
+        <img
+          className="w-full h-full"
+          src={`./images/homepage/courses/${imgName}`}
+          alt={`This is ${author}`}
+        />
+      </div>
       <div
-        className={`course-card w-[70%] lg:max-h-[500px] lg:w-full mx-auto lg:mx-0 mb-8 lg:mb-0 shadow-md rounded cursor-pointer hover:shadow-xl hover:scale-95 ${cardClass}`}
+        className={`info ${
+          isFlex ? "w-2/3" : "w-full flex flex-col items-center"
+        }`}
       >
-        <div
-          className={
-            isFlex ? "h-full lg:mb-0" : "w-full h-2/4 flex justify-center"
-          }
+        <h4
+          className={`inline px-2 py-1 text-white rounded ${
+            types[type as keyof typeof types]
+          }`}
         >
-          <img
-            src={`./images/homepage/courses/${imgName}`}
-            className={`${
-              isFlex ? "h-full w-full" : "h-full w-full"
-            } object-center rounded`}
-            height={"100%"}
-            alt=""
-          />
-        </div>
-        <div className="info py-8 px-4">
-          <h4
-            className={`inline text-white rounded py-2 px-2 ${
-              types[type as keyof typeof types]
-            }`}
-          >
-            {type}
-          </h4>
-          <h3 className="my-6 text-xl">{title}</h3>
-          <div className="row flex justify-center  items-center text-lg md:justify-start">
-            <p className="text-[#FF4242] ">${price}</p>
-            <p className="opacity-50 before:w-[1px] ml-4 before: before:h-full before:absolute before:top-0 before:left-[-0.5rem] relative before:bg-black">
-              {author}
-            </p>
-          </div>
+          {type}
+        </h4>
+        <h3 className="my-4">{title}</h3>
+        <div className="flex">
+          <p className="text-[#FF4242] relative mr-4 after:w-[2px] after:h-full after:block after:bg-gray-400 after:absolute after:top-0 after:right-[-0.5em]">
+            ${price}
+          </p>
+          <p className="text-[#787A80]">{author}</p>
         </div>
       </div>
-    </>
+    </div>
+    // <div>
+    //   <div>
+    //     <img src={`./images/homepage/courses/${imgName}`} alt="" />
+    //   </div>
+    //   <div className="">
+    //     <h4
+    //     // className={`inline text-white rounded py-2 px-2 ${
+    //     //   types[type as keyof typeof types]
+    //     // }`}
+    //     >
+    //       {type}
+    //     </h4>
+    //     <h3 className="">{title}</h3>
+    //     <div className="">
+    //       <p className="">${price}</p>
+    //       <p className="">{author}</p>
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 

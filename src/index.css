@@ -8,6 +8,10 @@
   @apply transition-all duration-300;
 }
 
+img {
+  object-fit: cover;
+}
+
 html {
   height: 100%;
   width: 100%;
