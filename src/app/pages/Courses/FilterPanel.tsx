@@ -48,6 +48,7 @@ const FilterPanel: FC = () => {
                   className={`type px-4 py-1 transition-none  ${
                     i === active ? activeClass : ""
                   }`}
+                  key={i}
                   data-index={i}
                   onClick={clickHandler}
                 >
@@ -57,6 +58,7 @@ const FilterPanel: FC = () => {
             }
             return (
               <li
+                key={courses[i].id}
                 className={`type px-4 py-1 transition-none ${
                   i === active ? activeClass : ""
                 }`}
