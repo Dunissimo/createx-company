@@ -39,14 +39,6 @@ const FilterPanel: FC = () => {
     setTypes(t);
   };
 
-  useEffect(() => {
-    getTypes();
-  }, []);
-
-  useEffect(() => {
-    renderTypes();
-  }, [types]);
-
   const renderTypes = () => {
     const toRender = [];
     for (const key in types) {
@@ -59,13 +51,19 @@ const FilterPanel: FC = () => {
     // ! Переделать отрисовку types
   };
 
+  useEffect(() => {
+    getTypes();
+  }, []);
+
+  useEffect(() => {
+    renderTypes();
+  }, [types]);
+
   return (
     <section>
-      <div className="container mx-auto">
+      <div className="container max-w-[80%] mx-auto flex items-center justify-between">
         <ul className="filters-list flex items-center gap-8">
-          <li>
-            <button>All</button>
-          </li>
+          <TypeFilter type="All" count={courses.length} />
           {renderTypes().map((type) => type)}
         </ul>
         <SearchBar />
