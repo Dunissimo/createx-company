@@ -1,11 +1,14 @@
 import React, { FC } from "react";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 const Contacts: FC = () => {
   return (
     <div>
       <Navbar />
-      <h1>Contacts</h1>
+      {/* <ContactInfo/> */}
+      {/* <Questions/> */}
+      <Footer />
     </div>
   );
 };

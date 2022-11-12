@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import FillButton from "../../components/Buttons/FillButton";
+import EventsList from "../../components/EventsList";
 import Title from "../../components/Title";
-
-import EventsList from "../Events/EventsList";
 
 const HomeEvents: FC = () => {
   return (
@@ -17,7 +16,7 @@ const HomeEvents: FC = () => {
           />
         </div>
         <ul className="events-list">
-          <EventsList />
+          <EventsList count={3} />
         </ul>
         <div className="row flex flex-col md:flex-row gap-4 md:gap-0 mt-16 items-center justify-center">
           <h3 className="text-3xl md:mr-10">Do you want more?</h3>

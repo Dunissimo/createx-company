@@ -3,10 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Courses from "../pages/Courses";
-import About from "../pages/About/About";
-import EventsList from "../pages/Events/EventsList";
-import Blog from "../pages/Blog/Blog";
-import Contacts from "../pages/Contacts/Contacts";
+import About from "../pages/About";
+import Blog from "../pages/Blog";
+import Contacts from "../pages/Contacts";
 
 // import Course from "../pages/Courses/Course";
 // import Event from "../pages/Events/Event";
@@ -15,6 +14,8 @@ import Contacts from "../pages/Contacts/Contacts";
 import store from "../../redux/store";
 import { Provider } from "react-redux";
 import ScrollToTop from "./ScrollToTop";
+import EventsList from "./EventsList";
+import Events from "../pages/Events";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/events" element={<EventsList />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contacts" element={<Contacts />} />
 

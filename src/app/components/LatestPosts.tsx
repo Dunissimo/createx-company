@@ -1,16 +1,20 @@
 import React, { FC, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import {
   errorPosts,
   fetchPosts,
   loadPosts,
-} from "../../../redux/slices/postsSlice";
-import FillButton from "../../components/Buttons/FillButton";
-import Title from "../../components/Title";
-import { BASE_URL, get } from "../../utils/api";
-import Post from "../Blog/Post";
+} from "../../redux/slices/postsSlice";
+import FillButton from "./Buttons/FillButton";
+import Title from "./Title";
+import { BASE_URL, get } from "../utils/api";
+import Post from "../pages/Blog/Post";
 
-const HomePosts: FC = () => {
+interface IProps {
+  count?: number;
+}
+
+const HomePosts: FC<IProps> = ({ count }) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -44,7 +48,9 @@ const HomePosts: FC = () => {
         </div>
         <div className="posts mx-4 flex flex-col lg:flex-row gap-8 mt-16">
           {posts.map((post) => {
-            if (post.id > 3) return null;
+            if (count) {
+              if (post.id > count) return null;
+            }
             return <Post key={post.id} post={post} />;
           })}
         </div>

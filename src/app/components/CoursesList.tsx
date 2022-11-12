@@ -9,7 +9,7 @@ import { get, BASE_URL } from "../utils/api";
 import Course from "./Course";
 
 interface IProps {
-  count: number;
+  count?: number;
   gridStyles: string;
   isFlex: boolean;
 }
@@ -40,7 +40,10 @@ const CoursesList: FC<IProps> = ({ count, gridStyles, isFlex }) => {
     <div className="container mx-auto py-20">
       <div className={`lg:grid gap-8 ${gridStyles}`}>
         {courses.map((course) => {
-          if (course.id > count) return null;
+          if (count) {
+            if (course.id > count) return null;
+          }
+
           return <Course course={course} key={course.id} isFlex={isFlex} />;
         })}
       </div>

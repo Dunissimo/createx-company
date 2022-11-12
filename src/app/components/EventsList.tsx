@@ -1,14 +1,18 @@
 import React, { FC, useEffect } from "react";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import {
-  errorEvents,
   fetchEvents,
   loadEvents,
-} from "../../../redux/slices/eventsSlice";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
-import { BASE_URL, get } from "../../utils/api";
+  errorEvents,
+} from "../../redux/slices/eventsSlice";
+import { get, BASE_URL } from "../utils/api";
 import Event from "./Event";
 
-const EventsList: FC = () => {
+interface IProps {
+  count?: number;
+}
+
+const EventsList: FC<IProps> = ({ count }) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -27,9 +31,12 @@ const EventsList: FC = () => {
   if (error) return <h2>Error!</h2>;
 
   return (
-    <div>
+    <div className="pb-20">
       {events.map((event) => {
-        if (event.id > 3) return null;
+        if (count) {
+          if (event.id > count) return null;
+        }
+
         return <Event event={event} key={event.id} />;
       })}
     </div>

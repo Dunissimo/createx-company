@@ -8,9 +8,9 @@ import HomeEvents from "./HomeEvents";
 import Certificate from "../../components/Certificate";
 import HomeTeam from "./HomeTeam";
 import Testimonials from "../../components/Testimonials";
-import HomePosts from "./HomePosts";
 import Subscribe from "../../components/Subscribe";
 import Footer from "../../components/Footer";
+import LatestPosts from "../../components/LatestPosts";
 
 const Home: FC = () => {
   return (
@@ -25,7 +25,7 @@ const Home: FC = () => {
       <HomeTeam />
       {/* TODO тоже сделать адаптивный слайдер */}
       <Testimonials />
-      <HomePosts />
+      <LatestPosts count={3} />
       <Subscribe />
       <Footer />
     </section>

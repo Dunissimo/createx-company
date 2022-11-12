@@ -12,17 +12,13 @@ const Courses: FC = () => {
   return (
     <section>
       <Navbar />
-      <div className="pt-16 pb-28 text-center">
+      <div className="container pt-16 pb-28 text-center">
         <Title
           text={{ h2: "Our online courses", h3: "Enjoy your studying!" }}
         />
       </div>
       <FilterPanel />
-      <CoursesList
-        count={9}
-        gridStyles="grid-rows-3 grid-cols-3"
-        isFlex={false}
-      />
+      <CoursesList gridStyles="grid-rows-3 grid-cols-3" isFlex={false} />
       <Testimonials />
       <Certificate />
       <Subscribe />

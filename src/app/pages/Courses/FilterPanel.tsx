@@ -1,70 +1,75 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, MouseEventHandler, useEffect, useState } from "react";
 import { useAppSelector } from "../../../redux/hooks";
 import SearchBar from "./SearchBar";
 import TypeFilter from "./TypeFilter";
 
-interface IType {
-  Marketing: number;
-  Management: number;
-  "HR & Recruting": number;
-  Design: number;
-  Development: number;
+interface IData {
+  types: string[];
+  uniq: string[];
 }
 
 const FilterPanel: FC = () => {
-  const [types, setTypes] = useState<IType>({
-    Marketing: 0,
-    Management: 0,
-    "HR & Recruting": 0,
-    Development: 0,
-    Design: 0,
-  });
+  const [active, setActive] = useState(0);
+  const [data, setData] = useState<IData>({ types: [], uniq: [] });
 
   const { courses } = useAppSelector((state) => state.courses);
 
   const getTypes = () => {
-    const tempArr: string[] = [];
+    const temp = courses.map((course) => course.type);
 
-    courses.map((course) => tempArr.push(course.type));
-
-    const t: IType = {
-      Marketing: tempArr.filter((type) => type === "Marketing").length,
-      Management: tempArr.filter((type) => type === "Management").length,
-      "HR & Recruting": tempArr.filter((type) => type === "HR & Recruting")
-        .length,
-      Design: tempArr.filter((type) => type === "Design").length,
-      Development: tempArr.filter((type) => type === "Development").length,
-    };
-
-    setTypes(t);
+    setData({ types: temp, uniq: ["All", ...Array.from(new Set(temp))] });
   };
 
-  const renderTypes = () => {
-    const toRender = [];
-    for (const key in types) {
-      toRender.push(
-        <TypeFilter type={key} count={types[key as keyof typeof types]} />
-      );
+  const clickHandler: MouseEventHandler<HTMLLIElement> = (
+    e: React.MouseEvent<HTMLLIElement>
+  ) => {
+    if (e.currentTarget.tagName === "LI") {
+      setActive(+e.currentTarget.dataset.index!);
     }
-
-    return toRender;
-    // ! Переделать отрисовку types
   };
 
   useEffect(() => {
     getTypes();
-  }, []);
 
-  useEffect(() => {
-    renderTypes();
-  }, [types]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [courses]);
 
   return (
     <section>
       <div className="container max-w-[80%] mx-auto flex items-center justify-between">
-        <ul className="filters-list flex items-center gap-8">
-          <TypeFilter type="All" count={courses.length} />
-          {renderTypes().map((type) => type)}
+        <ul className="filters-list flex items-center gap-4">
+          {data.uniq.map((type, i) => {
+            const activeClass =
+              "border-2 rounded border-[#FF3F3A] text-[#FF3F3A]";
+
+            if (type === "All") {
+              return (
+                <li
+                  className={`type px-4 py-1 transition-none  ${
+                    i === active ? activeClass : ""
+                  }`}
+                  data-index={i}
+                  onClick={clickHandler}
+                >
+                  <TypeFilter type={type} count={data.types.length} />
+                </li>
+              );
+            }
+            return (
+              <li
+                className={`type px-4 py-1 transition-none ${
+                  i === active ? activeClass : ""
+                }`}
+                data-index={i}
+                onClick={clickHandler}
+              >
+                <TypeFilter
+                  type={type}
+                  count={data.types.filter((tp) => tp === type).length}
+                />
+              </li>
+            );
+          })}
         </ul>
         <SearchBar />
       </div>

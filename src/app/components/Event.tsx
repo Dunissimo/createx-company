@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import UnFillButton from "../../components/Buttons/unFillButton";
-import { IEvent } from "../../utils/interfaces";
+import UnFillButton from "./Buttons/unFillButton";
+import { IEvent } from "../utils/interfaces";
 
 interface IProps {
   event: IEvent;

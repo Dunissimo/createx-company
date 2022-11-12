@@ -21,7 +21,7 @@ const Course: FC<IProps> = ({ isFlex, course }) => {
   const notFlexStyles = `flex flex-col items-center justify-start gap-8 min-w-[325px] text-center`;
   return (
     <div
-      className={`course shadow-lg max-w-[80%] mx-auto py-4 px-4 rounded  ${
+      className={`course min-w-full shadow-lg max-w-[80%] mx-auto py-4 px-4 rounded  ${
         isFlex ? flexStyles : notFlexStyles
       }`}
     >
