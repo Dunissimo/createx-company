@@ -1,14 +1,10 @@
 import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import {
-  errorPosts,
-  fetchPosts,
-  loadPosts,
-} from "../../redux/slices/postsSlice";
 import FillButton from "./Buttons/FillButton";
 import Title from "./Title";
-import { BASE_URL, get } from "../utils/api";
+import { getPosts } from "../utils/api";
 import Post from "../pages/Blog/Post";
+import { Link } from "react-router-dom";
 
 interface IProps {
   count?: number;
@@ -18,16 +14,11 @@ const HomePosts: FC<IProps> = ({ count }) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    get(`${BASE_URL}/posts`, dispatch, {
-      fetchAction: fetchPosts,
-      loadAction: loadPosts,
-      errorAction: errorPosts,
-    });
+    getPosts(dispatch);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const data = useAppSelector((state) => state.posts);
-  const { posts, loading, error } = data;
+  const { posts, loading, error } = useAppSelector((state) => state.posts);
 
   if (loading) return <h2>Loading...</h2>;
   if (error) return <h2>Error!</h2>;
@@ -42,9 +33,9 @@ const HomePosts: FC<IProps> = ({ count }) => {
               h2: "Latest posts",
             }}
           />
-          <div className="btn mt-6 lg:mt-0">
+          <Link to="./blog" className="btn mt-6 lg:mt-0">
             <FillButton text="Go to blog" />
-          </div>
+          </Link>
         </div>
         <div className="posts mx-4 flex flex-col lg:flex-row gap-8 mt-16">
           {posts.map((post) => {

@@ -10,7 +10,7 @@ const TeamCard: FC<IProps> = ({ team }) => {
     <div className="team rounded text-center">
       <div className="img relative px-6 pt-6">
         <div className="hidden bg absolute bottom-[-0.25rem] left-0 w-full h-full"></div>
-        <img src={`./images/homepage/team/${team.imgName}`} alt="" />
+        <img src={`./images/homepage/team/team/${team.imgName}`} alt="" />
         <ul className="hidden items-center gap-4 text-white absolute bottom-3 right-2">
           <li>
             <a href="/">

@@ -47,19 +47,19 @@ const Header: FC = () => {
         </div>
         <div className="statistics flex flex-col lg:flex-row items-center lg:justify-between pb-20">
           <div className="col flex items-center mb-4 lg:mb-0 ">
-            <h2>1200</h2>
+            <span>1200</span>
             <p>Students graduated</p>
           </div>
           <div className="col flex items-center mb-4 lg:mb-0">
-            <h2>84</h2>
+            <span>84</span>
             <p>Completed courses</p>
           </div>
           <div className="col flex items-center mb-4 lg:mb-0">
-            <h2>16</h2>
+            <span>16</span>
             <p>Qualified tutors</p>
           </div>
           <div className="col flex items-center mb-4 lg:mb-0">
-            <h2>5</h2>
+            <span>5</span>
             <p>Years of experience</p>
           </div>
         </div>

@@ -1,11 +1,6 @@
 import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import {
-  fetchEvents,
-  loadEvents,
-  errorEvents,
-} from "../../redux/slices/eventsSlice";
-import { get, BASE_URL } from "../utils/api";
+import { getEvents } from "../utils/api";
 import Event from "./Event";
 
 interface IProps {
@@ -16,11 +11,7 @@ const EventsList: FC<IProps> = ({ count }) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    get(`${BASE_URL}/events`, dispatch, {
-      fetchAction: fetchEvents,
-      loadAction: loadEvents,
-      errorAction: errorEvents,
-    });
+    getEvents(dispatch);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

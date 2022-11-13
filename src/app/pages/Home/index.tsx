@@ -22,7 +22,7 @@ const Home: FC = () => {
       <HomeEvents />
       <Certificate />
       {/* TODO сделать адаптивный слайдер */}
-      <HomeTeam />
+      <HomeTeam count={4} />
       {/* TODO тоже сделать адаптивный слайдер */}
       <Testimonials />
       <LatestPosts count={3} />

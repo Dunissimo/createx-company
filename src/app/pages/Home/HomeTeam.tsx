@@ -1,29 +1,23 @@
 import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
-import {
-  errorTeam,
-  fetchTeam,
-  loadTeam,
-} from "../../../redux/slices/teamSlice";
 import CircleButton from "../../components/Buttons/CircleButton";
 import TeamCard from "../../components/TeamCard";
 import Title from "../../components/Title";
-import { BASE_URL, get } from "../../utils/api";
+import { getTeam } from "../../utils/api";
 
-const HomeTeam: FC = () => {
+interface IProps {
+  count?: number;
+}
+
+const HomeTeam: FC<IProps> = ({ count }) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    get(`${BASE_URL}/team`, dispatch, {
-      fetchAction: fetchTeam,
-      loadAction: loadTeam,
-      errorAction: errorTeam,
-    });
+    getTeam(dispatch);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const data = useAppSelector((state) => state.team);
-  const { team, loading, error } = data;
+  const { team, loading, error } = useAppSelector((state) => state.team);
 
   if (loading) return <h2>Loading...</h2>;
   if (error) return <h2>Error!</h2>;
@@ -45,7 +39,9 @@ const HomeTeam: FC = () => {
         </div>
         <div className="team flex items-center justify-between">
           {team.map((tm) => {
-            if (tm.id > 4) return null;
+            if (count) {
+              if (tm.id > count) return null;
+            }
             return <TeamCard key={tm.id} team={tm} />;
           })}
         </div>

@@ -1,11 +1,6 @@
 import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import {
-  fetchCourses,
-  loadCourses,
-  errorCourses,
-} from "../../redux/slices/coursesSlice";
-import { get, BASE_URL } from "../utils/api";
+import { getCourses } from "../utils/api";
 import Course from "./Course";
 
 interface IProps {
@@ -18,16 +13,11 @@ const CoursesList: FC<IProps> = ({ count, gridStyles, isFlex }) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    get(`${BASE_URL}/courses`, dispatch, {
-      fetchAction: fetchCourses,
-      loadAction: loadCourses,
-      errorAction: errorCourses,
-    });
+    getCourses(dispatch);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const data = useAppSelector((state) => state.courses);
-  const { courses, loading, error } = data;
+  const { courses, loading, error } = useAppSelector((state) => state.courses);
 
   if (loading) {
     return <h2>Loading...</h2>;

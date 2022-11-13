@@ -57,11 +57,22 @@ svg path {
     transition-all duration-500;
 }
 
-.statistics h2 {
+.statistics li {
+  @apply flex items-center;
+}
+
+.statistics span {
   @apply text-4xl font-black;
 }
 .statistics p {
   @apply flex font-normal ml-4 items-center after:bg-[#FF3F3A] after:w-[8px] after:h-[8px] after:ml-14 after:block after:rounded-[50%];
+}
+
+.statistics-about span {
+  @apply text-[#FF3F3A];
+}
+.statistics-about p {
+  @apply after:content-none;
 }
 
 .whoWeAre-list li {
@@ -133,6 +144,33 @@ footer .links a:hover {
 
 .social-media li:hover svg path {
   fill: white;
+}
+
+.cores-item {
+  @apply flex flex-col items-center text-center;
+}
+.cores-item h3 {
+  @apply text-xl mt-5 mb-2;
+}
+.cores-item p {
+  @apply opacity-50;
+}
+
+.process {
+  padding-left: 2rem;
+  border-left: 3px solid rgba(66, 69, 81, 0.3);
+}
+.process .step {
+  @apply relative pb-8 before:w-[10px] before:h-[10px] before:rounded-[50%] before:bg-red-600 before:block before:absolute before:top-0 before:left-[-2.35rem];
+}
+.process .step h3 {
+  @apply mt-1 mb-2 text-xl;
+}
+.process .step h4 {
+  @apply uppercase opacity-60 text-sm;
+}
+.process .step p {
+  @apply opacity-50;
 }
 
 /* Scrollbar- */

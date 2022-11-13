@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import EventsList from "../../components/EventsList";
 import Title from "../../components/Title";
@@ -20,7 +21,9 @@ const HomeEvents: FC = () => {
         </ul>
         <div className="row flex flex-col md:flex-row gap-4 md:gap-0 mt-16 items-center justify-center">
           <h3 className="text-3xl md:mr-10">Do you want more?</h3>
-          <FillButton text="Explore all events" />
+          <Link to="/events">
+            <FillButton text="Explore all events" />
+          </Link>
         </div>
       </div>
     </section>

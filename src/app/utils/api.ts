@@ -2,6 +2,23 @@ import {
   ActionCreatorWithoutPayload,
   ActionCreatorWithPayload,
 } from "@reduxjs/toolkit";
+import {
+  errorCourses,
+  fetchCourses,
+  loadCourses,
+} from "../../redux/slices/coursesSlice";
+import {
+  errorEvents,
+  fetchEvents,
+  loadEvents,
+} from "../../redux/slices/eventsSlice";
+import { errrorJobs, fetchJobs, loadJobs } from "../../redux/slices/jobsSlice";
+import {
+  errorPosts,
+  fetchPosts,
+  loadPosts,
+} from "../../redux/slices/postsSlice";
+import { fetchTeam, loadTeam, errorTeam } from "../../redux/slices/teamSlice";
 
 import { AppDispatch } from "../../redux/store";
 
@@ -28,4 +45,44 @@ export const get = (
       dispatch(errorAction());
       console.error(`Something went wrong!`, reason);
     });
+};
+
+export const getCourses = (dispatch: AppDispatch) => {
+  get(`${BASE_URL}/courses`, dispatch, {
+    fetchAction: fetchCourses,
+    loadAction: loadCourses,
+    errorAction: errorCourses,
+  });
+};
+
+export const getEvents = (dispatch: AppDispatch) => {
+  get(`${BASE_URL}/events`, dispatch, {
+    fetchAction: fetchEvents,
+    loadAction: loadEvents,
+    errorAction: errorEvents,
+  });
+};
+
+export const getPosts = (dispatch: AppDispatch) => {
+  get(`${BASE_URL}/posts`, dispatch, {
+    fetchAction: fetchPosts,
+    loadAction: loadPosts,
+    errorAction: errorPosts,
+  });
+};
+
+export const getTeam = (dispatch: AppDispatch) => {
+  get(`${BASE_URL}/team`, dispatch, {
+    fetchAction: fetchTeam,
+    loadAction: loadTeam,
+    errorAction: errorTeam,
+  });
+};
+
+export const getJobs = async (dispatch: AppDispatch) => {
+  get(`${BASE_URL}/jobs`, dispatch, {
+    fetchAction: fetchJobs,
+    loadAction: loadJobs,
+    errorAction: errrorJobs,
+  });
 };
