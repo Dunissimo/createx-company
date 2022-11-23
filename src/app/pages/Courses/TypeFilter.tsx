@@ -2,15 +2,17 @@ import React, { FC } from "react";
 
 interface IProps {
   type: string;
-  count: number;
+  before?: number;
 }
 
-const TypeFilter: FC<IProps> = ({ type, count }) => {
+const TypeFilter: FC<IProps> = ({ type = "Not Found", before }) => {
   return (
-    <button className="border-none outline-none bg-none relative inline">
-      {type}
-      <span className="absolute top-[-0.5rem] right-[-0.75rem]">{count}</span>
-    </button>
+    <>
+      <button className="border-none outline-none bg-none relative inline">
+        {type}
+      </button>
+      <span className="absolute top-[-0.25rem] right-[0.5rem]">{before}</span>
+    </>
   );
 };
 

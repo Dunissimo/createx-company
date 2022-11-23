@@ -142,8 +142,23 @@ footer .links a:hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-.social-media li:hover svg path {
+.social-media.white li svg path {
+  fill: gray;
+}
+.social-media.white li:hover svg path {
   fill: white;
+}
+
+.social-media.black li svg path {
+  fill: black;
+}
+.social-media.black li:hover svg path {
+  fill: gray;
+}
+
+/* bug with youtube svg */
+.social-media li.youtube svg path {
+  fill: rgb(100, 99, 99);
 }
 
 .cores-item {
@@ -173,11 +188,22 @@ footer .links a:hover {
   @apply opacity-50;
 }
 
-.sort div button {
-  @apply opacity-50;
+.filters-list li {
+  @apply px-6 py-1;
 }
-.sort div.active button {
-  @apply opacity-100 border-2 rounded-md border-[#FF3F3A] px-4 py-2 text-[#FF3F3A];
+.filters-list li.active {
+  @apply border-2 rounded border-[#FF3F3A] text-[#FF3F3A];
+}
+/* .filters-list li[data-index="0"] {
+  @apply;
+} */
+
+.sort li {
+  @apply transition-none opacity-50 px-4 py-2;
+  list-style: none;
+}
+.sort li.active {
+  @apply opacity-100 border-2 rounded-md border-[#FF3F3A]  text-[#FF3F3A];
 }
 
 .posts-list {
@@ -207,6 +233,22 @@ footer .links a:hover {
 }
 .div8 {
   grid-area: 3 / 3 / 4 / 4;
+}
+
+.contacts-list li {
+  margin-bottom: 1.5rem;
+}
+
+.contacts-list li h3 {
+  @apply text-sm opacity-50;
+}
+
+.contacts-form label {
+  @apply font-normal;
+}
+.contacts-form input,
+.contacts-form textarea {
+  @apply font-bold mr-4 mt-4 border bg-white transition-none rounded px-4 py-3 outline-none focus:border focus:border-[#979797];
 }
 
 /* Scrollbar- */

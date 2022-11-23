@@ -1,27 +1,14 @@
 import React, { FC } from "react";
+import Tabs from "../../components/Tabs";
+import SearchBar from "../Courses/SearchBar";
 
 const FilterPanel: FC = () => {
+  const sort = ["All", "Articles", "Videos", "Podcasts"];
+
   return (
     <div className="container mx-auto py-20 flex justify-between items-center">
-      <div className="sort flex items-center gap-12">
-        <div className="all active">
-          <button className="">All</button>
-        </div>
-        <div className="articles">
-          <button className="relative before:content-[url(/public/images/homepage/blog/files-post.svg)] before:absolute before:top-[0.1rem] before:left-[-1.5rem] before:block">
-            Articles
-          </button>
-        </div>
-        <div className="videos">
-          <button className="relative before:content-[url(/public/images/homepage/blog/play-post.svg)] before:absolute before:top-[0.1rem] before:left-[-1.5rem] before:block">
-            Videos
-          </button>
-        </div>
-        <div className="podcasts">
-          <button className="relative before:content-[url(/public/images/homepage/blog/mic-post.svg)] before:absolute before:top-[0.1rem] before:left-[-1.5rem] before:block">
-            Podcasts
-          </button>
-        </div>
+      <div className="sort hidden lg:flex items-center gap-12">
+        <Tabs arr={sort} />
       </div>
       <div className="categories">
         <label htmlFor="ctg" className="flex items-center">
@@ -33,7 +20,7 @@ const FilterPanel: FC = () => {
           </select>
         </label>
       </div>
-      <div className="search">search bar</div>
+      <SearchBar />
     </div>
   );
 };

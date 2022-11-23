@@ -17,15 +17,15 @@ export const types = {
 const Course: FC<IProps> = ({ isFlex, course }) => {
   const { type, title, price, author, imgName } = course;
 
-  const flexStyles = `flex flex-col text-center items-center gap-8 mb-8 md:mb-0 md:max-w-none md:flex-row md:text-left`;
+  const flexStyles = `flex flex-col text-center items-center gap-8 lg:flex-row lg:text-left`;
   const notFlexStyles = `flex flex-col items-center justify-start gap-8 min-w-[325px] text-center`;
   return (
     <div
-      className={`course min-w-full shadow-lg max-w-[80%] mx-auto py-4 px-4 rounded  ${
+      className={`course max-w-[65%] mb-8 lg:mb-0 lg:max-w-none shadow-lg mx-auto py-4 px-4 rounded  ${
         isFlex ? flexStyles : notFlexStyles
       }`}
     >
-      <div className={`img ${isFlex ? "w-2/3 md:w-1/3" : "w-2/3"}`}>
+      <div className={`img ${isFlex ? "w-2/3 lg:w-1/3" : "w-2/3"}`}>
         <img
           className="w-full h-full"
           src={`./images/homepage/courses/${imgName}`}

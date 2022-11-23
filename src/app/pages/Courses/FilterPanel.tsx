@@ -1,15 +1,14 @@
-import React, { FC, MouseEventHandler, useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { useAppSelector } from "../../../redux/hooks";
+import Tabs from "../../components/Tabs";
 import SearchBar from "./SearchBar";
-import TypeFilter from "./TypeFilter";
 
-interface IData {
+export interface IData {
   types: string[];
   uniq: string[];
 }
 
 const FilterPanel: FC = () => {
-  const [active, setActive] = useState(0);
   const [data, setData] = useState<IData>({ types: [], uniq: [] });
 
   const { courses } = useAppSelector((state) => state.courses);
@@ -18,14 +17,6 @@ const FilterPanel: FC = () => {
     const temp = courses.map((course) => course.type);
 
     setData({ types: temp, uniq: ["All", ...Array.from(new Set(temp))] });
-  };
-
-  const clickHandler: MouseEventHandler<HTMLLIElement> = (
-    e: React.MouseEvent<HTMLLIElement>
-  ) => {
-    if (e.currentTarget.tagName === "LI") {
-      setActive(+e.currentTarget.dataset.index!);
-    }
   };
 
   useEffect(() => {
@@ -37,41 +28,8 @@ const FilterPanel: FC = () => {
   return (
     <section>
       <div className="container max-w-[80%] mx-auto flex items-center justify-between">
-        <ul className="filters-list flex items-center gap-4">
-          {data.uniq.map((type, i) => {
-            const activeClass =
-              "border-2 rounded border-[#FF3F3A] text-[#FF3F3A]";
-
-            if (type === "All") {
-              return (
-                <li
-                  className={`type px-4 py-1 transition-none  ${
-                    i === active ? activeClass : ""
-                  }`}
-                  key={i}
-                  data-index={i}
-                  onClick={clickHandler}
-                >
-                  <TypeFilter type={type} count={data.types.length} />
-                </li>
-              );
-            }
-            return (
-              <li
-                key={courses[i].id}
-                className={`type px-4 py-1 transition-none ${
-                  i === active ? activeClass : ""
-                }`}
-                data-index={i}
-                onClick={clickHandler}
-              >
-                <TypeFilter
-                  type={type}
-                  count={data.types.filter((tp) => tp === type).length}
-                />
-              </li>
-            );
-          })}
+        <ul className="filters-list hidden lg:flex items-center gap-4 mr-8">
+          <Tabs arr={data.uniq} types={data.types} />
         </ul>
         <SearchBar />
       </div>

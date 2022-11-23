@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import SearchBar from "../Courses/SearchBar";
 
 const OptionsPanel: FC = () => {
   return (
@@ -29,7 +30,7 @@ const OptionsPanel: FC = () => {
         />
         <p>events per page</p>
       </label>
-      {/* <SearchBar /> */}
+      <SearchBar />
       {/* <View/> */}
     </div>
   );
