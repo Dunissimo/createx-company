@@ -3,10 +3,12 @@ import Title from "../../components/Title";
 
 const Process: FC = () => {
   return (
-    <div className="container mx-auto py-20 ">
-      <Title text={{ h3: "Studying process", h2: "That`s how we do it" }} />
-      <div className="flex items-center">
-        <div className="left w-1/2">
+    <div className="container mx-auto py-20 px-4 md:px-0">
+      <div className="text-center md:text-left mb-8 md:mb-0">
+        <Title text={{ h3: "Studying process", h2: "That`s how we do it" }} />
+      </div>
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+        <div className="left md:w-1/2">
           <div className="process flex flex-col">
             <div className="step1 step">
               <h4>Step 1</h4>
@@ -43,7 +45,7 @@ const Process: FC = () => {
             </div>
           </div>
         </div>
-        <div className="right w-1/2">
+        <div className="right md:w-1/2">
           <img
             className="w-full"
             src="./images/aboutPage/illustration-2.png"

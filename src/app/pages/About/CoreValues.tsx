@@ -7,7 +7,7 @@ const CoreValues: FC = () => {
       <div className="text-center mb-16">
         <Title text={{ h3: "We always stand for", h2: "Our core values" }} />
       </div>
-      <div className="cores flex items-center">
+      <div className="cores w-2/3 mx-auto flex flex-col md:flex-row gap-8 md:gap-0 items-center">
         <div className="cores-item">
           <img src="./images/aboutPage/cores/structure.svg" alt="" />
           <h3>Structured Approach</h3>

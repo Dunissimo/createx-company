@@ -24,7 +24,7 @@ const About: FC = () => {
       <AboutTeam />
       <Testimonials />
       <JobsForU />
-      <LatestPosts count={3} />
+      <LatestPosts />
       <Subscribe />
       <Footer />
     </div>

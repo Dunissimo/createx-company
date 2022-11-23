@@ -21,7 +21,9 @@ const jobsSlice = createSlice({
       state.error = false;
     },
     loadJobs(state, action: PayloadAction<string[]>) {
+      state.loading = false;
       state.jobs = action.payload;
+      state.error = false;
     },
     errrorJobs(state) {
       state.loading = false;

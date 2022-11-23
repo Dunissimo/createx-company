@@ -6,9 +6,9 @@ import Title from "../../components/Title";
 
 const OnlineSchool: FC = () => {
   return (
-    <div className="container mx-auto py-20">
-      <div className="w-full flex items-center gap-8">
-        <div className="left w-1/2 flex flex-col justify-between">
+    <div className="container mx-auto py-20 px-8 md:px-0">
+      <div className="w-full flex flex-col md:flex-row items-center gap-8">
+        <div className="left md:w-1/2 flex flex-col justify-between">
           <Title text={{ h3: "About us", h2: "Createx Online School" }} />
           <h3 className="text-xl mt-20">
             Createx Online School is a leader in online studying. We have lots
@@ -30,7 +30,7 @@ const OnlineSchool: FC = () => {
             </Link>
           </div>
         </div>
-        <div className="right w-1/2 text-right flex justify-end">
+        <div className="right md:w-1/2 text-right flex justify-end">
           <img
             className="w-full"
             src="./images/aboutPage/illustration.png"

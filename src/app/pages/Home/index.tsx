@@ -25,7 +25,7 @@ const Home: FC = () => {
       <HomeTeam count={4} />
       {/* TODO тоже сделать адаптивный слайдер */}
       <Testimonials />
-      <LatestPosts count={3} />
+      <LatestPosts />
       <Subscribe />
       <Footer />
     </section>

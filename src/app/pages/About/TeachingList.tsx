@@ -25,19 +25,19 @@ const TeachingList: FC = () => {
   const temp = courses.map((course) => course.type);
   const types = Array.from(new Set(temp));
 
-  if (loading) <h2>Loading...</h2>;
-  if (error) <h2>Error!</h2>;
+  if (loading) return <h2>Loading...</h2>;
+  if (error) return <h2>Error!</h2>;
 
   return (
     <div className="container mx-auto py-20">
       <div className="text-center mb-16">
         <Title text={{ h3: "our main directions", h2: "What do we teach" }} />
       </div>
-      <div className="teaching-list grid gap-8 grid-rows-2 grid-cols-3">
+      <div className="teaching-list px-4 md:px-0 md:grid gap-8 grid-rows-2 grid-cols-3">
         {types.map((type, i) => (
           <TeachingItem key={courses[i].id} type={type} imgName={images[i]} />
         ))}
-        <div className="empty-item bg-gray-300 text-center flex flex-col justify-center items-center">
+        <div className="empty-item bg-gray-300 text-center flex flex-col justify-center items-center mt-8 md:mt-0">
           <p className="w-1/2 text-[#424551]">
             New studying program coming soon...
           </p>

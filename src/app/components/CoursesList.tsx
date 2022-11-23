@@ -19,12 +19,8 @@ const CoursesList: FC<IProps> = ({ count, gridStyles, isFlex }) => {
 
   const { courses, loading, error } = useAppSelector((state) => state.courses);
 
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
-  if (error) {
-    return <h2>Error!</h2>;
-  }
+  if (loading) return <h2>Loading...</h2>;
+  if (error) return <h2>Error!</h2>;
 
   return (
     <div className="container mx-auto py-20">

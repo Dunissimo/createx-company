@@ -7,9 +7,9 @@ interface IProps {
 
 const TeamCard: FC<IProps> = ({ team }) => {
   return (
-    <div className="team rounded text-center">
-      <div className="img relative px-6 pt-6">
-        <div className="hidden bg absolute bottom-[-0.25rem] left-0 w-full h-full"></div>
+    <div className="team rounded text-center px-8 md:px-0 mb-8 md:mb-0">
+      <div className="img flex justify-center relative px-6 pt-6">
+        <div className="hidden absolute bottom-[-0.25rem] left-0 w-full h-full"></div>
         <img src={`./images/homepage/team/team/${team.imgName}`} alt="" />
         <ul className="hidden items-center gap-4 text-white absolute bottom-3 right-2">
           <li>

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import { IPost } from "../../utils/interfaces";
+import { IPost } from "../utils/interfaces";
 
 interface IProps {
   post: IPost;
@@ -64,7 +64,7 @@ const Post: FC<IProps> = ({ post }) => {
       </div>
       <Link
         to="/post/id"
-        className="post-link self-start hover:scale-95 hover:underline after:content-[url(/public/images/homepage/blog/line.svg)] after:ml-4"
+        className="post-link self-start hover:text-red-500 after:content-[url(/public/images/homepage/blog/line.svg)] after:ml-4"
       >
         {idkHowToNameIt[post.type as keyof typeof idkHowToNameIt].button}
       </Link>
