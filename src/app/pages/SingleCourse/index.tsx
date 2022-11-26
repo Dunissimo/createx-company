@@ -21,6 +21,7 @@ const SingleCourse: FC = () => {
 
   useEffect(() => {
     getCourseContent(dispatch, +id!);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const { content, loading, error } = useAppSelector((state) => state.content);

@@ -12,7 +12,7 @@ const LearningProcess: FC<IProps> = ({ steps }) => {
       <div className="text-center">
         <Title text={{ h3: "main steps", h2: "Online learning process" }} />
       </div>
-      <div className="steps flex flex-col lg:flex-row items-center gap-8 mt-20 justify-center">
+      <div className="steps flex flex-col lg:flex-row items-start gap-8 mt-20 justify-center">
         <div className="step lg:w-1/4">
           <div className="head w-full flex items-center">
             <h2 className="text-5xl font-black opacity-30 mr-4">01</h2>
