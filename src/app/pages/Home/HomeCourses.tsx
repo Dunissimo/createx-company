@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import UnFillButton from "../../components/Buttons/unFillButton";
 import Title from "../../components/Title";
 import CoursesList from "../../components/CoursesList";
+import Container from "../../components/Container";
 
 const HomeCourses: FC = () => {
   return (
-    <section className="courses pb-32">
-      <div className="container mx-auto">
+    <section className="pb-32">
+      <Container>
         <div className="row w-full lg:flex mx-4 lg:mx-0 justify-between items-center">
           <div className="mb-4 lg:mb-0">
             <Title
@@ -22,7 +23,7 @@ const HomeCourses: FC = () => {
           </Link>
         </div>
         <CoursesList count={6} gridStyles="grid-rows-3 grid-cols-2" isFlex />
-      </div>
+      </Container>
     </section>
   );
 };

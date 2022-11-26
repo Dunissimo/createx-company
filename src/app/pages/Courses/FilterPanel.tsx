@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
 import { useAppSelector } from "../../../redux/hooks";
+import Container from "../../components/Container";
 import Tabs from "../../components/Tabs";
 import SearchBar from "./SearchBar";
 
@@ -26,14 +27,16 @@ const FilterPanel: FC = () => {
   }, [courses]);
 
   return (
-    <section>
-      <div className="container max-w-[80%] mx-auto flex items-center justify-between">
-        <ul className="filters-list hidden lg:flex items-center gap-4 mr-8">
-          <Tabs arr={data.uniq} types={data.types} />
-        </ul>
-        <SearchBar />
-      </div>
-    </section>
+    <div className="py-20">
+      <Container>
+        <div className="flex items-center justify-between">
+          <ul className="filters-list hidden lg:flex items-center gap-4 mr-8">
+            <Tabs arr={data.uniq} types={data.types} />
+          </ul>
+          <SearchBar />
+        </div>
+      </Container>
+    </div>
   );
 };
 

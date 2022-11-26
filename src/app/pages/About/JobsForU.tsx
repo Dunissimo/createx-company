@@ -1,6 +1,7 @@
 import React, { FC, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import Container from "../../components/Container";
 import Title from "../../components/Title";
 import { getJobs } from "../../utils/api";
 
@@ -18,9 +19,11 @@ const JobsForU: FC = () => {
   if (loading) return <h2>Loading...</h2>;
   if (error) return <h2>Error!</h2>;
 
+  // TODO: снова добавить данные в npoint
+
   return (
-    <div className="bg-[#F4F5F7]">
-      <div className="container mx-auto py-20">
+    <div className="bg-[#F4F5F7] py-20">
+      <Container>
         <div className="text-center mb-16">
           <Title
             text={{ h3: "best jobs for you", h2: "Our students work here" }}
@@ -33,7 +36,7 @@ const JobsForU: FC = () => {
             </Link>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

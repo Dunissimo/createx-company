@@ -8,6 +8,7 @@ const CircleButton: FC<IProps> = ({ isRotate }) => {
   const clickHandler = () => {
     alert("Слайдеры пока что не работают!");
   };
+
   return (
     <div>
       <button

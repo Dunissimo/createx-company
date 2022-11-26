@@ -3,11 +3,12 @@ import FillButton from "./Buttons/FillButton";
 import Title from "./Title";
 import { Link } from "react-router-dom";
 import PostsList from "./PostsList";
+import Container from "./Container";
 
-const HomePosts: FC = () => {
+const LatestPosts: FC = () => {
   return (
-    <section className="py-32">
-      <div className="container mx-auto">
+    <div className="py-20">
+      <Container>
         <div className="row flex flex-col lg:flex-row items-center text-center lg:text-left justify-between lg:items-end">
           <Title
             text={{
@@ -22,9 +23,9 @@ const HomePosts: FC = () => {
         <div className="posts mx-4 flex flex-col lg:flex-row gap-8 mt-16">
           <PostsList count={3} />
         </div>
-      </div>
-    </section>
+      </Container>
+    </div>
   );
 };
 
-export default HomePosts;
+export default LatestPosts;

@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
+import Container from "../../components/Container";
 import Title from "../../components/Title";
 
 const WhoWeAre: FC = () => {
   return (
-    <section className="whoWeAre py-32">
-      <div className="container mx-auto">
+    <section className="py-32">
+      <Container>
         <div className="row lg:flex items-start justify-between">
           <div className="left h-full w-full lg:w-1/2">
             <img
@@ -43,7 +44,7 @@ const WhoWeAre: FC = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

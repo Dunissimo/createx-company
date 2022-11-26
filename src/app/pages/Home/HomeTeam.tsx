@@ -1,6 +1,7 @@
 import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
 import CircleButton from "../../components/Buttons/CircleButton";
+import Container from "../../components/Container";
 import TeamCard from "../../components/TeamCard";
 import Title from "../../components/Title";
 import { getTeam } from "../../utils/api";
@@ -24,7 +25,7 @@ const HomeTeam: FC<IProps> = ({ count }) => {
 
   return (
     <section className="bg-[#F4F5F7] py-32">
-      <div className="container mx-auto">
+      <Container>
         <div className="row flex flex-col items-center text-center lg:text-left  lg:flex-row lg:items-end justify-between my-16">
           <Title
             text={{
@@ -45,7 +46,7 @@ const HomeTeam: FC<IProps> = ({ count }) => {
             return <TeamCard key={tm.id} team={tm} />;
           })}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

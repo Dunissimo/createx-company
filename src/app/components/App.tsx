@@ -16,7 +16,6 @@ import { Provider } from "react-redux";
 import ScrollToTop from "./ScrollToTop";
 import Events from "../pages/Events";
 import NotFound from "./NotFound";
-import Course from "./Course";
 import SingleCourse from "../pages/SingleCourse";
 
 function App() {
@@ -41,8 +40,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </Provider>
-
-    // ! Сделать нормальную архитектуру приложения, продумать роутинг.
   );
 }
 

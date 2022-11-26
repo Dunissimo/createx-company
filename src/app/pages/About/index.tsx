@@ -14,7 +14,7 @@ import TeachingList from "./TeachingList";
 
 const About: FC = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <OnlineSchool />
       <Statistics />
@@ -27,7 +27,7 @@ const About: FC = () => {
       <LatestPosts />
       <Subscribe />
       <Footer />
-    </div>
+    </>
   );
 };
 

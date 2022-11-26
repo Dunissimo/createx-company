@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Container from "../../components/Container";
 import EventsList from "../../components/EventsList";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
@@ -10,14 +11,16 @@ const Events: FC = () => {
   return (
     <section>
       <Navbar />
-      <div className="container mx-auto text-center pt-16 pb-28">
-        <Title
-          text={{
-            h3: "Our events",
-            h2: "Lectures, workshops & master-classes",
-          }}
-        />
-      </div>
+      <Container>
+        <div className="text-center">
+          <Title
+            text={{
+              h3: "Our events",
+              h2: "Lectures, workshops & master-classes",
+            }}
+          />
+        </div>
+      </Container>
       <OptionsPanel />
       <EventsList />
       <Subscribe />

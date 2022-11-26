@@ -1,10 +1,11 @@
 import React, { FC } from "react";
+import Container from "./Container";
 import Title from "./Title";
 
 const Certificate: FC = () => {
   return (
-    <section className="relative">
-      <div className="container py-24 mx-2 xl:mx-auto">
+    <section className="relative py-20">
+      <Container>
         <div className="left lg:w-1/3 ">
           <Title
             text={{
@@ -46,7 +47,7 @@ const Certificate: FC = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </Container>
       <img
         className="hidden z-10 lg:block absolute top-0 right-0 mt-24 w-[60%] h-[60%] xl:w-auto xl:h-auto "
         src={

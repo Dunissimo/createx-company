@@ -8,6 +8,7 @@ interface IProps {
 const Accordion: FC<IProps> = ({ lesson }) => {
   const [isOpen, setOpenStatus] = useState(false);
   const { numberOfLesson, head, text } = lesson;
+
   return (
     <div
       onClick={() => setOpenStatus((prev) => !prev)}

@@ -1,13 +1,14 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
+import Container from "../../components/Container";
 import EventsList from "../../components/EventsList";
 import Title from "../../components/Title";
 
 const HomeEvents: FC = () => {
   return (
-    <section className="events bg-[#FEDDD1] py-20">
-      <div className="container mx-auto">
+    <section className="bg-[#FEDDD1] py-20">
+      <Container>
         <div className="text-center mb-16">
           <Title
             text={{
@@ -25,7 +26,7 @@ const HomeEvents: FC = () => {
             <FillButton text="Explore all events" />
           </Link>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

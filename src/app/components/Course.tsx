@@ -20,6 +20,7 @@ const Course: FC<IProps> = ({ isFlex, course }) => {
 
   const flexStyles = `flex flex-col text-center items-center gap-8 lg:flex-row lg:text-left`;
   const notFlexStyles = `flex flex-col items-center justify-start gap-8 min-w-[325px] text-center`;
+
   return (
     <Link to={`/courses/${id}`}>
       <div

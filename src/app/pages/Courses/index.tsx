@@ -7,16 +7,19 @@ import Testimonials from "../../components/Testimonials";
 import Title from "../../components/Title";
 import FilterPanel from "./FilterPanel";
 import CoursesList from "../../components/CoursesList";
+import Container from "../../components/Container";
 
 const Courses: FC = () => {
   return (
     <section>
       <Navbar />
-      <div className="container pt-16 pb-28 text-center">
-        <Title
-          text={{ h2: "Our online courses", h3: "Enjoy your studying!" }}
-        />
-      </div>
+      <Container>
+        <div className="text-center">
+          <Title
+            text={{ h2: "Our online courses", h3: "Enjoy your studying!" }}
+          />
+        </div>
+      </Container>
       <FilterPanel />
       <CoursesList gridStyles="grid-rows-3 grid-cols-3" isFlex={false} />
       <Testimonials />

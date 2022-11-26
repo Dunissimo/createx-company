@@ -1,6 +1,7 @@
 import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { getCourses } from "../utils/api";
+import Container from "./Container";
 import Course from "./Course";
 
 interface IProps {
@@ -23,16 +24,18 @@ const CoursesList: FC<IProps> = ({ count, gridStyles, isFlex }) => {
   if (error) return <h2>Error!</h2>;
 
   return (
-    <div className="container mx-auto py-20">
-      <div className={`lg:grid gap-8 ${gridStyles}`}>
-        {courses.map((course) => {
-          if (count) {
-            if (course.id > count) return null;
-          }
+    <div className="py-20">
+      <Container>
+        <div className={`lg:grid gap-8 ${gridStyles}`}>
+          {courses.map((course) => {
+            if (count) {
+              if (course.id > count) return null;
+            }
 
-          return <Course course={course} key={course.id} isFlex={isFlex} />;
-        })}
-      </div>
+            return <Course course={course} key={course.id} isFlex={isFlex} />;
+          })}
+        </div>
+      </Container>
     </div>
   );
 };

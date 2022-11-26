@@ -5,14 +5,17 @@ import Title from "../../components/Title";
 import FilterPanel from "./FilterPanel";
 import BlogPosts from "./BlogPosts";
 import SubscribeNews from "./SubscribeNews";
+import Container from "../../components/Container";
 
 const Blog: FC = () => {
   return (
     <section>
       <Navbar />
-      <div className="container mx-auto text-center pt-16 pb-28">
-        <Title text={{ h3: "Our blog", h2: "Createx School Journal" }} />
-      </div>
+      <Container>
+        <div className="text-center">
+          <Title text={{ h3: "Our blog", h2: "Createx School Journal" }} />
+        </div>
+      </Container>
       <FilterPanel />
       <BlogPosts />
       <SubscribeNews />

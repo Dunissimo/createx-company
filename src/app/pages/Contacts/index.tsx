@@ -6,12 +6,12 @@ import Questions from "./Questions";
 
 const Contacts: FC = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <ContactInfo />
       <Questions />
       <Footer />
-    </div>
+    </>
   );
 };
 

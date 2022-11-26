@@ -2,14 +2,15 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import UnFillButton from "../../components/Buttons/unFillButton";
+import Container from "../../components/Container";
 import Navbar from "../../components/Navbar";
 
 const Header: FC = () => {
   return (
     <header className="bg-[#FEDDD1]">
       <Navbar />
-      <div className="container mx-auto">
-        <div className="body pb-32 lg:flex items-center">
+      <Container>
+        <div className="lg:flex items-center">
           <div className="text lg:w-1/2">
             <div className="showreel flex items-center justify-center lg:justify-start mb-12 ">
               <button
@@ -63,7 +64,7 @@ const Header: FC = () => {
             <p>Years of experience</p>
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 };

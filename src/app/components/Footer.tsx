@@ -1,11 +1,12 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
+import Container from "./Container";
 import SocialMediaIcons from "./SocialMediaIcons";
 
 const Footer: FC = () => {
   return (
     <footer className="bg-[#1E212C] text-white">
-      <div className="container mx-auto">
+      <Container>
         <div className="body py-20 flex flex-col lg:flex-row items-center lg:items-start gap-2">
           <div className="info w-[90%] lg:w-2/5">
             <img
@@ -79,20 +80,24 @@ const Footer: FC = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Container>
       <div className="py-4 bg-[#292C37] ">
-        <div className="container w-[90%] xl:w-auto mx-auto flex text-xs lg:text-base items-center justify-between">
-          <p className="flex">
-            © All rights reserved. Made with
-            <img
-              className="object-contain mx-1"
-              src={process.env.PUBLIC_URL + "/images/homepage/footer/love.svg"}
-              alt="love"
-            />{" "}
-            by Createx Studio
-          </p>
-          <a href="#top">GO TO TOP</a>
-        </div>
+        <Container>
+          <div className="w-[90%] xl:w-auto flex text-xs lg:text-base items-center justify-between">
+            <p className="flex">
+              © All rights reserved. Made with
+              <img
+                className="object-contain mx-1"
+                src={
+                  process.env.PUBLIC_URL + "/images/homepage/footer/love.svg"
+                }
+                alt="love"
+              />{" "}
+              by Createx Studio
+            </p>
+            <a href="#top">GO TO TOP</a>
+          </div>
+        </Container>
       </div>
     </footer>
   );
