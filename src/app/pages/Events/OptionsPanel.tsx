@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import SearchBar from "../Courses/SearchBar";
+import View from "./View";
 
 const OptionsPanel: FC = () => {
   return (
-    <div className="container mx-auto flex items-center justify-between">
+    <div className="container mx-auto flex items-center justify-between pb-20">
       <label className="flex items-center gap-4">
         <p>Event category</p>
-        <select name="" id="">
+        <select className="select" name="category" id="category">
           <option value="All">All themes</option>
           <option value="master-class">Master class</option>
           <option value="lecture">Lecture</option>
@@ -14,24 +15,24 @@ const OptionsPanel: FC = () => {
       </label>
       <label className="flex items-center gap-4">
         <p>Sort by</p>
-        <select name="" id="">
+        <select className="select" name="sorting" id="sorting">
           <option value="newest">Newest</option>
           <option value="oldest">oldest</option>
         </select>
       </label>
-      <label className="flex items-center gap-4">
+      <label className="flex items-center gap-2">
         <p>Show</p>
         <input
           type="number"
-          className="max-w-[70px] pl-4 pr-4"
+          className="perPage max-w-[60px] py-2 pl-2 pr-2"
           defaultValue="9"
-          name=""
-          id=""
+          name="eventsPerPage"
+          id="perPage"
         />
         <p>events per page</p>
       </label>
       <SearchBar />
-      {/* <View/> */}
+      <View />
     </div>
   );
 };

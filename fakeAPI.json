@@ -6,7 +6,7 @@
       "price": 100,
       "author": "by Jerome Bell",
       "imgName": "imagecourse-5.png",
-      "id": 1
+      "id": 9
     },
     {
       "type": "Management",
@@ -14,7 +14,7 @@
       "price": 480,
       "author": "by Marvin McKinney",
       "imgName": "imagecourse-2.png",
-      "id": 2
+      "id": 8
     },
     {
       "type": "HR & Recruting",
@@ -22,7 +22,7 @@
       "price": 200,
       "author": "by Leslie Alexander Li",
       "imgName": "imagecourse-4.png",
-      "id": 3
+      "id": 7
     },
     {
       "type": "Marketing",
@@ -30,7 +30,7 @@
       "price": 530,
       "author": "by Kristin Watson",
       "imgName": "imagecourse-1.png",
-      "id": 4
+      "id": 6
     },
     {
       "type": "Design",
@@ -46,7 +46,7 @@
       "price": 400,
       "author": "by Dianne Russell",
       "imgName": "imagecourse-3.png",
-      "id": 6
+      "id": 4
     },
     {
       "type": "Development",
@@ -54,7 +54,7 @@
       "price": 600,
       "author": "by Brooklyn Simmons",
       "imgName": "imagecourse-8.png",
-      "id": 7
+      "id": 3
     },
     {
       "type": "HR & Recruting",
@@ -62,7 +62,7 @@
       "price": 150,
       "author": "by Kathryn Murphy",
       "imgName": "imagecourse-7.png",
-      "id": 8
+      "id": 2
     },
     {
       "type": "Design",
@@ -70,7 +70,675 @@
       "price": 240,
       "author": "by Cody Fisher",
       "imgName": "imagecourse-9.png",
-      "id": 9
+      "id": 1
+    }
+  ],
+  "courses-content": [
+    {
+      "id": 1,
+      "content": {
+        "title": "User Experience. Principles of Human-Centered Design",
+        "discount": 20,
+        "info": {
+          "date": "Sept 7 – Nov 2",
+          "duration": "2 months – 8 lessons",
+          "price": 120
+        },
+        "about": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+        "willLearn": [
+          "A fermentum in morbi pretium aliquam adipiscing donec tempus.",
+          "Vulputate placerat amet pulvinar lorem nisl.",
+          "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.",
+          "Etiam duis lobortis in fames ultrices commodo nibh.",
+          "Fringilla in nec risus congue venenatis pretium posuere nec.",
+          "Cursus eu pretium, vulputate tempus quam massa sed at."
+        ],
+        "curator": {
+          "name": "Cody Fisher",
+          "job": "Senior UX designer in IT Product Company",
+          "rating": 4.9,
+          "coursesCount": 4,
+          "studentsCount": 250,
+          "text": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. ",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
+          },
+          "second": {
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
+          },
+          "third": {
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
+          },
+          "fourth": {
+            "head": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
+          }
+        },
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": 1,
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfLesson": 2,
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfLesson": 3,
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfLesson": 4,
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfLesson": 5,
+              "head": "Est, ut tempus id rutrum facilisi.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfLesson": 6,
+              "head": "Amet nec in pellentesque.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfLesson": 7,
+              "head": "Massa vel arcu mauris, id vel rhoncus mattis quis.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfLesson": 8,
+              "head": "Neque, cursus sapien nullam id.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "content": {
+        "title": "No data yet",
+        "discount": 0,
+        "info": {
+          "date": "No data yet",
+          "duration": "No data yet",
+          "price": 0
+        },
+        "about": "No data yet",
+        "willLearn": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "curator": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "rating": 0,
+          "coursesCount": 0,
+          "studentsCount": 0,
+          "text": "No data yet",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "second": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "third": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "fourth": {
+            "head": "No data yet",
+            "p": "No data yet"
+          }
+        },
+        "listForWhom": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "content": {
+        "title": "No data yet",
+        "discount": 0,
+        "info": {
+          "date": "No data yet",
+          "duration": "No data yet",
+          "price": 0
+        },
+        "about": "No data yet",
+        "willLearn": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "curator": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "rating": 0,
+          "coursesCount": 0,
+          "studentsCount": 0,
+          "text": "No data yet",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "second": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "third": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "fourth": {
+            "head": "No data yet",
+            "p": "No data yet"
+          }
+        },
+        "listForWhom": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "content": {
+        "title": "No data yet",
+        "discount": 0,
+        "info": {
+          "date": "No data yet",
+          "duration": "No data yet",
+          "price": 0
+        },
+        "about": "No data yet",
+        "willLearn": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "curator": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "rating": 0,
+          "coursesCount": 0,
+          "studentsCount": 0,
+          "text": "No data yet",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "second": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "third": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "fourth": {
+            "head": "No data yet",
+            "p": "No data yet"
+          }
+        },
+        "listForWhom": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "content": {
+        "title": "No data yet",
+        "discount": 0,
+        "info": {
+          "date": "No data yet",
+          "duration": "No data yet",
+          "price": 0
+        },
+        "about": "No data yet",
+        "willLearn": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "curator": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "rating": 0,
+          "coursesCount": 0,
+          "studentsCount": 0,
+          "text": "No data yet",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "second": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "third": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "fourth": {
+            "head": "No data yet",
+            "p": "No data yet"
+          }
+        },
+        "listForWhom": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "content": {
+        "title": "No data yet",
+        "discount": 0,
+        "info": {
+          "date": "No data yet",
+          "duration": "No data yet",
+          "price": 0
+        },
+        "about": "No data yet",
+        "willLearn": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "curator": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "rating": 0,
+          "coursesCount": 0,
+          "studentsCount": 0,
+          "text": "No data yet",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "second": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "third": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "fourth": {
+            "head": "No data yet",
+            "p": "No data yet"
+          }
+        },
+        "listForWhom": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "content": {
+        "title": "No data yet",
+        "discount": 0,
+        "info": {
+          "date": "No data yet",
+          "duration": "No data yet",
+          "price": 0
+        },
+        "about": "No data yet",
+        "willLearn": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "curator": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "rating": 0,
+          "coursesCount": 0,
+          "studentsCount": 0,
+          "text": "No data yet",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "second": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "third": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "fourth": {
+            "head": "No data yet",
+            "p": "No data yet"
+          }
+        },
+        "listForWhom": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 8,
+      "content": {
+        "title": "No data yet",
+        "discount": 0,
+        "info": {
+          "date": "No data yet",
+          "duration": "No data yet",
+          "price": 0
+        },
+        "about": "No data yet",
+        "willLearn": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "curator": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "rating": 0,
+          "coursesCount": 0,
+          "studentsCount": 0,
+          "text": "No data yet",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "second": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "third": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "fourth": {
+            "head": "No data yet",
+            "p": "No data yet"
+          }
+        },
+        "listForWhom": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 9,
+      "content": {
+        "title": "No data yet",
+        "discount": 0,
+        "info": {
+          "date": "No data yet",
+          "duration": "No data yet",
+          "price": 0
+        },
+        "about": "No data yet",
+        "willLearn": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "curator": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "rating": 0,
+          "coursesCount": 0,
+          "studentsCount": 0,
+          "text": "No data yet",
+          "socialMediaLinks": [""]
+        },
+        "steps": {
+          "first": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "second": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "third": {
+            "head": "No data yet",
+            "p": "No data yet"
+          },
+          "fourth": {
+            "head": "No data yet",
+            "p": "No data yet"
+          }
+        },
+        "listForWhom": [
+          "No data yet",
+          "No data yet",
+          "No data yet",
+          "No data yet"
+        ],
+        "whatWillULearn": {
+          "lessons": [
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            },
+            {
+              "numberOfLesson": "#",
+              "head": "No data yet",
+              "text": "No data yet"
+            }
+          ]
+        }
+      }
     }
   ],
   "events": [

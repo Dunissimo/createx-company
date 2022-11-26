@@ -31,7 +31,14 @@ const Tabs: FC<IProps> = ({ arr, types }) => {
           >
             {types ? (
               <>
-                <TypeFilter type={item} before={types.length} />
+                <TypeFilter
+                  type={item}
+                  before={
+                    item === "All"
+                      ? types.length
+                      : types.filter((value) => value === item).length
+                  }
+                />
               </>
             ) : (
               <TypeFilter type={item} />

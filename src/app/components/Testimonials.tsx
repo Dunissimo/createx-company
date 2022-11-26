@@ -28,7 +28,13 @@ const Testimonials: FC = () => {
               pharetra arcu diam maecenas diam integer in.
             </p>
             <div className="row flex">
-              <img src="./images/homepage/testimonials/testi.png" alt="" />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/homepage/testimonials/testi.png"
+                }
+                alt=""
+              />
               <div className="text ml-5">
                 <p>Eleanor Pena</p>
                 <p className="text-[#787A80]">Position, Course</p>

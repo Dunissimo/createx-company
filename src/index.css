@@ -8,6 +8,25 @@
   @apply transition-all duration-300;
 }
 
+.shadow-small {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+.shadow-regular {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+.shadow-large {
+  box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16),
+    0px 26px 24px -10px rgba(30, 33, 44, 0.1),
+    0px 12px 10px -6px rgba(30, 33, 44, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+
 img {
   object-fit: cover;
 }
@@ -75,8 +94,10 @@ svg path {
   @apply after:content-none;
 }
 
-.whoWeAre-list li {
-  list-style-image: url(/public/images/homepage/whoWeAre/check.svg);
+.whoWeAre-list li,
+.aboutCourse-list li,
+.forWhom-list {
+  list-style-image: url("/public/images/homepage/whoWeAre/check.svg");
   @apply mb-4;
 }
 
@@ -92,12 +113,12 @@ svg path {
   z-index: 100;
 }
 .team .img {
-  background: url(/public/images/homepage/team/background-team.png);
+  background: url("/public/images/homepage/team/background-team.png");
   z-index: 100;
 }
 
 .team .bg {
-  background: url(/public/images/homepage/team/gradient-team.png);
+  background: url("/public/images/homepage/team/gradient-team.png");
   animation: fade 0.5s linear;
 }
 .team ul {
@@ -149,10 +170,12 @@ footer .links a:hover {
   fill: white;
 }
 
-.social-media.black li svg path {
+.social-media.black li svg path,
+.socialMedia svg path {
   fill: black;
 }
-.social-media.black li:hover svg path {
+.social-media.black li:hover svg path,
+.socialMedia a:hover svg path {
   fill: gray;
 }
 
@@ -189,14 +212,11 @@ footer .links a:hover {
 }
 
 .filters-list li {
-  @apply px-6 py-1;
+  @apply px-6 py-1 opacity-50;
 }
 .filters-list li.active {
-  @apply border-2 rounded border-[#FF3F3A] text-[#FF3F3A];
+  @apply border-2 rounded opacity-100 border-[#FF3F3A] text-[#FF3F3A];
 }
-/* .filters-list li[data-index="0"] {
-  @apply;
-} */
 
 .sort li {
   @apply transition-none opacity-50 px-4 py-2;
@@ -249,6 +269,68 @@ footer .links a:hover {
 .contacts-form input,
 .contacts-form textarea {
   @apply font-bold mr-4 mt-4 border bg-white transition-none rounded px-4 py-3 outline-none focus:border focus:border-[#979797];
+}
+
+.select {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.3;
+
+  margin: 0;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  border: 1px solid #d7dadd;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: #fff;
+  background-image: url("/public/images/eventsPage/arrow.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.75em top 60%, 0 0;
+  background-size: 1rem auto, 100%;
+}
+
+.view button:hover svg path {
+  fill: red;
+}
+.view button.active svg path {
+  fill: red;
+}
+
+.lesson.open .text {
+  @apply block h-auto;
+  transition: height 1s;
+}
+
+.register-input {
+  @apply rounded-lg border border-gray-400 outline-none px-4 py-2 text-gray-600 max-w-[75%] min-w-[250px] focus:border-[black] hover:border-[black];
+}
+
+/* Select */
+
+.select::-ms-expand {
+  display: none;
+}
+.select:hover {
+  border-color: rgb(70, 68, 68);
+}
+.select:focus {
+  border-color: rgb(87, 86, 86);
+  color: #222;
+  outline: none;
+}
+.select option {
+  font-weight: normal;
+}
+
+.perPage {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #d7dadd;
 }
 
 /* Scrollbar- */

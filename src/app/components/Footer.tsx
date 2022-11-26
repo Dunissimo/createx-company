@@ -8,7 +8,13 @@ const Footer: FC = () => {
       <div className="container mx-auto">
         <div className="body py-20 flex flex-col lg:flex-row items-center lg:items-start gap-2">
           <div className="info w-[90%] lg:w-2/5">
-            <img src="./images/homepage/header/light-logo.svg" alt="logo" />
+            <img
+              src={
+                process.env.PUBLIC_URL +
+                "/images/homepage/header/light-logo.svg"
+              }
+              alt="logo"
+            />
             <p className="mt-6 mb-8">
               Createx Online School is a leader in online studying. We have lots
               of courses and programs from the main market experts. We provide
@@ -80,7 +86,7 @@ const Footer: FC = () => {
             © All rights reserved. Made with
             <img
               className="object-contain mx-1"
-              src="./images/homepage/footer/love.svg"
+              src={process.env.PUBLIC_URL + "/images/homepage/footer/love.svg"}
               alt="love"
             />{" "}
             by Createx Studio

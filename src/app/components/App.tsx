@@ -16,6 +16,8 @@ import { Provider } from "react-redux";
 import ScrollToTop from "./ScrollToTop";
 import Events from "../pages/Events";
 import NotFound from "./NotFound";
+import Course from "./Course";
+import SingleCourse from "../pages/SingleCourse";
 
 function App() {
   return (
@@ -31,8 +33,10 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
 
-          {/* <Route path="/courses/:id" element={<Course />} /> */}
+          <Route path="/courses/:id" element={<SingleCourse />} />
+
           {/* <Route path="/events/:id" element={<Event />} /> */}
+
           {/* <Route path="/blog/:id" element={<Post />} /> */}
         </Routes>
       </BrowserRouter>

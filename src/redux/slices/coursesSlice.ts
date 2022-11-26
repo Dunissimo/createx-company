@@ -24,7 +24,7 @@ const coursesSlice = createSlice({
     loadCourses(state, action: PayloadAction<ICourse[]>) {
       state.loading = false;
       state.loading = false;
-      state.courses = action.payload;
+      state.courses = action.payload.reverse();
     },
     errorCourses(state) {
       state.loading = false;

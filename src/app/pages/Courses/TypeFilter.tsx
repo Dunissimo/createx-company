@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 interface IProps {
   type: string;
-  before?: number;
+  before?: any;
 }
 
 const TypeFilter: FC<IProps> = ({ type = "Not Found", before }) => {

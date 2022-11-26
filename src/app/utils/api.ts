@@ -3,6 +3,11 @@ import {
   ActionCreatorWithPayload,
 } from "@reduxjs/toolkit";
 import {
+  errorContent,
+  fetchContent,
+  loadContent,
+} from "../../redux/slices/coursesContentSlice";
+import {
   errorCourses,
   fetchCourses,
   loadCourses,
@@ -26,7 +31,9 @@ export const BASE_URL = "https://api.npoint.io/66466e607109c64c28f2";
 
 interface IGet {
   fetchAction: ActionCreatorWithoutPayload;
-  loadAction: ActionCreatorWithPayload<any[], string>;
+  loadAction:
+    | ActionCreatorWithPayload<any[], string>
+    | ActionCreatorWithPayload<any, string>;
   errorAction: ActionCreatorWithoutPayload;
 }
 
@@ -52,6 +59,14 @@ export const getCourses = (dispatch: AppDispatch) => {
     fetchAction: fetchCourses,
     loadAction: loadCourses,
     errorAction: errorCourses,
+  });
+};
+
+export const getCourseContent = (dispatch: AppDispatch, id: number) => {
+  get(`${BASE_URL}/courses-content/${id - 1}/`, dispatch, {
+    fetchAction: fetchContent,
+    loadAction: loadContent,
+    errorAction: errorContent,
   });
 };
 

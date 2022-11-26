@@ -13,7 +13,7 @@ const FilterPanel: FC = () => {
       <div className="categories">
         <label htmlFor="ctg" className="flex items-center">
           <h2 className="mr-4">Blog category</h2>
-          <select name="categories" id="ctg">
+          <select className="select" name="categories" id="ctg">
             <option value="all">All themes</option>
             <option value="first">first theme</option>
             <option value="second">second theme</option>
