@@ -1,8 +1,28 @@
 import React, { FC } from "react";
 import Container from "../../components/Container";
+import Row from "../../components/Row";
 import Title from "../../components/Title";
 
 const Benefits: FC = () => {
+  const left = (
+    <div className="text-center md:text-left">
+      <h2 className="text-4xl font-black">Only practicing tutors</h2>
+      <p className="font-normal mt-6 md:w-3/4 text-[#424551]">
+        Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum
+        suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue.
+        Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis
+        vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim,
+        nisi tempus vehicula.
+      </p>
+    </div>
+  );
+
+  const right = (
+    <div className="mt-6 md:mt-0">
+      <img src="./images/homepage/benefits/benefits-illustration.png" alt="" />
+    </div>
+  );
+
   return (
     <section className="py-20">
       <Container>
@@ -23,24 +43,7 @@ const Benefits: FC = () => {
             Community
           </li>
         </ul>
-        <div className="body mx-4 lg:mx-0 flex flex-col md:flex-row items-center">
-          <div className="text-center md:text-left md:w-1/2">
-            <h2 className="text-4xl font-black">Only practicing tutors</h2>
-            <p className="font-normal mt-6 md:w-3/4 text-[#424551]">
-              Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
-              dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis
-              mollis augue. Nunc, sodales tortor sit diam mi amet massa.
-              Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id
-              dignissim massa ut amet. Amet enim, nisi tempus vehicula.
-            </p>
-          </div>
-          <div className="img md:w-1/2 mt-6 md:mt-0">
-            <img
-              src="./images/homepage/benefits/benefits-illustration.png"
-              alt=""
-            />
-          </div>
-        </div>
+        <Row left={left} right={right} />
       </Container>
     </section>
   );
