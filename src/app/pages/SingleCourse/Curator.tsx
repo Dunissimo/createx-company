@@ -25,9 +25,15 @@ const Curator: FC<IProps> = ({ curator }) => {
           <p className="opacity-50">{job}</p>
         </div>
         <div className="achievements">
-          <p>{rating} rate</p>
-          <p className="my-2">{coursesCount} courses</p>
-          <p>{studentsCount} students</p>
+          <p className="before:content-[url(/public/images/coursesPage/star.svg)] before:pr-2">
+            {rating} rate
+          </p>
+          <p className="my-2 before:content-[url(/public/images/coursesPage/play.svg)] before:pr-2">
+            {coursesCount} courses
+          </p>
+          <p className="before:content-[url(/public/images/coursesPage/people.svg)] before:pr-2">
+            {studentsCount} students
+          </p>
         </div>
         <div className="text my-8 opacity-75">{text}</div>
         <div className="socialMedia flex gap-4">
