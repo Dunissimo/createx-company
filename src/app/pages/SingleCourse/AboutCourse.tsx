@@ -16,7 +16,7 @@ interface IProps {
 const AboutCourse: FC<IProps> = ({ data }) => {
   const { info, about, willLearn } = data;
   return (
-    <div className="container mx-auto py-20 flex items-center justify-between">
+    <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between">
       <div className="left lg:w-1/2">
         <h2 className="text-5xl font-black">About the course</h2>
         <p className="py-10 opacity-50">{about}</p>
@@ -29,8 +29,8 @@ const AboutCourse: FC<IProps> = ({ data }) => {
           ))}
         </ul>
       </div>
-      <div className="right lg:w-1/2 flex justify-end">
-        <div className="w-2/3 blocks px-8 py-10 shadow-regular border-2 border-[#E5E8ED]">
+      <div className="right lg:w-1/2 flex lg:justify-end">
+        <div className="lg:w-2/3 blocks px-8 py-10 shadow-regular border-2 border-[#E5E8ED]">
           <div className="block mb-8">
             <h4 className="uppercase">Dates</h4>
             <p className="text-2xl text-[#FF3F3A] mt-1 mb-2">{info.date}</p>

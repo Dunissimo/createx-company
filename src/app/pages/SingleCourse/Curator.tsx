@@ -9,10 +9,11 @@ interface IProps {
 const Curator: FC<IProps> = ({ curator }) => {
   const { name, job, studentsCount, coursesCount, text, rating } = curator;
   return (
-    <div className="container mx-auto py-20 flex">
-      <div className="left lg:w-1/2">
-        <div className="w-2/3 bg-yellow-300 flex justify-center">
+    <div className="container px-4 mx-auto py-20 flex flex-col lg:flex-row">
+      <div className="left mb-8 lg:mb-0 lg:w-1/2">
+        <div className="lg:w-2/3 bg-yellow-300 flex justify-center">
           <img
+            className="w-1/2 lg:w-auto"
             src={process.env.PUBLIC_URL + "/images/coursesPage/image.png"}
             alt=""
           />

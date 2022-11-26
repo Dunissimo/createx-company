@@ -8,8 +8,8 @@ interface IProps {
 const Discount: FC<IProps> = ({ discount }) => {
   return (
     <div className="container mx-auto py-20 px-16 bg-[#FEDBD3]">
-      <div className="mb-8 head flex items-center justify-between">
-        <p className="text-3xl font-black">
+      <div className="mb-8 head flex flex-col lg:flex-row items-center text-center lg:text-left lg:justify-between">
+        <p className="text-3xl font-black mb-8 lg:mb-0">
           {discount}% discount for early birds!
         </p>
         <div className="timer flex items-center gap-8">
@@ -31,8 +31,11 @@ const Discount: FC<IProps> = ({ discount }) => {
           </div>
         </div>
       </div>
-      <form className="flex items-end justify-between" action="post">
-        <div className="flex flex-col">
+      <form
+        className="flex flex-col lg:flex-row lg:items-end justify-between"
+        action="post"
+      >
+        <div className="flex flex-col mb-8 lg:mb-0">
           <label className="text-gray-800 font-normal mb-2" htmlFor="fullName">
             Full name
           </label>
@@ -44,7 +47,7 @@ const Discount: FC<IProps> = ({ discount }) => {
           />
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-8 lg:mb-0">
           <label className="text-gray-800 font-normal mb-2" htmlFor="email">
             Email
           </label>
@@ -56,7 +59,7 @@ const Discount: FC<IProps> = ({ discount }) => {
           />
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-8 lg:mb-0">
           <label className="text-gray-800 font-normal mb-2" htmlFor="phone">
             Phone
           </label>

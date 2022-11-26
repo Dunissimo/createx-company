@@ -7,7 +7,7 @@ import Title from "../../components/Title";
 
 const OtherCourses: FC = () => {
   return (
-    <div className="container mx-auto py-20">
+    <div className="container px-4 mx-auto py-20">
       <div className="flex justify-between">
         <Title text={{ h3: "Check other courses", h2: "You may also like" }} />
         <div className="slider-controls items-end flex">

@@ -10,8 +10,8 @@ const Register: FC<IProps> = ({ discount }) => {
   const h3 = `Leave a request now and get ${discount}% off!`;
   return (
     <div className="bg-[#F4F5F6]">
-      <div className="container mx-auto py-20 flex items-center">
-        <div className="left lg:w-1/2">
+      <div className="container px-4 mx-auto py-20 flex flex-col lg:flex-row items-center">
+        <div className="left lg:w-1/2 mb-8 lg:mb-0">
           <img
             src={
               process.env.PUBLIC_URL + "/images/coursesPage/illustration-2.png"

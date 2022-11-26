@@ -300,14 +300,13 @@ footer .links a:hover {
 .view button.active svg path {
   fill: red;
 }
-
 .lesson.open .text {
   @apply block h-auto;
   transition: height 1s;
 }
 
 .register-input {
-  @apply rounded-lg border border-gray-400 outline-none px-4 py-2 text-gray-600 max-w-[75%] min-w-[250px] focus:border-[black] hover:border-[black];
+  @apply rounded-lg max-w-none border w-full border-gray-400 outline-none px-4 py-2 text-gray-600 lg:w-auto lg:max-w-[75%] min-w-[250px] focus:border-[black] hover:border-[black];
 }
 
 /* Select */
