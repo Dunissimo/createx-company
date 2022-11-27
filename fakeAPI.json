@@ -76,7 +76,7 @@
   "courses-content": [
     {
       "id": 1,
-      "content": {
+      "data": {
         "title": "User Experience. Principles of Human-Centered Design",
         "discount": 20,
         "info": {
@@ -174,7 +174,7 @@
     },
     {
       "id": 2,
-      "content": {
+      "data": {
         "title": "No data yet",
         "discount": 0,
         "info": {
@@ -245,7 +245,7 @@
     },
     {
       "id": 3,
-      "content": {
+      "data": {
         "title": "No data yet",
         "discount": 0,
         "info": {
@@ -316,7 +316,7 @@
     },
     {
       "id": 4,
-      "content": {
+      "data": {
         "title": "No data yet",
         "discount": 0,
         "info": {
@@ -387,7 +387,7 @@
     },
     {
       "id": 5,
-      "content": {
+      "data": {
         "title": "No data yet",
         "discount": 0,
         "info": {
@@ -458,7 +458,7 @@
     },
     {
       "id": 6,
-      "content": {
+      "data": {
         "title": "No data yet",
         "discount": 0,
         "info": {
@@ -529,7 +529,7 @@
     },
     {
       "id": 7,
-      "content": {
+      "data": {
         "title": "No data yet",
         "discount": 0,
         "info": {
@@ -600,7 +600,7 @@
     },
     {
       "id": 8,
-      "content": {
+      "data": {
         "title": "No data yet",
         "discount": 0,
         "info": {
@@ -671,7 +671,7 @@
     },
     {
       "id": 9,
-      "content": {
+      "data": {
         "title": "No data yet",
         "discount": 0,
         "info": {
