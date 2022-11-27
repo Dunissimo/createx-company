@@ -19,7 +19,7 @@ const WhatWillULearn: FC<IProps> = ({ lessons }) => {
 
       <div className="lessons mt-12 w-full">
         {lessons.map((lesson, i) => (
-          <Accordion lesson={lesson} key={i} />
+          <Accordion item={lesson} key={i} />
         ))}
       </div>
     </>

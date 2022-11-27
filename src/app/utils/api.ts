@@ -3,9 +3,9 @@ import {
   ActionCreatorWithPayload,
 } from "@reduxjs/toolkit";
 import {
-  errorContent,
-  fetchContent,
-  loadContent,
+  errorCourseContent,
+  fetchCourseContent,
+  loadCourseContent,
 } from "../../redux/slices/coursesContentSlice";
 import {
   errorCourses,
@@ -64,9 +64,9 @@ export const getCourses = (dispatch: AppDispatch) => {
 
 export const getCourseContent = (dispatch: AppDispatch, id: number) => {
   get(`${BASE_URL}/courses-content/${id - 1}/`, dispatch, {
-    fetchAction: fetchContent,
-    loadAction: loadContent,
-    errorAction: errorContent,
+    fetchAction: fetchCourseContent,
+    loadAction: loadCourseContent,
+    errorAction: errorCourseContent,
   });
 };
 
@@ -75,6 +75,14 @@ export const getEvents = (dispatch: AppDispatch) => {
     fetchAction: fetchEvents,
     loadAction: loadEvents,
     errorAction: errorEvents,
+  });
+};
+
+export const getEventsContent = (dispatch: AppDispatch, id: number) => {
+  get(`${BASE_URL}/events-content/${id - 1}/`, dispatch, {
+    fetchAction: fetchCourseContent,
+    loadAction: loadCourseContent,
+    errorAction: errorCourseContent,
   });
 };
 

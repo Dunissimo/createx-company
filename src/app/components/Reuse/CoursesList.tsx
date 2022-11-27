@@ -1,10 +1,10 @@
 import React, { FC, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import { getCourses } from "../utils/api";
-import Container from "./Container";
-import Course from "./Course";
-import ErrorIndicator from "./Indicators/ErrorIndicator";
-import LoadingIndicator from "./Indicators/LoadingIndicator";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { getCourses } from "../../utils/api";
+import Container from "../Container";
+import Course from "../Course";
+import ErrorIndicator from "../Indicators/ErrorIndicator";
+import LoadingIndicator from "../Indicators/LoadingIndicator";
 
 interface IProps {
   count?: number;

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import Container from "./Container";
-import Title from "./Title";
+import Container from "../Container";
+import Title from "../Title";
 
 const Certificate: FC = () => {
   return (

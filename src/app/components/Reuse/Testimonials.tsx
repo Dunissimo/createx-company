@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import CircleButton from "./Buttons/CircleButton";
-import Container from "./Container";
-import Title from "./Title";
+import CircleButton from "../Buttons/CircleButton";
+import Container from "../Container";
+import Title from "../Title";
 
 const Testimonials: FC = () => {
   return (

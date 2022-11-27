@@ -63,6 +63,30 @@ export interface ICourse {
   id: number;
 }
 
+export interface ITheme {
+  numberOfThemes: number | string;
+  title: string;
+  text: string;
+}
+
+export interface IEventsContent {
+  id: number;
+  data: {
+    title: string;
+    info: {
+      date: string;
+      price: number | string;
+    };
+    themes: ITheme[];
+    speaker: {
+      name: string;
+      job: string;
+      text: string;
+    };
+    listForWhom: string[];
+  };
+}
+
 export interface IEvent {
   date: {
     time: string;

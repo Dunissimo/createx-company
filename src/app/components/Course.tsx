@@ -18,7 +18,7 @@ export const types = {
 const Course: FC<IProps> = ({ isFlex, course }) => {
   const { type, title, price, author, imgName, id } = course;
 
-  const flexStyles = `w-2/3 md:w-auto flex flex-col text-center items-center gap-8 pb-8 md:pb-0 pt-4 md:pt-0 md:flex-row md:text-left`;
+  const flexStyles = `w-2/3 md:w-auto flex flex-col ] text-center items-center gap-8 pb-8 md:pb-0 pt-4 md:pt-0 md:flex-row md:text-left`;
   const notFlexStyles = `flex flex-col items-center max-w-[33.333%] min-h-[400px] pb-8 justify-start gap-8 min-w-[325px] text-center`;
 
   return (

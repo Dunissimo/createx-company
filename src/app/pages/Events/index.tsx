@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import Container from "../../components/Container";
-import EventsList from "../../components/EventsList";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
-import Subscribe from "../../components/Subscribe";
+import EventsList from "../../components/Reuse/EventsList";
+import Footer from "../../components/Reuse/Footer";
+import Navbar from "../../components/Reuse/Navbar";
+import Subscribe from "../../components/Reuse/Subscribe";
 import Title from "../../components/Title";
 import OptionsPanel from "./OptionsPanel";
 

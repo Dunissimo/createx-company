@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import Footer from "../../components/Reuse/Footer";
+import Navbar from "../../components/Reuse/Navbar";
 import Title from "../../components/Title";
 import FilterPanel from "./FilterPanel";
 import BlogPosts from "./BlogPosts";

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import Container from "./Container";
-import SocialMediaIcons from "./SocialMediaIcons";
+import Container from "../Container";
+import SocialMediaIcons from "../SocialMediaIcons";
 
 const Footer: FC = () => {
   return (

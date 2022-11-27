@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import Container from "../../components/Container";
-import EventsList from "../../components/EventsList";
+import EventsList from "../../components/Reuse/EventsList";
 import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Title from "../../components/Title";
 

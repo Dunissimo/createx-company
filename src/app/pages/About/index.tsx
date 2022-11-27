@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import Footer from "../../components/Footer";
-import LatestPosts from "../../components/LatestPosts";
-import Navbar from "../../components/Navbar";
-import Subscribe from "../../components/Subscribe";
-import Testimonials from "../../components/Testimonials";
+import Footer from "../../components/Reuse/Footer";
+import LatestPosts from "../../components/Reuse/LatestPosts";
+import Navbar from "../../components/Reuse/Navbar";
+import Subscribe from "../../components/Reuse/Subscribe";
+import Testimonials from "../../components/Reuse/Testimonials";
 import AboutTeam from "./AboutTeam";
 import CoreValues from "./CoreValues";
 import JobsForU from "./JobsForU";

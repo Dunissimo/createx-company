@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import FillButton from "./Buttons/FillButton";
-import Title from "./Title";
+import FillButton from "../Buttons/FillButton";
+import Title from "../Title";
 
 const Subscribe: FC = () => {
   return (

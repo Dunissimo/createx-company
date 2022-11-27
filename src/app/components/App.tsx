@@ -1,23 +1,20 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { Provider } from "react-redux";
+import store from "../../redux/store";
+
 import Home from "../pages/Home";
 import Courses from "../pages/Courses";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
 import Contacts from "../pages/Contacts";
-
-// import Course from "../pages/Courses/Course";
-// import Event from "../pages/Events/Event";
-// import Post from "../pages/Blog/Post";
-
-import store from "../../redux/store";
-import { Provider } from "react-redux";
 import ScrollToTop from "./ScrollToTop";
 import Events from "../pages/Events";
 import NotFound from "./NotFound";
 import SingleCourse from "../pages/SingleCourse";
 import ErrorBoundary from "./Indicators/ErrorBoundary";
+import SingleEvent from "../pages/SingleEvent";
 
 function App() {
   return (
@@ -38,6 +35,15 @@ function App() {
             element={
               <ErrorBoundary>
                 <SingleCourse />
+              </ErrorBoundary>
+            }
+          />
+
+          <Route
+            path="/events/:id"
+            element={
+              <ErrorBoundary>
+                <SingleEvent />
               </ErrorBoundary>
             }
           />

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import CircleButton from "../../components/Buttons/CircleButton";
 import FillButton from "../../components/Buttons/FillButton";
 import Container from "../../components/Container";
-import CoursesList from "../../components/CoursesList";
 import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
+import CoursesList from "../../components/Reuse/CoursesList";
 import Title from "../../components/Title";
 
 const OtherCourses: FC = () => {

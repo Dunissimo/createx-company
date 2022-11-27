@@ -1,13 +1,13 @@
 import React, { FC } from "react";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
-import Certificate from "../../components/Certificate";
-import Subscribe from "../../components/Subscribe";
-import Testimonials from "../../components/Testimonials";
+import Footer from "../../components/Reuse/Footer";
+import Navbar from "../../components/Reuse/Navbar";
+import Certificate from "../../components/Reuse/Certificate";
+import Subscribe from "../../components/Reuse/Subscribe";
+import Testimonials from "../../components/Reuse/Testimonials";
 import Title from "../../components/Title";
 import FilterPanel from "./FilterPanel";
-import CoursesList from "../../components/CoursesList";
 import Container from "../../components/Container";
+import CoursesList from "../../components/Reuse/CoursesList";
 
 const Courses: FC = () => {
   return (

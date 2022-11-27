@@ -851,6 +851,354 @@
       "id": 9
     }
   ],
+  "events-content": [
+    {
+      "id": 1,
+      "data": {
+        "title": "Formation of the organizational structure of the company in the face of uncertainty",
+        "info": {
+          "date": "August 5, 11:00 – 14:00",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": 1,
+            "title": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+          },
+          {
+            "numberOfTheme": 2,
+            "title": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+          },
+          {
+            "numberOfTheme": 3,
+            "title": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+          },
+          {
+            "numberOfTheme": 4,
+            "title": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+          }
+        ],
+        "speaker": {
+          "name": "Kathryn Murphy",
+          "job": "Analyst and Marketing specialist in IT company",
+          "text": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. "
+        },
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "data": {
+        "title": "No data yet",
+        "info": {
+          "date": "No data yet",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          }
+        ],
+        "speaker": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "text": "No data yet"
+        },
+        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+      }
+    },
+    {
+      "id": 3,
+      "data": {
+        "title": "No data yet",
+        "info": {
+          "date": "No data yet",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          }
+        ],
+        "speaker": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "text": "No data yet"
+        },
+        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+      }
+    },
+    {
+      "id": 4,
+      "data": {
+        "title": "No data yet",
+        "info": {
+          "date": "No data yet",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          }
+        ],
+        "speaker": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "text": "No data yet"
+        },
+        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+      }
+    },
+    {
+      "id": 5,
+      "data": {
+        "title": "No data yet",
+        "info": {
+          "date": "No data yet",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          }
+        ],
+        "speaker": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "text": "No data yet"
+        },
+        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+      }
+    },
+    {
+      "id": 6,
+      "data": {
+        "title": "No data yet",
+        "info": {
+          "date": "No data yet",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          }
+        ],
+        "speaker": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "text": "No data yet"
+        },
+        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+      }
+    },
+    {
+      "id": 7,
+      "data": {
+        "title": "No data yet",
+        "info": {
+          "date": "No data yet",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          }
+        ],
+        "speaker": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "text": "No data yet"
+        },
+        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+      }
+    },
+    {
+      "id": 8,
+      "data": {
+        "title": "No data yet",
+        "info": {
+          "date": "No data yet",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          }
+        ],
+        "speaker": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "text": "No data yet"
+        },
+        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+      }
+    },
+    {
+      "id": 9,
+      "data": {
+        "title": "No data yet",
+        "info": {
+          "date": "No data yet",
+          "price": "Free"
+        },
+        "themes": [
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          },
+          {
+            "numberOfTheme": "#",
+            "title": "No data yet",
+            "text": "No data yet"
+          }
+        ],
+        "speaker": {
+          "name": "No data yet",
+          "job": "No data yet",
+          "text": "No data yet"
+        },
+        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+      }
+    }
+  ],
   "team": [
     {
       "imgName": "image-4.png",
@@ -996,5 +1344,16 @@
       "id": 8
     }
   ],
-  "jobsForU": []
+  "jobs": [
+    "logo-1.png",
+    "logo-2.png",
+    "logo-3.png",
+    "logo-4.png",
+    "logo-5.png",
+    "logo-6.png",
+    "logo-7.png",
+    "logo-8.png",
+    "logo-9.png",
+    "logo-10.png"
+  ]
 }

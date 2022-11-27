@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import Footer from "../../components/Reuse/Footer";
+import Navbar from "../../components/Reuse/Navbar";
 import ContactInfo from "./ContactInfo";
 import Questions from "./Questions";
 

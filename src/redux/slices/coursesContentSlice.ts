@@ -55,25 +55,26 @@ const initialState: IInitial = {
   error: false,
 };
 
-const contentSlice = createSlice({
-  name: "coursesContent",
+const courseContentSlice = createSlice({
+  name: "course",
   initialState,
   reducers: {
-    fetchContent(state) {
+    fetchCourseContent(state) {
       state.loading = true;
       state.error = false;
     },
-    loadContent(state, action: PayloadAction<ICoursesContent>) {
+    loadCourseContent(state, action: PayloadAction<ICoursesContent>) {
       state.loading = false;
       state.loading = false;
       state.content = action.payload; // INFO: Если будет неправильно отображатся контент курса, то проблема может быть тут!
     },
-    errorContent(state) {
+    errorCourseContent(state) {
       state.loading = false;
       state.error = true;
     },
   },
 });
 
-export const { fetchContent, loadContent, errorContent } = contentSlice.actions;
-export const contentReducer = contentSlice.reducer;
+export const { fetchCourseContent, loadCourseContent, errorCourseContent } =
+  courseContentSlice.actions;
+export const courseContentReducer = courseContentSlice.reducer;

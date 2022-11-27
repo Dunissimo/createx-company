@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Container from "../../components/Container";
 import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
-import PostsList from "../../components/PostsList";
+import PostsList from "../../components/Reuse/PostsList";
 
 const BlogPosts: FC = () => {
   return (

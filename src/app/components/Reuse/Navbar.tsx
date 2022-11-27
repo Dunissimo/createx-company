@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { NavLink, Link } from "react-router-dom";
 
-import FillButton from "./Buttons/FillButton";
-import Container from "./Container";
+import FillButton from "../Buttons/FillButton";
+import Container from "../Container";
 
 const Navbar: FC = () => {
   return (

@@ -2,12 +2,12 @@ import React, { FC, useState } from "react";
 import { ILesson } from "../utils/interfaces";
 
 interface IProps {
-  lesson: ILesson;
+  item: ILesson;
 }
 
-const Accordion: FC<IProps> = ({ lesson }) => {
+const Accordion: FC<IProps> = ({ item }) => {
   const [isOpen, setOpenStatus] = useState(false);
-  const { numberOfLesson, head, text } = lesson;
+  const { numberOfLesson, head, text } = item;
 
   return (
     <div
@@ -23,6 +23,7 @@ const Accordion: FC<IProps> = ({ lesson }) => {
         <div className="top flex lg:items-center">
           <h3 className="text-[#FF3F3A] whitespace-nowrap text-md lg:text-xl">
             Lesson {numberOfLesson}.
+            {/* TODO: сделать динамичный тип. Lesson & Theme */}
           </h3>
           <h2 className="pl-2 text-md lg:text-xl">{head}</h2>
         </div>

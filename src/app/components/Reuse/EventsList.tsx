@@ -1,9 +1,9 @@
 import React, { FC, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import { getEvents } from "../utils/api";
-import Event from "./Event";
-import ErrorIndicator from "./Indicators/ErrorIndicator";
-import LoadingIndicator from "./Indicators/LoadingIndicator";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { getEvents } from "../../utils/api";
+import Event from "../Event";
+import ErrorIndicator from "../Indicators/ErrorIndicator";
+import LoadingIndicator from "../Indicators/LoadingIndicator";
 
 interface IProps {
   count?: number;

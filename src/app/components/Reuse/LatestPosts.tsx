@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import FillButton from "./Buttons/FillButton";
-import Title from "./Title";
+import FillButton from "../Buttons/FillButton";
+import Title from "../Title";
 import { Link } from "react-router-dom";
 import PostsList from "./PostsList";
-import Container from "./Container";
+import Container from "../Container";
 
 const LatestPosts: FC = () => {
   return (

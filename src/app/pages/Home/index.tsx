@@ -5,12 +5,12 @@ import WhoWeAre from "./WhoWeAre";
 import HomeCourses from "./HomeCourses";
 import Benefits from "./Benefits";
 import HomeEvents from "./HomeEvents";
-import Certificate from "../../components/Certificate";
+import Certificate from "../../components/Reuse/Certificate";
 import HomeTeam from "./HomeTeam";
-import Testimonials from "../../components/Testimonials";
-import Subscribe from "../../components/Subscribe";
-import Footer from "../../components/Footer";
-import LatestPosts from "../../components/LatestPosts";
+import Testimonials from "../../components/Reuse/Testimonials";
+import Subscribe from "../../components/Reuse/Subscribe";
+import Footer from "../../components/Reuse/Footer";
+import LatestPosts from "../../components/Reuse/LatestPosts";
 
 const Home: FC = () => {
   return (

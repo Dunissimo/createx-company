@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import UnFillButton from "../../components/Buttons/unFillButton";
+import UnFillButton from "../../components/Buttons/UnFillButton";
 import Title from "../../components/Title";
-import CoursesList from "../../components/CoursesList";
 import Container from "../../components/Container";
 import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
+import CoursesList from "../../components/Reuse/CoursesList";
 
 const HomeCourses: FC = () => {
   return (
