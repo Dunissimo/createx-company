@@ -17,6 +17,7 @@ import ScrollToTop from "./ScrollToTop";
 import Events from "../pages/Events";
 import NotFound from "./NotFound";
 import SingleCourse from "../pages/SingleCourse";
+import ErrorBoundary from "./Indicators/ErrorBoundary";
 
 function App() {
   return (
@@ -32,7 +33,14 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
 
-          <Route path="/courses/:id" element={<SingleCourse />} />
+          <Route
+            path="/courses/:id"
+            element={
+              <ErrorBoundary>
+                <SingleCourse />
+              </ErrorBoundary>
+            }
+          />
 
           {/* <Route path="/events/:id" element={<Event />} /> */}
 

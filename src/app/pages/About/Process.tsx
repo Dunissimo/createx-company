@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Container from "../../components/Container";
+import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import Title from "../../components/Title";
 
@@ -50,14 +51,18 @@ const Process: FC = () => {
   );
 
   return (
-    <div className="py-20">
-      <Container>
-        <div className="text-center md:text-left mb-8 md:mb-0">
-          <Title text={{ h3: "Studying process", h2: "That`s how we do it" }} />
-        </div>
-        <Row left={left} right={right} />
-      </Container>
-    </div>
+    <ErrorBoundary>
+      <div className="py-20">
+        <Container>
+          <div className="text-center md:text-left mb-8 md:mb-0">
+            <Title
+              text={{ h3: "Studying process", h2: "That`s how we do it" }}
+            />
+          </div>
+          <Row left={left} right={right} />
+        </Container>
+      </div>
+    </ErrorBoundary>
   );
 };
 

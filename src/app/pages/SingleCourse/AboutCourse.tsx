@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import Container from "../../components/Container";
+import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 
 interface IProps {
@@ -70,11 +71,13 @@ const AboutCourse: FC<IProps> = ({ data }) => {
   );
 
   return (
-    <div className="py-20">
-      <Container>
-        <Row left={left} right={right} />
-      </Container>
-    </div>
+    <ErrorBoundary>
+      <div className="py-20">
+        <Container>
+          <Row left={left} right={right} />
+        </Container>
+      </div>
+    </ErrorBoundary>
   );
 };
 

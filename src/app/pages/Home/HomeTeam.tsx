@@ -2,6 +2,8 @@ import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
 import CircleButton from "../../components/Buttons/CircleButton";
 import Container from "../../components/Container";
+import ErrorIndicator from "../../components/Indicators/ErrorIndicator";
+import LoadingIndicator from "../../components/Indicators/LoadingIndicator";
 import TeamCard from "../../components/TeamCard";
 import Title from "../../components/Title";
 import { getTeam } from "../../utils/api";
@@ -20,8 +22,13 @@ const HomeTeam: FC<IProps> = ({ count }) => {
 
   const { team, loading, error } = useAppSelector((state) => state.team);
 
-  if (loading) return <h2>Loading...</h2>;
-  if (error) return <h2>Error!</h2>;
+  if (loading) return <LoadingIndicator />;
+  if (error)
+    return (
+      <div className="mt-32">
+        <ErrorIndicator />
+      </div>
+    );
 
   return (
     <section className="bg-[#F4F5F7] py-32">

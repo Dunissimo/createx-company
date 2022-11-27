@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import FillButton from "../../components/Buttons/FillButton";
 import Container from "../../components/Container";
+import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import Title from "../../components/Title";
 
@@ -79,11 +80,13 @@ const Questions: FC = () => {
   );
 
   return (
-    <div className="py-20">
-      <Container>
-        <Row left={left} right={right} />
-      </Container>
-    </div>
+    <ErrorBoundary>
+      <div className="py-20">
+        <Container>
+          <Row left={left} right={right} />
+        </Container>
+      </div>
+    </ErrorBoundary>
   );
 };
 

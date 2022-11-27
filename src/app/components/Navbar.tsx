@@ -9,8 +9,8 @@ const Navbar: FC = () => {
     <nav className="py-[2.25rem]" id="top">
       <Container>
         <div className="flex flex-col lg:flex-row items-center justify-between">
-          <div className="left flex">
-            <Link to="/" className="logo mb-4 lg:mb-0 lg:mr-[3.75rem]">
+          <div className="flex">
+            <Link to="/" className="logo mb-8 lg:mb-0 lg:mr-[3.75rem]">
               <img
                 src={
                   process.env.PUBLIC_URL + `/images/homepage/header/logo.svg`
@@ -41,9 +41,8 @@ const Navbar: FC = () => {
               </li>
             </ul>
           </div>
-
-          <div className="right flex justify-between">
-            <Link to="/contacts">
+          <div className="flex justify-between">
+            <Link to="/contacts" className="mr-12 lg:mr-0">
               <FillButton text="Get consultation" />
             </Link>
             <Link

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import UnFillButton from "../../components/Buttons/unFillButton";
 import Container from "../../components/Container";
+import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import Title from "../../components/Title";
 
@@ -43,11 +44,13 @@ const OnlineSchool: FC = () => {
   );
 
   return (
-    <div className="py-20">
-      <Container>
-        <Row left={left} right={right} />
-      </Container>
-    </div>
+    <ErrorBoundary>
+      <div className="py-20">
+        <Container>
+          <Row left={left} right={right} />
+        </Container>
+      </div>
+    </ErrorBoundary>
   );
 };
 

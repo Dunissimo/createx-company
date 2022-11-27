@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import UnFillButton from "../../components/Buttons/unFillButton";
 import Container from "../../components/Container";
+import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Navbar from "../../components/Navbar";
 import Row from "../../components/Row";
 
@@ -47,31 +48,33 @@ const Header: FC = () => {
     </div>
   );
   return (
-    <header className="bg-[#FEDDD1]">
-      <Navbar />
-      <Container>
-        <Row left={left} right={right} />
+    <ErrorBoundary>
+      <header className="bg-[#FEDDD1]">
+        <Navbar />
+        <Container>
+          <Row left={left} right={right} />
 
-        <div className="statistics mt-12 flex flex-col lg:flex-row items-center lg:justify-between pb-20">
-          <div className="col flex items-center mb-4 lg:mb-0 ">
-            <span>1200</span>
-            <p>Students graduated</p>
+          <div className="statistics mt-12 flex flex-col lg:flex-row items-center lg:justify-between pb-20">
+            <div className="col flex items-center mb-4 lg:mb-0 ">
+              <span>1200</span>
+              <p>Students graduated</p>
+            </div>
+            <div className="col flex items-center mb-4 lg:mb-0">
+              <span>84</span>
+              <p>Completed courses</p>
+            </div>
+            <div className="col flex items-center mb-4 lg:mb-0">
+              <span>16</span>
+              <p>Qualified tutors</p>
+            </div>
+            <div className="col flex items-center mb-4 lg:mb-0">
+              <span>5</span>
+              <p>Years of experience</p>
+            </div>
           </div>
-          <div className="col flex items-center mb-4 lg:mb-0">
-            <span>84</span>
-            <p>Completed courses</p>
-          </div>
-          <div className="col flex items-center mb-4 lg:mb-0">
-            <span>16</span>
-            <p>Qualified tutors</p>
-          </div>
-          <div className="col flex items-center mb-4 lg:mb-0">
-            <span>5</span>
-            <p>Years of experience</p>
-          </div>
-        </div>
-      </Container>
-    </header>
+        </Container>
+      </header>
+    </ErrorBoundary>
   );
 };
 

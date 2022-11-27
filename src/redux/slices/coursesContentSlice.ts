@@ -2,13 +2,55 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ICoursesContent } from "../../app/utils/interfaces";
 
 interface IInitial {
-  content: ICoursesContent | null;
+  content: ICoursesContent;
   loading: boolean;
   error: boolean;
 }
 
 const initialState: IInitial = {
-  content: null,
+  content: {
+    id: 0,
+    data: {
+      title: "",
+      discount: "",
+      info: {
+        date: "",
+        duration: "",
+        price: 0,
+      },
+      about: "",
+      willLearn: [],
+      curator: {
+        name: "",
+        job: "",
+        rating: 0,
+        coursesCount: 0,
+        studentsCount: 0,
+        text: "",
+        socialMediaLinks: [],
+      },
+      steps: {
+        first: {
+          head: "",
+          p: "",
+        },
+        second: {
+          head: "",
+          p: "",
+        },
+        third: {
+          head: "",
+          p: "",
+        },
+        fourth: {
+          head: "",
+          p: "",
+        },
+      },
+      listForWhom: [],
+      whatWillULearn: { lessons: [] },
+    },
+  },
   loading: true,
   error: false,
 };
@@ -24,7 +66,7 @@ const contentSlice = createSlice({
     loadContent(state, action: PayloadAction<ICoursesContent>) {
       state.loading = false;
       state.loading = false;
-      state.content = action.payload; // ! Если будет неправильно отображатся контент курса, то проблема может быть тут!
+      state.content = action.payload; // INFO: Если будет неправильно отображатся контент курса, то проблема может быть тут!
     },
     errorContent(state) {
       state.loading = false;

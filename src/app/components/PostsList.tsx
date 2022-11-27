@@ -2,6 +2,8 @@ import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import Post from "./Post";
 import { getPosts } from "../utils/api";
+import LoadingIndicator from "./Indicators/LoadingIndicator";
+import ErrorIndicator from "./Indicators/ErrorIndicator";
 
 interface IProps {
   count?: number;
@@ -17,8 +19,19 @@ const PostsList: FC<IProps> = ({ count }) => {
 
   const { posts, loading, error } = useAppSelector((state) => state.posts);
 
-  if (loading) return <h2>Loading...</h2>;
-  if (error) return <h2>Error!</h2>;
+  if (loading)
+    return (
+      <div className="w-full">
+        <LoadingIndicator />
+      </div>
+    );
+
+  if (error)
+    return (
+      <div className="w-full">
+        <ErrorIndicator />
+      </div>
+    );
 
   return (
     <>

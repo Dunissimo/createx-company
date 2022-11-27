@@ -35,9 +35,9 @@ export interface ISteps {
 
 export interface ICoursesContent {
   id: number;
-  content: {
+  data: {
     title: string;
-    discount: number;
+    discount: number | string;
     info: {
       date: string;
       duration: string;

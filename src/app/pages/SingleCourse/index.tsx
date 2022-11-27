@@ -2,6 +2,8 @@ import React, { FC, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
 import Footer from "../../components/Footer";
+import ErrorIndicator from "../../components/Indicators/ErrorIndicator";
+import LoadingIndicator from "../../components/Indicators/LoadingIndicator";
 import Navbar from "../../components/Navbar";
 import Testimonials from "../../components/Testimonials";
 import { getCourseContent } from "../../utils/api";
@@ -24,58 +26,34 @@ const SingleCourse: FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
-  const { content, loading, error } = useAppSelector((state) => state.content);
-
-  if (!content) return null;
-
   const {
-    content: {
-      title = "Loading Failed",
-      discount = 0,
-      info = { date: "Loading Failed", duration: "Loading Failed", price: 0 },
-      about = "Loading Failed",
-      willLearn = [],
-      curator = {
-        name: "Loading Failed",
-        job: "Loading Failed",
-        rating: 0,
-        coursesCount: 0,
-        studentsCount: 0,
-        text: "Loading Failed",
-        socialMediaLinks: [],
-      },
-      steps = {
-        first: { head: "Loading Failed", p: "Loading Failed" },
-        second: { head: "Loading Failed", p: "Loading Failed" },
-        third: { head: "Loading Failed", p: "Loading Failed" },
-        fourth: { head: "Loading Failed", p: "Loading Failed" },
-      },
-      listForWhom = [],
-      whatWillULearn = {
-        lessons: [{ numberOfLesson: "SSS", head: "NOO", text: "OOO" }],
-      },
-    },
-  } = content;
+    title,
+    about,
+    discount,
+    info,
+    willLearn,
+    curator,
+    steps,
+    listForWhom,
+    whatWillULearn,
+  } = useAppSelector((state) => state.content.content.data);
+  const { error, loading } = useAppSelector((state) => state.content);
 
   if (loading)
     return (
-      <div>
-        <div className="bg-[#FEDBD3]">
-          <Navbar />
-        </div>
-        <div className="w-full uppercase text-center">Loading...</div>
-      </div>
+      <>
+        <Navbar />
+        <LoadingIndicator />
+      </>
     );
 
   if (error) {
     return (
-      <div>
+      <div className="bg-[#bd1414]">
         <div className="bg-[#FEDBD3]">
           <Navbar />
         </div>
-        <div className="w-full uppercase text-center text-[#FF3F3A]">
-          Error!
-        </div>
+        <ErrorIndicator />
       </div>
     );
   }
@@ -86,7 +64,7 @@ const SingleCourse: FC = () => {
         <Navbar />
         <CourseHeader title={title} />
       </div>
-      <AboutCourse data={{ info, about, willLearn }} />
+      <AboutCourse data={{ about, info, willLearn }} />
       <Curator curator={curator} />
       <LearningProcess steps={steps} />
       <Discount discount={discount} />

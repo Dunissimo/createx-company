@@ -1,5 +1,5 @@
 import React, { FC, MouseEventHandler, useState } from "react";
-import TypeFilter from "../pages/Courses/TypeFilter";
+import TypeFilter from "./TypeFilter";
 
 interface IProps {
   arr: string[];
