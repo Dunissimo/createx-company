@@ -27,7 +27,7 @@ import { fetchTeam, loadTeam, errorTeam } from "../../redux/slices/teamSlice";
 
 import { AppDispatch } from "../../redux/store";
 
-export const BASE_URL = "https://sapi.npoint.io/66466e607109c64c28f2";
+export const BASE_URL = "https://api.npoint.io/66466e607109c64c28f2";
 
 interface IGet {
   fetchAction: ActionCreatorWithoutPayload;
