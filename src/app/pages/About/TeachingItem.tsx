@@ -9,7 +9,7 @@ interface IProps {
 
 const TeachingItem: FC<IProps> = ({ type, imgName }) => {
   return (
-    <div className="teaching-item shadow-md mt-8 md:mt-0">
+    <div className="teaching-item shadow-md mt-8 md:mt-0 border border-gray-300 rounded">
       <img
         src={`./images/aboutPage/teach/${imgName}`}
         className="w-full"

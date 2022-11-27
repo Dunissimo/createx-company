@@ -15,7 +15,7 @@ const Event: FC<IProps> = ({ event, view }) => {
 
   const viewCond = view === "list";
   return (
-    <section className="py-6 mx-auto px-4 md:py-2 lg:px-10 lg:py-6 mb-6 max-w-[85%] bg-white shadow-md rounded hover:shadow-xl hover:scale-95 cursor-pointer active:scale-95">
+    <section className="border border-gray-300 py-6 mx-auto px-4 md:py-2 lg:px-10 lg:py-6 mb-6 max-w-[85%] bg-white shadow-md rounded hover:shadow-xl hover:scale-95 cursor-pointer active:scale-95">
       <div
         className={`container text-left mx-auto flex flex-col gap-6 ${
           viewCond
