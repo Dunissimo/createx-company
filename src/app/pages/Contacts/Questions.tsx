@@ -12,8 +12,11 @@ const Questions: FC = () => {
     <div className="mt-12 lg:mt-0">
       <Title text={{ h3: "Any questions?", h2: "Drop us a line" }} />
       <form action="post" className="contacts-form mt-6">
-        <div className="name w-full flex">
-          <label htmlFor="first" className="w-1/2 flex flex-col">
+        <div className="name w-full flex flex-col lg:flex-row">
+          <label
+            htmlFor="first"
+            className="mb-4 lg:mb-0 lg:w-1/2 flex flex-col"
+          >
             First Name*
             <input
               type="text"
@@ -24,7 +27,7 @@ const Questions: FC = () => {
             />
           </label>
 
-          <label htmlFor="second" className="w-1/2 flex flex-col">
+          <label htmlFor="second" className="lg:w-1/2 flex flex-col">
             Second Name*
             <input
               required
@@ -35,8 +38,11 @@ const Questions: FC = () => {
             />
           </label>
         </div>
-        <div className="email&phone my-6 flex">
-          <label htmlFor="email" className="w-1/2 flex flex-col">
+        <div className="email&phone my-6 flex flex-col lg:flex-row">
+          <label
+            htmlFor="email"
+            className="mb-4 lg:mb-0 lg:w-1/2 flex flex-col"
+          >
             Email*
             <input
               type="email"
@@ -47,7 +53,7 @@ const Questions: FC = () => {
             />
           </label>
 
-          <label htmlFor="phone" className="w-1/2 flex flex-col">
+          <label htmlFor="phone" className="lg:w-1/2 flex flex-col">
             Phone
             <input
               type="phone"
@@ -68,8 +74,12 @@ const Questions: FC = () => {
             rows={10}
           ></textarea>
         </label>
-        <div className="flex justify-between mt-8">
-          <label htmlFor="agree" className="ml-4 opacity-50 w-1/2">
+        <div className="flex flex-col lg:flex-row justify-between mt-8">
+          <label
+            htmlFor="agree"
+            className="ml-4 opacity-50 lg:w-1/2 mb-8 lg:mb-0"
+          >
+            {/* TODO: сделать стилизация checkbox */}
             <input type="checkbox" name="agree" id="agree" />I agree to receive
             communications from Createx Online School
           </label>

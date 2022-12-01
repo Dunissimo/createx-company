@@ -1,20 +1,19 @@
-import React, { FC, MouseEventHandler, useState } from "react";
-import { useAppDispatch } from "../../../redux/hooks";
+import React, { FC, MouseEventHandler } from "react";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
 import { setView } from "../../../redux/slices/eventsViewSlice";
 
 const View: FC = () => {
   const dispatch = useAppDispatch();
 
-  const [view, setLocalView] = useState("list");
-
   const clickHandler: MouseEventHandler<HTMLButtonElement> = (
     e: React.MouseEvent<HTMLButtonElement>
   ) => {
     if (e.currentTarget.tagName === "BUTTON") {
-      setLocalView(e.currentTarget.dataset.view!);
       dispatch(setView(e.currentTarget.dataset.view!));
     }
   };
+
+  const { view } = useAppSelector((state) => state.view);
 
   return (
     <div className="view flex items-center gap-4">

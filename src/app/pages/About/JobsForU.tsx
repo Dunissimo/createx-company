@@ -23,8 +23,6 @@ const JobsForU: FC = () => {
 
   if (error) return <ErrorIndicator />;
 
-  // TODO: снова добавить данные в npoint
-
   return (
     <ErrorBoundary>
       <div className="bg-[#F4F5F7] py-20">

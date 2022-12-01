@@ -151,6 +151,9 @@ button:hover svg {
   fill: #fff;
 }
 
+.dot:hover {
+  background: #424551;
+}
 .dot.active {
   background: #424551;
 }

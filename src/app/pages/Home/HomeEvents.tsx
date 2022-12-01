@@ -1,12 +1,20 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import Container from "../../components/Container";
 import EventsList from "../../components/Reuse/EventsList";
 import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Title from "../../components/Title";
+import { useAppDispatch } from "../../../redux/hooks";
+import { setView } from "../../../redux/slices/eventsViewSlice";
 
 const HomeEvents: FC = () => {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(setView("list"));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <ErrorBoundary>
       <section className="bg-[#FEDDD1] py-20">

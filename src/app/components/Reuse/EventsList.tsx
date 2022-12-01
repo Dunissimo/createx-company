@@ -27,7 +27,9 @@ const EventsList: FC<IProps> = ({ count }) => {
   return (
     <div
       className={`pb-20 ${
-        view === "list" ? "" : "grid grid-rows-3 grid-cols-3"
+        view === "list"
+          ? "max-w-[90%] mx-auto"
+          : "px-8 grid gap-6 md:grid-rows-5 md:grid-cols-2 lg:grid-rows-3 lg:grid-cols-3"
       }`}
     >
       {events.map((event) => {
