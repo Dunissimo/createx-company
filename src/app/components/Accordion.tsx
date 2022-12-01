@@ -1,13 +1,13 @@
 import React, { FC, useState } from "react";
-import { ILesson } from "../utils/interfaces";
+import { ILesson, ITheme } from "../utils/interfaces";
 
 interface IProps {
-  item: ILesson;
+  item: ILesson | ITheme;
 }
 
 const Accordion: FC<IProps> = ({ item }) => {
   const [isOpen, setOpenStatus] = useState(false);
-  const { numberOfLesson, head, text } = item;
+  const { numberOfItem, head, text } = item;
 
   return (
     <div
@@ -22,8 +22,7 @@ const Accordion: FC<IProps> = ({ item }) => {
       <div className="pl-2 lg:pl-8">
         <div className="top flex lg:items-center">
           <h3 className="text-[#FF3F3A] whitespace-nowrap text-md lg:text-xl">
-            Lesson {numberOfLesson}.
-            {/* TODO: сделать динамичный тип. Lesson & Theme */}
+            {numberOfItem}.
           </h3>
           <h2 className="pl-2 text-md lg:text-xl">{head}</h2>
         </div>

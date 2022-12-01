@@ -5,14 +5,14 @@ import Right from "./Right";
 interface IProps {
   left: React.ReactNode;
   right: React.ReactNode;
-  styles?: boolean;
+  itemsAlign?: boolean;
 }
 
-const Row: FC<IProps> = ({ left, right, styles }) => {
+const Row: FC<IProps> = ({ left, right, itemsAlign }) => {
   return (
     <div
       className={`flex flex-col lg:flex-row ${
-        styles ? "items-start" : "items-center"
+        itemsAlign ? "items-start" : "items-center"
       }`}
     >
       <Left>{left}</Left>

@@ -23,7 +23,7 @@ const Human: FC<IProps> = ({
   const left = (
     <div className="lg:w-2/3 bg-yellow-300 flex justify-center">
       <img
-        src={process.env.PUBLIC_URL + `/images/coursesPage/${image}`}
+        src={process.env.PUBLIC_URL + image}
         alt=""
       />
     </div>

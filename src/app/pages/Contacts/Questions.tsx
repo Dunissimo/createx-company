@@ -74,7 +74,7 @@ const Questions: FC = () => {
             rows={10}
           ></textarea>
         </label>
-        <div className="flex flex-col lg:flex-row justify-between mt-8">
+        <div className="flex items-center flex-col lg:flex-row justify-between mt-8">
           <label
             htmlFor="agree"
             className="ml-4 opacity-50 lg:w-1/2 mb-8 lg:mb-0"
@@ -83,7 +83,9 @@ const Questions: FC = () => {
             <input type="checkbox" name="agree" id="agree" />I agree to receive
             communications from Createx Online School
           </label>
-          <FillButton text="Send message" />
+          <div className="w-1/2 ml-8">
+            <FillButton text="Send message" />
+          </div>
         </div>
       </form>
     </div>

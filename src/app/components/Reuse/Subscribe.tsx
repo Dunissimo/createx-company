@@ -21,14 +21,14 @@ const Subscribe: FC = () => {
         </div>
         <form
           action="post"
-          className="flex justify-center items-center mt-16 h-[50px]"
+          className="w-1/2 mx-auto flex justify-center items-center mt-16 h-[50px]"
         >
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Your working email"
-            className="mr-6 h-full rounded min-w-[30%] px-4 outline-none focus:border focus:border-[#555454]"
+            className="w-[220%] mr-6 h-full rounded min-w-[30%] px-4 outline-none focus:border focus:border-[#555454]"
           />
           <FillButton text="Subscribe" />
         </form>

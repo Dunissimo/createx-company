@@ -11,7 +11,12 @@ const Curator: FC<IProps> = ({ curator }) => {
 
   return (
     <Human
-      human={{ image: "image.png", who: "Course Curator", name, job }}
+      human={{
+        image: "/images/coursesPage/image.png",
+        who: "Course Curator",
+        name,
+        job,
+      }}
       about={text}
     >
       <div className="achievements">

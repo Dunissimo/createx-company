@@ -29,7 +29,7 @@ const EventsList: FC<IProps> = ({ count }) => {
       className={`pb-20 ${
         view === "list"
           ? "max-w-[90%] mx-auto"
-          : "px-8 grid gap-6 md:grid-rows-5 md:grid-cols-2 lg:grid-rows-3 lg:grid-cols-3"
+          : "px-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
       }`}
     >
       {events.map((event) => {

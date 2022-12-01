@@ -1,5 +1,5 @@
 export interface ILesson {
-  numberOfLesson: number | string;
+  numberOfItem: number | string;
   head: string;
   text: string;
 }
@@ -64,8 +64,8 @@ export interface ICourse {
 }
 
 export interface ITheme {
-  numberOfThemes: number | string;
-  title: string;
+  numberOfItem: number | string;
+  head: string;
   text: string;
 }
 

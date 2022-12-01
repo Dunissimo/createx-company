@@ -1,6 +1,7 @@
 import { combineReducers } from "@reduxjs/toolkit";
 import { courseContentReducer } from "./slices/coursesContentSlice";
 import { coursesReducer } from "./slices/coursesSlice";
+import { eventContentReducer } from "./slices/eventsContentSlice";
 import { eventsReducer } from "./slices/eventsSlice";
 import { eventsViewReducer } from "./slices/eventsViewSlice";
 import { jobsReducer } from "./slices/jobsSlice";
@@ -15,6 +16,7 @@ export const rootReducer = combineReducers({
   jobs: jobsReducer,
   view: eventsViewReducer,
   course: courseContentReducer,
+  event: eventContentReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

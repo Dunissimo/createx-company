@@ -12,11 +12,11 @@ import { getCourseContent } from "../../utils/api";
 import AboutCourse from "./AboutCourse";
 import Curator from "./Curator";
 import Discount from "./Discount";
-import ForWhom from "./ForWhom";
 import LearningProcess from "./LearningProcess";
 import OtherCourses from "./OtherCourses";
-import Register from "./Register";
 import WhatWillULearn from "./WhatWillULearn";
+import ForWhom from "../../components/SingleItem/ForWhom";
+import Registration from "./Registration";
 
 const SingleCourse: FC = () => {
   const dispatch = useAppDispatch();
@@ -27,6 +27,7 @@ const SingleCourse: FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
+  const { error, loading, content } = useAppSelector((state) => state.course);
   const {
     title,
     about,
@@ -37,8 +38,7 @@ const SingleCourse: FC = () => {
     steps,
     listForWhom,
     whatWillULearn,
-  } = useAppSelector((state) => state.course.content.data);
-  const { error, loading } = useAppSelector((state) => state.course);
+  } = content.data;
 
   if (loading)
     return (
@@ -69,10 +69,10 @@ const SingleCourse: FC = () => {
       <Curator curator={curator} />
       <LearningProcess steps={steps} />
       <Discount discount={discount} />
-      <ForWhom list={listForWhom} />
+      <ForWhom list={listForWhom} type="course" />
       <WhatWillULearn lessons={whatWillULearn.lessons} />
       <Testimonials />
-      <Register discount={discount} />
+      <Registration discount={discount} />
       <OtherCourses />
       <Footer />
     </div>

@@ -34,7 +34,7 @@ const ForWhom: FC<IProps> = ({ list }) => {
     <ErrorBoundary>
       <div className="py-20">
         <Container>
-          <Row left={left} right={right} styles />
+          <Row left={left} right={right} itemsAlign />
         </Container>
       </div>
     </ErrorBoundary>

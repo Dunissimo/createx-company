@@ -13,6 +13,11 @@ import {
   loadCourses,
 } from "../../redux/slices/coursesSlice";
 import {
+  errorEventContent,
+  fetchEventContent,
+  loadEventContent,
+} from "../../redux/slices/eventsContentSlice";
+import {
   errorEvents,
   fetchEvents,
   loadEvents,
@@ -80,9 +85,9 @@ export const getEvents = (dispatch: AppDispatch) => {
 
 export const getEventsContent = (dispatch: AppDispatch, id: number) => {
   get(`${BASE_URL}/events-content/${id - 1}/`, dispatch, {
-    fetchAction: fetchCourseContent,
-    loadAction: loadCourseContent,
-    errorAction: errorCourseContent,
+    fetchAction: fetchEventContent,
+    loadAction: loadEventContent,
+    errorAction: errorEventContent,
   });
 };
 
