@@ -356,3 +356,20 @@ footer .links a:hover {
     background-color: #000000;
   }
 }
+
+/* Modal */
+.wrapper {
+  @apply absolute z-50 top-0 left-0 min-h-screen min-w-full;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  @apply absolute z-50 top-[5%] left-[27.5%] 2xl:left-[25%] bg-white;
+}
+
+.modal.open {
+  display: block;
+}
+.modal.close {
+  display: none;
+}

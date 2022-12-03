@@ -8,7 +8,7 @@ interface IProps {
 
 const Post: FC<IProps> = ({ post }) => {
   const duration = post.details.duration ? (
-    <span className="duration-details ml-6 relative before:content-[url(/public/images/homepage/blog/calendar-details.svg)] before:absolute before:top-[0.1rem] before:left-[-1.5rem]">
+    <span className="duration-details ml-6 relative before:content-[url('/public/images/homepage/blog/calendar-details.svg')] before:absolute before:top-[0.1rem] before:left-[-1.5rem]">
       {post.details.duration}
     </span>
   ) : (
@@ -36,14 +36,21 @@ const Post: FC<IProps> = ({ post }) => {
       <div className="img w-full relative">
         <img
           className="w-full"
-          src={`./images/homepage/blog/posts/${post.imgName}`}
+          src={
+            process.env.PUBLIC_URL +
+            `/images/homepage/blog/posts/${post.imgName}`
+          }
           alt=""
         />
         <div className="before flex gap-2 bg-white rounded px-2 py-1 absolute top-2 left-2">
           <img
-            src={`./images/homepage/blog/${
-              idkHowToNameIt[post.type as keyof typeof idkHowToNameIt].img
-            }`}
+            className="object-fill"
+            src={
+              process.env.PUBLIC_URL +
+              `/images/homepage/blog/${
+                idkHowToNameIt[post.type as keyof typeof idkHowToNameIt].img
+              }`
+            }
             alt="icon"
           />
           <p className="font-normal text-sm capitalize">{post.type}</p>

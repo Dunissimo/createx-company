@@ -15,12 +15,15 @@ import NotFound from "./NotFound";
 import SingleCourse from "../pages/SingleCourse";
 import ErrorBoundary from "./Indicators/ErrorBoundary";
 import SingleEvent from "../pages/SingleEvent";
+import SinglePost from "../pages/SinglePost";
+import Modal from "./Modal";
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
         <ScrollToTop />
+        <Modal />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -48,9 +51,14 @@ function App() {
             }
           />
 
-          {/* <Route path="/events/:id" element={<Event />} /> */}
-
-          {/* <Route path="/blog/:id" element={<Post />} /> */}
+          <Route
+            path="/blog/:id"
+            element={
+              <ErrorBoundary>
+                <SinglePost />
+              </ErrorBoundary>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </Provider>
