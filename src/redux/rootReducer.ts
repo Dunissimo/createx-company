@@ -7,6 +7,7 @@ import { eventsViewReducer } from "./slices/eventsViewSlice";
 import { jobsReducer } from "./slices/jobsSlice";
 import { postsReducer } from "./slices/postsSlice";
 import { teamReducer } from "./slices/teamSlice";
+import { modalReducer } from "./slices/modalSlice";
 
 export const rootReducer = combineReducers({
   courses: coursesReducer,
@@ -17,6 +18,7 @@ export const rootReducer = combineReducers({
   view: eventsViewReducer,
   course: courseContentReducer,
   event: eventContentReducer,
+  modal: modalReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

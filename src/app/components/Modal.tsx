@@ -1,18 +1,38 @@
-import React, { FC, useState } from "react";
+import React, { FC, MouseEventHandler } from "react";
 import { Link } from "react-router-dom";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { toggleOpenStatus } from "../../redux/slices/modalSlice";
 import FillButton from "./Buttons/FillButton";
 import SocialMediaIcons from "./SocialMediaIcons";
 
 const Modal: FC = () => {
-  const [isOpen, setOpenStatus] = useState(true);
+  const dispatch = useAppDispatch();
+  const clickHandler: MouseEventHandler<HTMLDivElement | HTMLButtonElement> = (
+    e: React.MouseEvent<HTMLDivElement | HTMLButtonElement>
+  ) => {
+    dispatch(toggleOpenStatus());
+  };
+  const { isOpen } = useAppSelector((state) => state.modal);
 
   return (
-    <div className="">
-      <div className={`wrapper`}></div>
-      <div className={`modal ${isOpen ? "open" : "close"}`}>
+    <>
+      <div
+        onClick={clickHandler}
+        className={`wrapper ${isOpen ? "open" : "close"}`}
+      ></div>
+      <div
+        className={`modal ${
+          isOpen ? "open" : "close"
+        } w-full lg:w-auto absolute z-50 lg:top-[5%] left-[50%] translate-x-[-50%] bg-white`}
+      >
         <div className="top mb-8 border-b-2 border-gray-300 px-6 py-4 2xlpx-12 2xl:py-12">
           <div className="modal-container 2xl:max-w-[70%] mx-auto">
-            <div className="text-center mb-6">
+            <div className="text-center mb-6 relative">
+              <div className="close-modal absolute top-2 right-2">
+                <button className="hover:text-[gray]" onClick={clickHandler}>
+                  &#x2715;
+                </button>
+              </div>
               <h2 className="text-2xl mb-4">Sign in</h2>
               <p className="opacity-50 text-base">
                 Sign in to your account using email and password provided during
@@ -29,7 +49,7 @@ const Modal: FC = () => {
                   placeholder="Your working email"
                   type="email"
                   name="email"
-                  id="email"
+                  id="email-modal"
                 />
               </div>
               <div className="flex flex-col gap-2 mb-4">
@@ -72,7 +92,7 @@ const Modal: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

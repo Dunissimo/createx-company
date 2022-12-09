@@ -6,7 +6,7 @@ interface IProps {
 
 const UnFillButton: FC<IProps> = ({ text }) => {
   const baseStyle =
-    "w-full block whitespace-nowrap relative px-4 py-1 lg:px-8 lg:py-3 text-[#FF3F3A] rounded bg-none border border-[#FF3F3A]  hover:text-white";
+    "w-full block whitespace-nowrap relative px-4 py-1 lg:px-8 lg:py-3 text-[#FF3F3A] rounded bg-none border border-[#FF3F3A] z-20 hover:text-white";
   const afterStyles = `
     after:w-0 after:h-full after:bg-[#ff3f3a] after:absolute after:top-0 after:left-0 after:z-[-1] after:block after:transition-all after:duration-1000
     hover:after:w-full

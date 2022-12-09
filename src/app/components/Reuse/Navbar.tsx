@@ -1,10 +1,19 @@
-import React, { FC } from "react";
+import React, { FC, MouseEventHandler } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { useAppDispatch } from "../../../redux/hooks";
+import { toggleOpenStatus } from "../../../redux/slices/modalSlice";
 
 import FillButton from "../Buttons/FillButton";
 import Container from "../Container";
 
 const Navbar: FC = () => {
+  const dispatch = useAppDispatch();
+
+  const clickHandler: MouseEventHandler<HTMLButtonElement> = (
+    e: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    dispatch(toggleOpenStatus());
+  };
   return (
     <nav className="py-[2.25rem]" id="top">
       <Container>
@@ -45,14 +54,14 @@ const Navbar: FC = () => {
             <Link to="/contacts" className="mr-12 lg:mr-0">
               <FillButton text="Get consultation" />
             </Link>
-            <Link
-              to="/logIn"
-              className="flex flex-col items-center justify-center"
-            >
-              <button className="lg:ml-[2.25rem] logIn text-base md:text-lg relative hover:text-[#565454] active:scale-75 before:content-[url('/public/images/homepage/header/Person.png')] before:absolute before:top-[15%] before:left-[-20%]">
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={clickHandler}
+                className="lg:ml-[2.25rem] logIn text-base md:text-lg relative hover:text-[#565454] active:scale-75 before:content-[url('/public/images/homepage/header/Person.png')] before:absolute before:top-[15%] before:left-[-20%]"
+              >
                 Log in / Register
               </button>
-            </Link>
+            </div>
           </div>
         </div>
       </Container>
