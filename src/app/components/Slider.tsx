@@ -8,7 +8,7 @@ interface IProps {
 const Slider: FC<IProps> = ({ children, slidesToShow }) => {
   const sliderTrack = useRef<HTMLDivElement>(null);
   const [offset, setOffset] = useState(0);
-  const initializeSlider = () => {
+  const initializeSlider = (slidesToShow: number) => {
     if (sliderTrack.current) {
       sliderTrack.current.childNodes.forEach((child: any) => {
         child.style.minWidth = `${100 / slidesToShow}%`;
@@ -38,7 +38,15 @@ const Slider: FC<IProps> = ({ children, slidesToShow }) => {
   };
 
   useEffect(() => {
-    initializeSlider();
+    const windowInnerWidth = window.innerWidth;
+    console.log(windowInnerWidth);
+
+    if (windowInnerWidth < 768) {
+      initializeSlider(1);
+      return;
+    }
+
+    initializeSlider(slidesToShow);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slidesToShow, children]);
 
