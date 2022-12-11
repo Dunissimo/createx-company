@@ -6,7 +6,7 @@ const Subscribe: FC = () => {
   return (
     <div className="mb-20">
       <Container>
-        <div className="bg-[#FEDBD3] flex flex-col gap-16 lg:flex-row px-20 py-20">
+        <div className="bg-[#FEDBD3] flex flex-col gap-16 lg:flex-row px-8 py-8 lg:px-20 lg:py-20">
           <div className="lg:w-1/3">
             <img
               loading="lazy"

@@ -9,7 +9,7 @@ const HomeCourses: FC = () => {
   return (
     <section className="pb-32">
       <Container>
-        <div className="row w-full lg:flex mx-4 lg:mx-0 justify-between items-center">
+        <div className="row w-full lg:flex justify-between items-center">
           <div className="mb-4 lg:mb-0">
             <Title
               text={{

@@ -39,7 +39,6 @@ const Slider: FC<IProps> = ({ children, slidesToShow }) => {
 
   useEffect(() => {
     const windowInnerWidth = window.innerWidth;
-    console.log(windowInnerWidth);
 
     if (windowInnerWidth < 768) {
       initializeSlider(1);

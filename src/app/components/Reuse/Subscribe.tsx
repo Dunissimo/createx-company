@@ -4,7 +4,7 @@ import Title from "../Title";
 
 const Subscribe: FC = () => {
   return (
-    <section className="bg-[#FEDBD4] text-center md:text-left py-32 relative overflow-y-hidden">
+    <section className="bg-[#FEDBD4] text-center md:text-left lg:py-32 relative overflow-y-hidden">
       <img
         loading="lazy"
         className="hidden lg:block scale-75 absolute bottom-[-2rem] left-[-2rem]"
@@ -22,7 +22,7 @@ const Subscribe: FC = () => {
         </div>
         <form
           action="post"
-          className="w-1/2 mx-auto flex justify-center items-center mt-16 h-[50px]"
+          className="lg:w-1/2 mx-8 g:mx-auto flex justify-center items-center mt-16 h-[50px]"
         >
           <input
             type="email"

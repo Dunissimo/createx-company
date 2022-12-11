@@ -20,17 +20,18 @@ const Course: FC<IProps> = ({ isFlex, course, style }) => {
   const { type, title, price, author, imgName, id } = course;
 
   const flex = {
-    mainDiv: "flex items-center h-[210px]",
+    mainDiv:
+      "flex flex-col lg:flex-row lg:items-center lg:h-[210px] mb-8 lg:mb-0",
     imgDiv: {
-      div: "w-[50%] h-full flex flex-col",
+      div: "lg:w-[50%] h-full flex flex-col",
       img: "h-full",
     },
     infoDiv: {
-      div: "w-[50%] ml-8 py-8",
+      div: "lg:w-[50%] mx-4 py-4 lg:py-8",
     },
   };
   const card = {
-    mainDiv: "h-[445px]",
+    mainDiv: "h-[445px] mb-8 lg:mb-0",
     imgDiv: {
       img: "w-full mb-8",
     },

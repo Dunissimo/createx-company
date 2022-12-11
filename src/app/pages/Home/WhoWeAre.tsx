@@ -16,7 +16,7 @@ const WhoWeAre: FC = () => {
   );
 
   const right = (
-    <div className="ml-12">
+    <div className="lg:ml-12">
       <Title
         text={{
           h3: "WHO WE ARE",

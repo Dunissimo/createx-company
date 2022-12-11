@@ -18,8 +18,8 @@ const Testimonials: FC = () => {
           </div>
 
           <Slider slidesToShow={1}>
-            <div className="testimonials bg-white px-16 py-16 relative">
-              <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
+            <div className="testimonials bg-white py-4 px-4 lg:px-16 lg:py-16 relative">
+              <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative lg:before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
                 <p className="mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Justo, amet lectus quam viverra mus lobortis fermentum amet,
@@ -44,8 +44,8 @@ const Testimonials: FC = () => {
                 </div>
               </div>
             </div>
-            <div className="testimonials bg-white px-16 py-16 relative">
-              <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
+            <div className="testimonials bg-white py-4 px-4 lg:px-16 lg:py-16 relative">
+              <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative lg:before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
                 <p className="mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Justo, amet lectus quam viverra mus lobortis fermentum amet,
@@ -70,8 +70,8 @@ const Testimonials: FC = () => {
                 </div>
               </div>
             </div>
-            <div className="testimonials bg-white px-16 py-16 relative">
-              <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
+            <div className="testimonials bg-white py-4 px-4 lg:px-16 lg:py-16 relative">
+              <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative lg:before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
                 <p className="mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Justo, amet lectus quam viverra mus lobortis fermentum amet,
@@ -96,8 +96,8 @@ const Testimonials: FC = () => {
                 </div>
               </div>
             </div>
-            <div className="testimonials bg-white px-16 py-16 relative">
-              <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
+            <div className="testimonials bg-white py-4 px-4 lg:px-16 lg:py-16 relative">
+              <div className="wrapper w-[95%] lg:w-[75%] mx-auto relative lg:before:content-[url('/public/images/homepage/testimonials/braces.png')] before:absolute before:top-0 before:left-[-15%] lg:before:left-[-7%]">
                 <p className="mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Justo, amet lectus quam viverra mus lobortis fermentum amet,

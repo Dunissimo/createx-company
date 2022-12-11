@@ -33,7 +33,7 @@ const Benefits: FC = () => {
         <div className="text-center mb-16">
           <Title text={{ h3: "Our benefits", h2: "That’s how we do it" }} />
         </div>
-        <ul className="benefits-list w-full  mb-20 text-center flex flex-col gap-4 md:flex-row md:gap-0 items-center justify-around">
+        <ul className="benefits-list w-full mb-20 text-center flex flex-col gap-4 md:flex-row md:gap-0 items-center justify-around">
           <li className="border border-[#FF3F3A] text-[#FF3F3A] rounded px-2 py-1 xl:px-12 xl:py-3 before:content-[url(/public/images/homepage/benefits/star.svg)]">
             Experienced Tutors
           </li>

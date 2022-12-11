@@ -12,7 +12,7 @@ const RegistrationForm: FC<IProps> = ({ type, isFlex }) => {
       action="post"
       className={`mt-10 ${
         isFlex
-          ? "flex flex-row items-end gap-8"
+          ? "flex flex-col lg:flex-row lg:items-end gap-8"
           : "max-w-[80%] flex flex-col gap-8"
       }`}
     >
