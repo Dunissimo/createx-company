@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 import { getCourses } from "../../utils/api";
 import Container from "../Container";
 import Course from "../Course";

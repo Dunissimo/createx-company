@@ -1,13 +1,12 @@
 import React, { FC } from "react";
 import FillButton from "../../components/Buttons/FillButton";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 
 const SubscribeNews: FC = () => {
   const left = (
     <div className="mb-8 md:mb-0">
-      <img src="/images/blogPage/illustration.png" alt="" />
+      <img loading="lazy" src="/images/blogPage/illustration.png" alt="" />
     </div>
   );
 
@@ -35,13 +34,11 @@ const SubscribeNews: FC = () => {
   );
 
   return (
-    <ErrorBoundary>
-      <div className="py-20 bg-[#F4F5F6] px-4 lg:px-0">
-        <Container>
-          <Row left={left} right={right} />
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <div className="py-20 bg-[#F4F5F6] px-4 lg:px-0">
+      <Container>
+        <Row left={left} right={right} />
+      </Container>
+    </div>
   );
 };
 

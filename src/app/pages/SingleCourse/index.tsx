@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 
 import Footer from "../../components/Reuse/Footer";
 import ErrorIndicator from "../../components/Indicators/ErrorIndicator";

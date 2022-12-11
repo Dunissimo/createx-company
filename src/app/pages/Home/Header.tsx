@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import UnFillButton from "../../components/Buttons/UnFillButton";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Navbar from "../../components/Reuse/Navbar";
 import Row from "../../components/Row";
 
@@ -16,6 +15,7 @@ const Header: FC = () => {
           className="bg-[#FEC8C1] px-3 py-3 rounded-[50%] flex justify-center"
         >
           <img
+            loading="lazy"
             src="./images/homepage/header/small.png"
             alt="play"
             className="w-[100%] bg-[#FF3F3A] rounded-[50%]"
@@ -41,6 +41,7 @@ const Header: FC = () => {
   const right = (
     <div className="img w-[85%] mx-auto mt-8 lg:mt-0">
       <img
+        loading="lazy"
         src="./images/homepage/header/header-illustration.png"
         className="w-full h-full"
         alt=""
@@ -48,33 +49,31 @@ const Header: FC = () => {
     </div>
   );
   return (
-    <ErrorBoundary>
-      <header className="bg-[#FEDDD1]">
-        <Navbar />
-        <Container>
-          <Row left={left} right={right} />
+    <header className="bg-[#FEDDD1]">
+      <Navbar />
+      <Container>
+        <Row left={left} right={right} />
 
-          <div className="statistics mt-12 flex flex-col lg:flex-row items-center lg:justify-between pb-20">
-            <div className="col flex items-center mb-4 lg:mb-0 ">
-              <span>1200</span>
-              <p>Students graduated</p>
-            </div>
-            <div className="col flex items-center mb-4 lg:mb-0">
-              <span>84</span>
-              <p>Completed courses</p>
-            </div>
-            <div className="col flex items-center mb-4 lg:mb-0">
-              <span>16</span>
-              <p>Qualified tutors</p>
-            </div>
-            <div className="col flex items-center mb-4 lg:mb-0">
-              <span>5</span>
-              <p>Years of experience</p>
-            </div>
+        <div className="statistics mt-12 flex flex-col lg:flex-row items-center lg:justify-between pb-20">
+          <div className="col flex items-center mb-4 lg:mb-0 ">
+            <span>1200</span>
+            <p>Students graduated</p>
           </div>
-        </Container>
-      </header>
-    </ErrorBoundary>
+          <div className="col flex items-center mb-4 lg:mb-0">
+            <span>84</span>
+            <p>Completed courses</p>
+          </div>
+          <div className="col flex items-center mb-4 lg:mb-0">
+            <span>16</span>
+            <p>Qualified tutors</p>
+          </div>
+          <div className="col flex items-center mb-4 lg:mb-0">
+            <span>5</span>
+            <p>Years of experience</p>
+          </div>
+        </div>
+      </Container>
+    </header>
   );
 };
 

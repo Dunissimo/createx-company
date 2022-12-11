@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 import Post from "../Post";
 import { getPosts } from "../../utils/api";
 import LoadingIndicator from "../Indicators/LoadingIndicator";

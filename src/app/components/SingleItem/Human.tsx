@@ -1,7 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { Link } from "react-router-dom";
 import Container from "../Container";
-import ErrorBoundary from "../Indicators/ErrorBoundary";
 import Row from "../Row";
 
 interface IProps {
@@ -22,10 +21,7 @@ const Human: FC<IProps> = ({
 }) => {
   const left = (
     <div className="lg:w-2/3 bg-yellow-300 flex justify-center">
-      <img
-        src={process.env.PUBLIC_URL + image}
-        alt=""
-      />
+      <img loading="lazy" src={process.env.PUBLIC_URL + image} alt="" />
     </div>
   );
 
@@ -100,13 +96,11 @@ const Human: FC<IProps> = ({
   );
 
   return (
-    <ErrorBoundary>
-      <div className="py-20">
-        <Container>
-          <Row left={left} right={right} />
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <div className="py-20">
+      <Container>
+        <Row left={left} right={right} />
+      </Container>
+    </div>
   );
 };
 

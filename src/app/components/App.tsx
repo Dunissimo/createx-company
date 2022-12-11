@@ -13,7 +13,6 @@ import ScrollToTop from "./ScrollToTop";
 import Events from "../pages/Events";
 import NotFound from "./NotFound";
 import SingleCourse from "../pages/SingleCourse";
-import ErrorBoundary from "./Indicators/ErrorBoundary";
 import SingleEvent from "../pages/SingleEvent";
 import SinglePost from "../pages/SinglePost";
 import Modal from "./Modal";
@@ -33,32 +32,11 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
 
-          <Route
-            path="/courses/:id"
-            element={
-              <ErrorBoundary>
-                <SingleCourse />
-              </ErrorBoundary>
-            }
-          />
+          <Route path="/courses/:id" element={<SingleCourse />} />
 
-          <Route
-            path="/events/:id"
-            element={
-              <ErrorBoundary>
-                <SingleEvent />
-              </ErrorBoundary>
-            }
-          />
+          <Route path="/events/:id" element={<SingleEvent />} />
 
-          <Route
-            path="/blog/:id"
-            element={
-              <ErrorBoundary>
-                <SinglePost />
-              </ErrorBoundary>
-            }
-          />
+          <Route path="/blog/:id" element={<SinglePost />} />
         </Routes>
       </BrowserRouter>
     </Provider>

@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import Accordion from "../../components/Accordion";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import Title from "../../components/Title";
 import { ILesson } from "../../utils/interfaces";
@@ -28,6 +27,7 @@ const WhatWillULearn: FC<IProps> = ({ lessons }) => {
   const right = (
     <div className="flex justify-end">
       <img
+        loading="lazy"
         src={process.env.PUBLIC_URL + "/images/coursesPage/illustration.png"}
         alt=""
       />
@@ -35,13 +35,11 @@ const WhatWillULearn: FC<IProps> = ({ lessons }) => {
   );
 
   return (
-    <ErrorBoundary>
-      <div className="py-20">
-        <Container>
-          <Row left={left} right={right} />
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <div className="py-20">
+      <Container>
+        <Row left={left} right={right} />
+      </Container>
+    </div>
   );
 };
 

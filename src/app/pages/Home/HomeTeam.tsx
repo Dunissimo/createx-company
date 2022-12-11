@@ -1,9 +1,9 @@
-import React, { FC, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
-import CircleButton from "../../components/Buttons/CircleButton";
+import { FC, useEffect } from "react";
+import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 import Container from "../../components/Container";
 import ErrorIndicator from "../../components/Indicators/ErrorIndicator";
 import LoadingIndicator from "../../components/Indicators/LoadingIndicator";
+import Slider from "../../components/Slider";
 import TeamCard from "../../components/TeamCard";
 import Title from "../../components/Title";
 import { getTeam } from "../../utils/api";
@@ -30,29 +30,33 @@ const HomeTeam: FC<IProps> = ({ count }) => {
       </div>
     );
 
+  const throwErr = () => {
+    throw new Error("lox");
+  };
+
   return (
     <section className="bg-[#F4F5F7] py-32">
       <Container>
-        <div className="row flex flex-col items-center text-center lg:text-left  lg:flex-row lg:items-end justify-between my-16">
+        <div
+          onClick={throwErr}
+          className="row flex flex-col items-center text-center lg:text-left  lg:flex-row lg:items-end justify-between my-16"
+        >
           <Title
             text={{
               h3: "BEST TUTORS ARE ALL HERE",
               h2: "Meet our team",
             }}
           />
-          <div className="slider-controls flex">
-            <CircleButton />
-            <CircleButton isRotate />
-          </div>
         </div>
-        <div className="team flex items-center justify-between">
+        <Slider slidesToShow={3}>
           {team.map((tm) => {
-            if (count) {
-              if (tm.id > count) return null;
-            }
-            return <TeamCard key={tm.id} team={tm} />;
+            return (
+              <div key={tm.id} className="px-2">
+                <TeamCard team={tm} />
+              </div>
+            );
           })}
-        </div>
+        </Slider>
       </Container>
     </section>
   );

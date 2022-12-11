@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import { FC, ReactNode } from "react";
 
 interface IProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const Container: FC<IProps> = ({ children }) => {

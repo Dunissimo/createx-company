@@ -6,6 +6,7 @@ const Subscribe: FC = () => {
   return (
     <section className="bg-[#FEDBD4] text-center md:text-left py-32 relative overflow-y-hidden">
       <img
+        loading="lazy"
         className="hidden lg:block scale-75 absolute bottom-[-2rem] left-[-2rem]"
         src="./images/homepage/subscribe/subscribe.png"
         alt=""
@@ -34,6 +35,7 @@ const Subscribe: FC = () => {
         </form>
       </div>
       <img
+        loading="lazy"
         className="scale-75 hidden lg:block absolute bottom-[-2rem] right-[-2rem]"
         src="./images/homepage/subscribe/subscribe.png"
         alt=""

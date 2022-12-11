@@ -118,7 +118,19 @@ svg path {
 }
 
 .team .bg {
-  background: url("/public/images/homepage/team/gradient-team.png");
+  transition: height 0.3s;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 33, 44, 0) 43.9%,
+    rgba(30, 33, 44, 0.03) 55.21%,
+    rgba(30, 33, 44, 0.33) 68.73%,
+    rgba(30, 33, 44, 0.56) 76.17%,
+    rgba(30, 33, 44, 0.768225) 83.75%,
+    rgba(30, 33, 44, 0.92) 91.49%,
+    #1e212c 100%
+  );
+  border-radius: 4px;
+  /* background: url("/public/images/homepage/team/gradient-team.png"); */
   animation: fade 0.5s linear;
 }
 .team ul {
@@ -138,13 +150,15 @@ svg path {
   }
 }
 
-.team .img:hover .bg,
+.team .img:hover .bg {
+  height: 100%;
+}
 .team .img:hover ul {
   display: flex;
 }
 
 .team ul li:hover svg {
-  fill: black;
+  fill: gray;
 }
 
 button:hover svg {
@@ -369,4 +383,25 @@ footer .links a:hover {
 }
 .modal.close {
   display: none;
+}
+
+.circle-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.circle-btn.left {
+  left: -1rem;
+}
+.circle-btn.right {
+  right: -1rem;
+}
+
+.ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.3em;
+  height: 3.9em;
 }

@@ -35,7 +35,7 @@ const Post: FC<IProps> = ({ post }) => {
     <div className="flex flex-col">
       <div className="img w-full relative">
         <img
-          className="w-full"
+          className="w-full min-h-[295px]"
           src={
             process.env.PUBLIC_URL +
             `/images/homepage/blog/posts/${post.imgName}`
@@ -67,10 +67,10 @@ const Post: FC<IProps> = ({ post }) => {
       </div>
       <div className="text w-full">
         <h2 className="text-xl">{post.title}</h2>
-        <p className="text-[#424551] mt-2 mb-4">{post.p}</p>
+        <p className="ellipsis text-[#424551] mt-2 mb-4">{post.p}</p>
       </div>
       <Link
-        to="/post/id"
+        to={`/blog/${post.id}`}
         className="post-link self-start hover:text-red-500 after:content-[url(/public/images/homepage/blog/line.svg)] after:ml-4"
       >
         {idkHowToNameIt[post.type as keyof typeof idkHowToNameIt].button}

@@ -1,8 +1,9 @@
-import React, { FC } from "react";
+import React, { CSSProperties, FC } from "react";
 import { Link } from "react-router-dom";
 import { ICourse } from "../utils/interfaces";
 
 interface IProps {
+  style?: CSSProperties;
   course: ICourse;
   isFlex: boolean;
 }
@@ -15,44 +16,59 @@ export const types = {
   Development: "bg-[#7772F1]",
 };
 
-const Course: FC<IProps> = ({ isFlex, course }) => {
+const Course: FC<IProps> = ({ isFlex, course, style }) => {
   const { type, title, price, author, imgName, id } = course;
 
-  const flexStyles = `w-2/3 md:w-auto flex flex-col ] text-center items-center gap-8 pb-8 md:pb-0 pt-4 md:pt-0 md:flex-row md:text-left`;
-  const notFlexStyles = `flex flex-col items-center max-w-[33.333%] min-h-[400px] pb-8 justify-start gap-8 min-w-[325px] text-center`;
+  const flex = {
+    mainDiv: "flex items-center h-[210px]",
+    imgDiv: {
+      div: "w-[50%] h-full flex flex-col",
+      img: "h-full",
+    },
+    infoDiv: {
+      div: "w-[50%] ml-8 py-8",
+    },
+  };
+  const card = {
+    mainDiv: "h-[445px]",
+    imgDiv: {
+      img: "w-full mb-8",
+    },
+    infoDiv: {
+      div: "px-8 pb-8",
+    },
+  };
 
   return (
     <Link to={`/courses/${id}`}>
       <div
-        className={`course border border-gray-300 w-full mb-8 lg:mb-0 shadow-lg mx-auto rounded  ${
-          isFlex ? flexStyles : notFlexStyles
-        }`}
+        style={style}
+        className={`${
+          isFlex ? flex.mainDiv : card.mainDiv
+        } bg-white border border-gray-300 rounded shadow-lg hover:shadow-xl hover:scale-[1.01]`}
       >
-        <div className={`img ${isFlex ? "w-2/3 h-full md:w-1/2" : "w-full"}`}>
+        <div className={isFlex ? flex.imgDiv.div : ""}>
           <img
-            className="w-full min-h-full max-h-[200px]"
+            className={isFlex ? flex.imgDiv.img : card.imgDiv.img}
             src={process.env.PUBLIC_URL + `/images/homepage/courses/${imgName}`}
             alt={`This is ${author}`}
           />
         </div>
-        <div
-          className={`info ${
-            isFlex ? "md:w-2/3" : "w-full flex flex-col items-center"
-          }`}
-        >
+
+        <div className={isFlex ? flex.infoDiv.div : card.infoDiv.div}>
           <h4
-            className={`inline px-2 py-1 text-white rounded ${
+            className={`${
               types[type as keyof typeof types]
-            }`}
+            } inline text-white px-2 py-1 rounded`}
           >
             {type}
           </h4>
-          <h3 className="my-4">{title}</h3>
-          <div className="flex items-center justify-center md:justify-start">
-            <p className="text-[#FF4242] relative mr-4 after:w-[2px] after:h-full after:block after:bg-gray-400 after:absolute after:top-0 after:right-[-0.5em]">
-              ${price}
+          <h3 className="my-4 text-xl">{title}</h3>
+          <div className="flex">
+            <p className="text-[#FF3F3A]">${price}</p>
+            <p className="opacity-50 ml-4 relative before:absolute before:left-[-10px] before:h-full before:w-[2px] before:bg-black before:block">
+              {author}
             </p>
-            <p className="text-[#787A80]">{author}</p>
           </div>
         </div>
       </div>

@@ -23,6 +23,7 @@ const Speaker: FC<IProps> = ({ speaker }) => {
       <ul className="flex items-center gap-14 mt-10">
         <li>
           <img
+            loading="lazy"
             src={
               process.env.PUBLIC_URL +
               "/images/homepage/certificate/strategy.png"
@@ -32,6 +33,7 @@ const Speaker: FC<IProps> = ({ speaker }) => {
         </li>
         <li>
           <img
+            loading="lazy"
             src={
               process.env.PUBLIC_URL +
               "/images/homepage/certificate/consulting.png"
@@ -41,6 +43,7 @@ const Speaker: FC<IProps> = ({ speaker }) => {
         </li>
         <li>
           <img
+            loading="lazy"
             src={
               process.env.PUBLIC_URL +
               "/images/homepage/certificate/national.png"

@@ -2,13 +2,13 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import Title from "../../components/Title";
 
 const WhoWeAre: FC = () => {
   const left = (
     <img
+      loading="lazy"
       className="w-full"
       src="./images/homepage/whoWeAre/who.png"
       alt="whoweare"
@@ -43,13 +43,11 @@ const WhoWeAre: FC = () => {
   );
 
   return (
-    <ErrorBoundary>
-      <section className="py-32">
-        <Container>
-          <Row left={left} right={right} />
-        </Container>
-      </section>
-    </ErrorBoundary>
+    <section className="py-32">
+      <Container>
+        <Row left={left} right={right} />
+      </Container>
+    </section>
   );
 };
 

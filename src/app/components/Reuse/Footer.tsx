@@ -10,6 +10,7 @@ const Footer: FC = () => {
         <div className="body py-20 flex flex-col lg:flex-row items-center lg:items-start gap-2">
           <div className="info w-[90%] lg:w-2/5">
             <img
+              loading="lazy"
               src={
                 process.env.PUBLIC_URL +
                 "/images/homepage/header/light-logo.svg"
@@ -87,6 +88,7 @@ const Footer: FC = () => {
             <p className="flex">
               © All rights reserved. Made with
               <img
+                loading="lazy"
                 className="object-contain mx-1"
                 src={
                   process.env.PUBLIC_URL + "/images/homepage/footer/love.svg"

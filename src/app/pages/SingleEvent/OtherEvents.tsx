@@ -1,50 +1,37 @@
 import React, { FC, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useAppDispatch } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 import { setView } from "../../../redux/slices/eventsViewSlice";
-import CircleButton from "../../components/Buttons/CircleButton";
-import FillButton from "../../components/Buttons/FillButton";
-import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
-import EventsList from "../../components/Reuse/EventsList";
-import Title from "../../components/Title";
+import OtherItem from "../../components/OtherItem";
+import { getEvents } from "../../utils/api";
+import Event from "../../components/Event";
 
 const OtherEvents: FC = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(setView("grid"));
+    getEvents(dispatch);
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const { events } = useAppSelector((state) => state.events);
+  const { view } = useAppSelector((state) => state.view);
+
   return (
-    <ErrorBoundary>
-      <div className="container px-4 mx-auto py-20">
-        <Container>
-          <div className="flex justify-between">
-            <Title
-              text={{
-                h3: "Check other online events",
-                h2: "You may be interested in",
-              }}
-            />
-            <div className="slider-controls items-end flex">
-              <CircleButton />
-              <CircleButton isRotate />
-            </div>
-          </div>
-          <div className="py-20">
-            <EventsList count={3} />
-          </div>
-          {/* TODO: сделать слайдер, убрать count */}
-          <div className="flex items-center justify-center">
-            <h3 className="text-2xl mr-8">Do you want more?</h3>
-            <Link to="/courses">
-              <FillButton text="Explore all events" />
-            </Link>
-          </div>
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <OtherItem
+      data={{
+        h3: "Check other online events",
+        h2: "You may be interested in",
+        linkTo: "/events",
+        bottom: "Do you want more events?",
+        bottomInBtn: "Explore all events",
+        slidesToShow: 3,
+      }}
+      slides={events.map((event) => (
+        <Event event={event} key={event.id} view={view} />
+      ))}
+    />
   );
 };
 

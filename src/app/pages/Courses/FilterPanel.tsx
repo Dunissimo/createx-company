@@ -1,7 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
-import { useAppSelector } from "../../../redux/hooks";
+import { useAppSelector } from "../../utils/hooks";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import ErrorIndicator from "../../components/Indicators/ErrorIndicator";
 import LoadingIndicator from "../../components/Indicators/LoadingIndicator";
 import Tabs from "../../components/Tabs";
@@ -33,18 +32,16 @@ const FilterPanel: FC = () => {
   if (error) return <ErrorIndicator />;
 
   return (
-    <ErrorBoundary>
-      <div className="py-20">
-        <Container>
-          <div className="flex items-center justify-between">
-            <ul className="filters-list hidden lg:flex items-center gap-4 mr-8">
-              <Tabs arr={data.uniq} types={data.types} />
-            </ul>
-            <SearchBar />
-          </div>
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <div className="py-20">
+      <Container>
+        <div className="flex items-center justify-between">
+          <ul className="filters-list hidden lg:flex items-center gap-4 mr-8">
+            <Tabs arr={data.uniq} types={data.types} />
+          </ul>
+          <SearchBar />
+        </div>
+      </Container>
+    </div>
   );
 };
 

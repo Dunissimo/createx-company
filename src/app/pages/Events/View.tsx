@@ -1,16 +1,17 @@
 import React, { FC, MouseEventHandler } from "react";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 import { setView } from "../../../redux/slices/eventsViewSlice";
 
 const View: FC = () => {
   const dispatch = useAppDispatch();
 
-  const clickHandler: MouseEventHandler<HTMLButtonElement> = (
-    e: React.MouseEvent<HTMLButtonElement>
-  ) => {
-    if (e.currentTarget.tagName === "BUTTON") {
-      dispatch(setView(e.currentTarget.dataset.view!));
-    }
+  const localView = localStorage.getItem("view");
+  if (localView) dispatch(setView(localView));
+
+  const clickHandler: MouseEventHandler<HTMLButtonElement> = (e) => {
+    debugger;
+    dispatch(setView(e.currentTarget.dataset.view!));
+    localStorage.setItem("view", e.currentTarget.dataset.view!);
   };
 
   const { view } = useAppSelector((state) => state.view);

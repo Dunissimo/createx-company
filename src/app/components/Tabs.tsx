@@ -1,4 +1,4 @@
-import React, { FC, MouseEventHandler, useState } from "react";
+import { FC, MouseEventHandler, useState } from "react";
 import TypeFilter from "./TypeFilter";
 
 interface IProps {
@@ -9,9 +9,7 @@ interface IProps {
 const Tabs: FC<IProps> = ({ arr, types }) => {
   const [active, setActive] = useState(0);
 
-  const clickHandler: MouseEventHandler<HTMLLIElement> = (
-    e: React.MouseEvent<HTMLLIElement>
-  ) => {
+  const clickHandler: MouseEventHandler<HTMLLIElement> = (e) => {
     if (e.currentTarget.tagName === "LI") {
       setActive(+e.currentTarget.dataset.index!);
     }

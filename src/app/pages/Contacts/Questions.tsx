@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import FillButton from "../../components/Buttons/FillButton";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import Title from "../../components/Title";
 
 const Questions: FC = () => {
-  const left = <img src="./images/contactsPage/illustration.png" alt="" />;
+  const left = (
+    <img loading="lazy" src="./images/contactsPage/illustration.png" alt="" />
+  );
 
   const right = (
     <div className="mt-12 lg:mt-0">
@@ -92,13 +93,11 @@ const Questions: FC = () => {
   );
 
   return (
-    <ErrorBoundary>
-      <div className="py-20">
-        <Container>
-          <Row left={left} right={right} />
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <div className="py-20">
+      <Container>
+        <Row left={left} right={right} />
+      </Container>
+    </div>
   );
 };
 

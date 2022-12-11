@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import UnFillButton from "../../components/Buttons/UnFillButton";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import Title from "../../components/Title";
 
@@ -36,6 +35,7 @@ const OnlineSchool: FC = () => {
   const right = (
     <div className="ml-12 text-right flex justify-end">
       <img
+        loading="lazy"
         className="w-full"
         src="./images/aboutPage/illustration.png"
         alt=""
@@ -44,13 +44,11 @@ const OnlineSchool: FC = () => {
   );
 
   return (
-    <ErrorBoundary>
-      <div className="py-20">
-        <Container>
-          <Row left={left} right={right} />
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <div className="py-20">
+      <Container>
+        <Row left={left} right={right} />
+      </Container>
+    </div>
   );
 };
 

@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import RegistrationForm from "../../components/SingleItem/RegistrationForm";
 import Title from "../../components/Title";
@@ -14,6 +13,7 @@ const Registration: FC<IProps> = ({ discount }) => {
 
   const left = (
     <img
+      loading="lazy"
       src={process.env.PUBLIC_URL + "/images/coursesPage/illustration-2.png"}
       alt=""
     />
@@ -32,13 +32,11 @@ const Registration: FC<IProps> = ({ discount }) => {
   );
 
   return (
-    <ErrorBoundary>
-      <div className="py-20 bg-[#F4F5F6]">
-        <Container>
-          <Row left={left} right={right} />
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <div className="py-20 bg-[#F4F5F6]">
+      <Container>
+        <Row left={left} right={right} />
+      </Container>
+    </div>
   );
 };
 

@@ -41,7 +41,7 @@ const Event: FC<IProps> = ({ event, view }) => {
 
   return (
     <Link to={`/events/${id}`}>
-      <section className="border bg-white border-gray-300 rounded shadow-md mb-8 hover:shadow-lg hover:border-gray-400 px-6 py-6">
+      <section className="border bg-white border-gray-300 rounded shadow-md mb-8 hover:shadow-lg hover:border-gray-400 px-6 py-6 hover:scale-[1.05]">
         <div className={viewCond ? flexStyles.mainDiv : gridStyles.mainDiv}>
           <div className={viewCond ? flexStyles.bodyDiv : gridStyles.bodyDiv}>
             <div

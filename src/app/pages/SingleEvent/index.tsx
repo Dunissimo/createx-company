@@ -9,7 +9,7 @@ import Subscribe from "./Subscribe";
 import Registration from "./Registration";
 import OtherEvents from "./OtherEvents";
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 import ErrorIndicator from "../../components/Indicators/ErrorIndicator";
 import LoadingIndicator from "../../components/Indicators/LoadingIndicator";
 import { getEventsContent } from "../../utils/api";

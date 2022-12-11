@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import RegistrationForm from "../../components/SingleItem/RegistrationForm";
 import Title from "../../components/Title";
@@ -20,6 +19,7 @@ const Registration: FC = () => {
   const right = (
     <>
       <img
+        loading="lazy"
         src={process.env.PUBLIC_URL + "/images/eventsPage/illustration-2.png"}
         alt=""
       />
@@ -27,13 +27,11 @@ const Registration: FC = () => {
   );
 
   return (
-    <ErrorBoundary>
-      <div className="pb-20">
-        <Container>
-          <Row left={left} right={right} />
-        </Container>
-      </div>{" "}
-    </ErrorBoundary>
+    <div className="pb-20">
+      <Container>
+        <Row left={left} right={right} />
+      </Container>
+    </div>
   );
 };
 

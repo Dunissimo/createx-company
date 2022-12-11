@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import Container from "../../components/Container";
-import ErrorBoundary from "../../components/Indicators/ErrorBoundary";
 import Row from "../../components/Row";
 import Title from "../../components/Title";
 
@@ -31,13 +30,11 @@ const ForWhom: FC<IProps> = ({ list }) => {
   );
 
   return (
-    <ErrorBoundary>
-      <div className="py-20">
-        <Container>
-          <Row left={left} right={right} itemsAlign />
-        </Container>
-      </div>
-    </ErrorBoundary>
+    <div className="py-20">
+      <Container>
+        <Row left={left} right={right} itemsAlign />
+      </Container>
+    </div>
   );
 };
 

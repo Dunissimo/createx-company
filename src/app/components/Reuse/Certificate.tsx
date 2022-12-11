@@ -20,6 +20,7 @@ const Certificate: FC = () => {
           <ul className="flex items-center gap-14 mt-10">
             <li>
               <img
+                loading="lazy"
                 src={
                   process.env.PUBLIC_URL +
                   "/images/homepage/certificate/strategy.png"
@@ -29,6 +30,7 @@ const Certificate: FC = () => {
             </li>
             <li>
               <img
+                loading="lazy"
                 src={
                   process.env.PUBLIC_URL +
                   "/images/homepage/certificate/consulting.png"
@@ -38,6 +40,7 @@ const Certificate: FC = () => {
             </li>
             <li>
               <img
+                loading="lazy"
                 src={
                   process.env.PUBLIC_URL +
                   "/images/homepage/certificate/national.png"
@@ -49,6 +52,7 @@ const Certificate: FC = () => {
         </div>
       </Container>
       <img
+        loading="lazy"
         className="hidden z-10 lg:block absolute top-0 right-0 mt-24 w-[60%] h-[60%] xl:w-auto xl:h-auto "
         src={
           process.env.PUBLIC_URL +

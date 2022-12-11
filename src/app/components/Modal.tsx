@@ -1,15 +1,13 @@
-import React, { FC, MouseEventHandler } from "react";
+import { FC } from "react";
 import { Link } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../utils/hooks";
 import { toggleOpenStatus } from "../../redux/slices/modalSlice";
 import FillButton from "./Buttons/FillButton";
 import SocialMediaIcons from "./SocialMediaIcons";
 
 const Modal: FC = () => {
   const dispatch = useAppDispatch();
-  const clickHandler: MouseEventHandler<HTMLDivElement | HTMLButtonElement> = (
-    e: React.MouseEvent<HTMLDivElement | HTMLButtonElement>
-  ) => {
+  const clickHandler = () => {
     dispatch(toggleOpenStatus());
   };
   const { isOpen } = useAppSelector((state) => state.modal);

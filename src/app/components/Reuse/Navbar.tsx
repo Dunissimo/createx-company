@@ -1,6 +1,6 @@
-import React, { FC, MouseEventHandler } from "react";
+import { FC } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { useAppDispatch } from "../../../redux/hooks";
+import { useAppDispatch } from "../../utils/hooks";
 import { toggleOpenStatus } from "../../../redux/slices/modalSlice";
 
 import FillButton from "../Buttons/FillButton";
@@ -9,9 +9,7 @@ import Container from "../Container";
 const Navbar: FC = () => {
   const dispatch = useAppDispatch();
 
-  const clickHandler: MouseEventHandler<HTMLButtonElement> = (
-    e: React.MouseEvent<HTMLButtonElement>
-  ) => {
+  const clickHandler = () => {
     dispatch(toggleOpenStatus());
   };
   return (
@@ -21,6 +19,7 @@ const Navbar: FC = () => {
           <div className="flex">
             <Link to="/" className="logo mb-8 lg:mb-0 lg:mr-[3.75rem]">
               <img
+                loading="lazy"
                 src={
                   process.env.PUBLIC_URL + `/images/homepage/header/logo.svg`
                 }

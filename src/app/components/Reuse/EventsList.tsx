@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 import { getEvents } from "../../utils/api";
 import Event from "../Event";
 import ErrorIndicator from "../Indicators/ErrorIndicator";

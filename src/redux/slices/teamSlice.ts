@@ -22,7 +22,7 @@ const teamSlice = createSlice({
       state.error = false;
     },
     loadTeam(state, action: PayloadAction<ITeam[]>) {
-      state.loading = false;
+      state.loading = true;
       state.loading = false;
       state.team = action.payload;
     },
