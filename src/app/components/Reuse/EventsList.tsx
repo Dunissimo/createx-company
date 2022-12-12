@@ -1,15 +1,23 @@
-import React, { FC, useEffect } from "react";
+import { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 import { getEvents } from "../../utils/api";
 import Event from "../Event";
 import ErrorIndicator from "../Indicators/ErrorIndicator";
 import LoadingIndicator from "../Indicators/LoadingIndicator";
+import { useSearchParams } from "react-router-dom";
 
 interface IProps {
   count?: number;
 }
 
 const EventsList: FC<IProps> = ({ count }) => {
+  const [searchParams] = useSearchParams();
+
+  const theme = searchParams.get("category") || "";
+  const perPage = searchParams.get("perPage") || 9;
+  const sorting = searchParams.get("sorting") || "newest";
+  const query = searchParams.get("query") || "";
+
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -24,6 +32,24 @@ const EventsList: FC<IProps> = ({ count }) => {
   if (loading) return <LoadingIndicator />;
   if (error) return <ErrorIndicator />;
 
+  const sortBy = (a: any, b: any, sorting: string) => {
+    const firstDate = new Date(`${a.date.day} ${a.date.month}`);
+    const secondDate = new Date(`${b.date.day} ${b.date.month}`);
+
+    if (sorting === "newest") {
+      if (firstDate > secondDate) return 1;
+      if (firstDate < secondDate) return -1;
+      if (firstDate === secondDate) return 0;
+    }
+    if (sorting === "oldest") {
+      if (firstDate > secondDate) return -1;
+      if (firstDate < secondDate) return 1;
+      if (firstDate === secondDate) return 0;
+    }
+
+    return 0;
+  };
+
   return (
     <div
       className={`pb-20 ${
@@ -32,13 +58,26 @@ const EventsList: FC<IProps> = ({ count }) => {
           : "px-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
       }`}
     >
-      {events.map((event) => {
-        if (count) {
-          if (event.id > count) return null;
-        }
+      {events
+        .slice(0, +perPage)
+        .filter((event) => {
+          if (theme && theme !== "all") {
+            return event.text.p.includes(theme);
+          }
 
-        return <Event event={event} key={event.id} view={view} />;
-      })}
+          return event;
+        })
+        .sort((a, b) => sortBy(a, b, sorting))
+        .filter((item) => {
+          return item.text.title.toLowerCase().includes(query.toLowerCase());
+        })
+        .map((event) => {
+          if (count) {
+            if (event.id > count) return null;
+          }
+
+          return <Event event={event} key={event.id} view={view} />;
+        })}
     </div>
   );
 };

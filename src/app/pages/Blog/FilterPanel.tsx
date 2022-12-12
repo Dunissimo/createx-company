@@ -1,7 +1,6 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Container from "../../components/Container";
 import Tabs from "../../components/Tabs";
-import SearchBar from "../../components/SearchBar";
 
 const FilterPanel: FC = () => {
   const sort = ["All", "Articles", "Videos", "Podcasts"];
@@ -23,7 +22,17 @@ const FilterPanel: FC = () => {
               </select>
             </label>
           </div>
-          <SearchBar />
+          <div className="search-div">
+            <input
+              // onChange={handleChange}
+              // TODO: сделать обработку
+              className="search-input"
+              placeholder="Search"
+              name="query"
+              type="text"
+              // value={search}
+            />
+          </div>
         </div>
       </Container>
     </div>

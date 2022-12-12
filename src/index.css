@@ -405,3 +405,10 @@ footer .links a:hover {
   line-height: 1.3em;
   height: 3.9em;
 }
+
+.search-div {
+  @apply relative after:content-[url(/public/images/coursesPage/search.svg)] hover:after:opacity-100 after:block after:w-6 after:h-full after:absolute after:top-[.5rem] after:right-[1rem] after:opacity-50;
+}
+.search-input {
+  @apply border-2 px-4 py-2 rounded min-w-[300px] hover:shadow hover:border-gray-500;
+}
