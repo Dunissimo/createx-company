@@ -1,4 +1,5 @@
 import { FC, MouseEventHandler, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import TypeFilter from "./TypeFilter";
 
 interface IProps {
@@ -7,40 +8,43 @@ interface IProps {
 }
 
 const Tabs: FC<IProps> = ({ arr, types }) => {
-  const [active, setActive] = useState(0);
+  const [params, setSearchParams] = useSearchParams();
+  const [active, setActive] = useState(params.get("theme") || "all");
 
   const clickHandler: MouseEventHandler<HTMLLIElement> = (e) => {
-    if (e.currentTarget.tagName === "LI") {
-      setActive(+e.currentTarget.dataset.index!);
+    const theme = e.currentTarget.dataset.theme?.toLowerCase();
+
+    if (theme) {
+      setSearchParams({ theme });
+      setActive(theme);
     }
   };
 
   return (
     <>
       {arr.map((item, i) => {
+        const withBefore = types ? (
+          <TypeFilter
+            type={item}
+            before={
+              item === "All"
+                ? types.length
+                : types.filter((value) => value === item).length
+            }
+          />
+        ) : null;
+
+        const without = <TypeFilter type={item} />;
+
+        const isActive = item.toLowerCase() === active ? "active" : "";
         return (
           <li
-            className={`type relative transition-none  ${
-              i === active ? "active" : ""
-            }`}
+            className={`type relative transition-none ${isActive}`}
             key={i}
-            data-index={i}
+            data-theme={item}
             onClick={clickHandler}
           >
-            {types ? (
-              <>
-                <TypeFilter
-                  type={item}
-                  before={
-                    item === "All"
-                      ? types.length
-                      : types.filter((value) => value === item).length
-                  }
-                />
-              </>
-            ) : (
-              <TypeFilter type={item} />
-            )}
+            {withBefore || without}
           </li>
         );
       })}

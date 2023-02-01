@@ -30,11 +30,7 @@ const Testimonials: FC = () => {
                 </p>
                 <div className="row flex">
                   <img
-                    loading="lazy"
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/images/homepage/testimonials/testi.png"
-                    }
+                    src={"./images/homepage/testimonials/testi.png"}
                     alt=""
                   />
                   <div className="text ml-5">
@@ -56,11 +52,7 @@ const Testimonials: FC = () => {
                 </p>
                 <div className="row flex">
                   <img
-                    loading="lazy"
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/images/homepage/testimonials/testi.png"
-                    }
+                    src={"./images/homepage/testimonials/testi.png"}
                     alt=""
                   />
                   <div className="text ml-5">
@@ -82,11 +74,7 @@ const Testimonials: FC = () => {
                 </p>
                 <div className="row flex">
                   <img
-                    loading="lazy"
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/images/homepage/testimonials/testi.png"
-                    }
+                    src={"./images/homepage/testimonials/testi.png"}
                     alt=""
                   />
                   <div className="text ml-5">
@@ -108,11 +96,7 @@ const Testimonials: FC = () => {
                 </p>
                 <div className="row flex">
                   <img
-                    loading="lazy"
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/images/homepage/testimonials/testi.png"
-                    }
+                    src={"./images/homepage/testimonials/testi.png"}
                     alt=""
                   />
                   <div className="text ml-5">

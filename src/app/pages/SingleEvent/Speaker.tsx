@@ -22,34 +22,13 @@ const Speaker: FC<IProps> = ({ speaker }) => {
     >
       <ul className="flex items-center gap-14 mt-10">
         <li>
-          <img
-            loading="lazy"
-            src={
-              process.env.PUBLIC_URL +
-              "/images/homepage/certificate/strategy.png"
-            }
-            alt=""
-          />
+          <img src={"./images/homepage/certificate/strategy.png"} alt="" />
         </li>
         <li>
-          <img
-            loading="lazy"
-            src={
-              process.env.PUBLIC_URL +
-              "/images/homepage/certificate/consulting.png"
-            }
-            alt=""
-          />
+          <img src={"./images/homepage/certificate/consulting.png"} alt="" />
         </li>
         <li>
-          <img
-            loading="lazy"
-            src={
-              process.env.PUBLIC_URL +
-              "/images/homepage/certificate/national.png"
-            }
-            alt=""
-          />
+          <img src={"./images/homepage/certificate/national.png"} alt="" />
         </li>
       </ul>
     </Human>

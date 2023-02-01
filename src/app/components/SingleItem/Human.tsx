@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import { Link } from "react-router-dom";
 import Container from "../Container";
 import Row from "../Row";
@@ -21,7 +21,7 @@ const Human: FC<IProps> = ({
 }) => {
   const left = (
     <div className="lg:w-2/3 bg-yellow-300 flex justify-center">
-      <img loading="lazy" src={process.env.PUBLIC_URL + image} alt="" />
+      <img src={`/images/coursesPage/image.png`} alt="404" />
     </div>
   );
 

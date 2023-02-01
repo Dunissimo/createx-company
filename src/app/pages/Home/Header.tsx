@@ -15,7 +15,6 @@ const Header: FC = () => {
           className="bg-[#FEC8C1] px-3 py-3 rounded-[50%] flex justify-center"
         >
           <img
-            loading="lazy"
             src="./images/homepage/header/small.png"
             alt="play"
             className="w-[100%] bg-[#FF3F3A] rounded-[50%]"
@@ -41,7 +40,6 @@ const Header: FC = () => {
   const right = (
     <div className="img w-[85%] mx-auto mt-8 lg:mt-0">
       <img
-        loading="lazy"
         src="./images/homepage/header/header-illustration.png"
         className="w-full h-full"
         alt=""

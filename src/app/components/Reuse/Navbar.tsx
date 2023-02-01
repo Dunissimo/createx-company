@@ -18,13 +18,7 @@ const Navbar: FC = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="flex">
             <Link to="/" className="logo mb-8 lg:mb-0 lg:mr-[3.75rem]">
-              <img
-                loading="lazy"
-                src={
-                  process.env.PUBLIC_URL + `/images/homepage/header/logo.svg`
-                }
-                alt="logo"
-              />
+              <img src={`/images/homepage/header/logo.svg`} alt="logo" />
             </Link>
             <ul className="links hidden lg:flex gap-4 xl:gap-12">
               <li className="navbar-link">

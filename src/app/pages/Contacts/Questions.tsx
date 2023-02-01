@@ -5,9 +5,7 @@ import Row from "../../components/Row";
 import Title from "../../components/Title";
 
 const Questions: FC = () => {
-  const left = (
-    <img loading="lazy" src="./images/contactsPage/illustration.png" alt="" />
-  );
+  const left = <img src="./images/contactsPage/illustration.png" alt="" />;
 
   const right = (
     <div className="mt-12 lg:mt-0">

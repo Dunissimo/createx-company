@@ -35,7 +35,6 @@ const OnlineSchool: FC = () => {
   const right = (
     <div className="ml-12 text-right flex justify-end">
       <img
-        loading="lazy"
         className="w-full"
         src="./images/aboutPage/illustration.png"
         alt=""

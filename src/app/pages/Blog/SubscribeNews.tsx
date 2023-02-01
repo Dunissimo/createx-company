@@ -6,7 +6,7 @@ import Row from "../../components/Row";
 const SubscribeNews: FC = () => {
   const left = (
     <div className="mb-8 md:mb-0">
-      <img loading="lazy" src="/images/blogPage/illustration.png" alt="" />
+      <img src="/images/blogPage/illustration.png" alt="" />
     </div>
   );
 

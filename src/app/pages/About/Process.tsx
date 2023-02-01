@@ -43,7 +43,6 @@ const Process: FC = () => {
 
   const right = (
     <img
-      loading="lazy"
       className="w-full"
       src="./images/aboutPage/illustration-2.png"
       alt=""

@@ -19,45 +19,23 @@ const Certificate: FC = () => {
           </p>
           <ul className="flex items-center gap-14 mt-10">
             <li>
+              <img src={"./images/homepage/certificate/strategy.png"} alt="" />
+            </li>
+            <li>
               <img
-                loading="lazy"
-                src={
-                  process.env.PUBLIC_URL +
-                  "/images/homepage/certificate/strategy.png"
-                }
+                src={"./images/homepage/certificate/consulting.png"}
                 alt=""
               />
             </li>
             <li>
-              <img
-                loading="lazy"
-                src={
-                  process.env.PUBLIC_URL +
-                  "/images/homepage/certificate/consulting.png"
-                }
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                loading="lazy"
-                src={
-                  process.env.PUBLIC_URL +
-                  "/images/homepage/certificate/national.png"
-                }
-                alt=""
-              />
+              <img src={"./images/homepage/certificate/national.png"} alt="" />
             </li>
           </ul>
         </div>
       </Container>
       <img
-        loading="lazy"
         className="hidden z-10 lg:block absolute top-0 right-0 mt-24 w-[60%] h-[60%] xl:w-auto xl:h-auto "
-        src={
-          process.env.PUBLIC_URL +
-          "/images/homepage/certificate/certificate.png"
-        }
+        src={"./images/homepage/certificate/certificate.png"}
         alt="certificate"
       />
     </section>

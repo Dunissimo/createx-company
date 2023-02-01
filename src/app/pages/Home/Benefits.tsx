@@ -19,11 +19,7 @@ const Benefits: FC = () => {
 
   const right = (
     <div className="mt-6 md:mt-0">
-      <img
-        loading="lazy"
-        src="./images/homepage/benefits/benefits-illustration.png"
-        alt=""
-      />
+      <img src="./images/homepage/benefits/benefits-illustration.png" alt="" />
     </div>
   );
 

@@ -36,21 +36,15 @@ const Post: FC<IProps> = ({ post }) => {
       <div className="img w-full relative">
         <img
           className="w-full min-h-[295px]"
-          src={
-            process.env.PUBLIC_URL +
-            `/images/homepage/blog/posts/${post.imgName}`
-          }
+          src={`./images/homepage/blog/posts/${post.imgName}`}
           alt=""
         />
         <div className="before flex gap-2 bg-white rounded px-2 py-1 absolute top-2 left-2">
           <img
             className="object-fill"
-            src={
-              process.env.PUBLIC_URL +
-              `/images/homepage/blog/${
-                idkHowToNameIt[post.type as keyof typeof idkHowToNameIt].img
-              }`
-            }
+            src={`./images/homepage/blog/${
+              idkHowToNameIt[post.type as keyof typeof idkHowToNameIt].img
+            }`}
             alt="icon"
           />
           <p className="font-normal text-sm capitalize">{post.type}</p>

@@ -4,9 +4,8 @@ import Title from "../Title";
 
 const Subscribe: FC = () => {
   return (
-    <section className="bg-[#FEDBD4] text-center md:text-left lg:py-32 relative overflow-y-hidden">
+    <section className="bg-[#FEDBD4] py-12 px-6 text-center md:text-left lg:px-0 lg:py-32 relative overflow-y-hidden">
       <img
-        loading="lazy"
         className="hidden lg:block scale-75 absolute bottom-[-2rem] left-[-2rem]"
         src="./images/homepage/subscribe/subscribe.png"
         alt=""
@@ -22,7 +21,7 @@ const Subscribe: FC = () => {
         </div>
         <form
           action="post"
-          className="lg:w-1/2 mx-8 g:mx-auto flex justify-center items-center mt-16 h-[50px]"
+          className="lg:w-1/2 mx-auto g:mx-auto flex justify-center items-center mt-16 h-[50px]"
         >
           <input
             type="email"
@@ -35,7 +34,6 @@ const Subscribe: FC = () => {
         </form>
       </div>
       <img
-        loading="lazy"
         className="scale-75 hidden lg:block absolute bottom-[-2rem] right-[-2rem]"
         src="./images/homepage/subscribe/subscribe.png"
         alt=""

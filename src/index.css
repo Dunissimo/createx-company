@@ -66,9 +66,6 @@ svg path {
   @apply w-full;
 }
 
-/* .navbar-link .active { */
-/* @apply relative active:scale-75; */
-/* } */
 .navbar-link a.active::after {
   content: "";
 

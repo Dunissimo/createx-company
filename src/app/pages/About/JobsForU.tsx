@@ -19,6 +19,7 @@ const JobsForU: FC = () => {
   const { jobs, loading, error } = useAppSelector((state) => state.jobs);
 
   if (loading) return <LoadingIndicator />;
+  if (error) return <ErrorIndicator />;
 
   return (
     <div className="bg-[#F4F5F7] py-20">
@@ -31,11 +32,7 @@ const JobsForU: FC = () => {
         <div className="jobs grid grid-cols-2 md:grid-rows-2 md:grid-cols-5">
           {jobs.map((job, i) => (
             <Link to="/" key={i} className="flex justify-center">
-              <img
-                loading="lazy"
-                src={`./images/aboutPage/jobs/${job}`}
-                alt=""
-              />
+              <img src={`./images/aboutPage/jobs/${job}`} alt="" />
             </Link>
           ))}
         </div>

@@ -4,6 +4,7 @@ import Container from "../../components/Container";
 import ErrorIndicator from "../../components/Indicators/ErrorIndicator";
 import LoadingIndicator from "../../components/Indicators/LoadingIndicator";
 import Tabs from "../../components/Tabs";
+import { useSearchParams } from "react-router-dom";
 
 export interface IData {
   types: string[];
@@ -11,7 +12,9 @@ export interface IData {
 }
 
 const FilterPanel: FC = () => {
+  const [params, setSearchParams] = useSearchParams();
   const [data, setData] = useState<IData>({ types: [], uniq: [] });
+  const [query, setQuery] = useState(params.get("query") || "");
 
   const { courses, loading, error } = useAppSelector((state) => state.courses);
 
@@ -30,7 +33,10 @@ const FilterPanel: FC = () => {
   if (loading) return <LoadingIndicator />;
   if (error) return <ErrorIndicator />;
 
-  const handleChange: ChangeEventHandler<HTMLInputElement> = () => {};
+  const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
+    setSearchParams({ query: e.target.value });
+    setQuery(e.target.value);
+  };
 
   return (
     <div className="py-20">
@@ -46,9 +52,7 @@ const FilterPanel: FC = () => {
               placeholder="Search"
               name="query"
               type="text"
-              // TODO: сделать обработку
-
-              // value={search}
+              value={query}
             />
           </div>
         </div>

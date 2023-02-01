@@ -57,7 +57,7 @@ const Slider: FC<IProps> = ({ children, slidesToShow }) => {
       >
         <img
           className="hover:scale-[1.15] active:scale-95 rotate-90"
-          src={process.env.PUBLIC_URL + "/images/eventsPage/arrow.svg"}
+          src="./images/eventsPage/arrow.svg"
           width={50}
           height={50}
           alt=""
@@ -75,7 +75,7 @@ const Slider: FC<IProps> = ({ children, slidesToShow }) => {
       <button className="circle-btn right" onClick={() => changeSlide("next")}>
         <img
           className="hover:scale-[1.15] active:scale-95 rotate-[-90deg]"
-          src={process.env.PUBLIC_URL + "/images/eventsPage/arrow.svg"}
+          src={"./images/eventsPage/arrow.svg"}
           width={50}
           height={50}
           alt=""

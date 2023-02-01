@@ -26,11 +26,7 @@ const WhatWillULearn: FC<IProps> = ({ lessons }) => {
 
   const right = (
     <div className="flex justify-end">
-      <img
-        loading="lazy"
-        src={process.env.PUBLIC_URL + "/images/coursesPage/illustration.png"}
-        alt=""
-      />
+      <img src={"./images/coursesPage/illustration.png"} alt="" />
     </div>
   );
 

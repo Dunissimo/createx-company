@@ -52,7 +52,7 @@ const EventsList: FC<IProps> = ({ count }) => {
 
   return (
     <div
-      className={`pb-20 ${
+      className={`${
         view === "list"
           ? "max-w-[90%] mx-auto"
           : "px-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
@@ -60,6 +60,7 @@ const EventsList: FC<IProps> = ({ count }) => {
     >
       {events
         .slice(0, +perPage)
+        // TODO: сделать пагинацию
         .filter((event) => {
           if (theme && theme !== "all") {
             return event.text.p.includes(theme);

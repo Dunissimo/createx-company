@@ -18,11 +18,7 @@ const Registration: FC = () => {
 
   const right = (
     <>
-      <img
-        loading="lazy"
-        src={process.env.PUBLIC_URL + "/images/eventsPage/illustration-2.png"}
-        alt=""
-      />
+      <img src={"./images/eventsPage/illustration-2.png"} alt="" />
     </>
   );
 

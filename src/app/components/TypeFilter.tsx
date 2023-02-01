@@ -9,7 +9,7 @@ const TypeFilter: FC<IProps> = ({ type = "Not Found", before }) => {
   return (
     <>
       <button className="border-none outline-none bg-none relative inline">
-        {type}
+        {type === "Recruting" ? "HR & Recruting" : type}
       </button>
       <span className="absolute top-[-0.25rem] right-[0.5rem]">{before}</span>
     </>

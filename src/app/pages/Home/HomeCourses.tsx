@@ -10,7 +10,7 @@ const HomeCourses: FC = () => {
     <section className="pb-32">
       <Container>
         <div className="row w-full lg:flex justify-between items-center">
-          <div className="mb-4 lg:mb-0">
+          <div className="mb-4 lg:mb-12">
             <Title
               text={{
                 h3: "Ready to learn?",
@@ -18,7 +18,7 @@ const HomeCourses: FC = () => {
               }}
             />
           </div>
-          <Link to="/courses" className="mt-8">
+          <Link to="/courses">
             <UnFillButton text="View All Courses" />
           </Link>
         </div>

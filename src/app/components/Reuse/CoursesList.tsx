@@ -5,6 +5,8 @@ import Container from "../Container";
 import Course from "../Course";
 import ErrorIndicator from "../Indicators/ErrorIndicator";
 import LoadingIndicator from "../Indicators/LoadingIndicator";
+import { useSearchParams } from "react-router-dom";
+import { ICourse } from "../../utils/interfaces";
 
 interface IProps {
   count?: number;
@@ -13,6 +15,7 @@ interface IProps {
 }
 
 const CoursesList: FC<IProps> = ({ count, gridStyles, isFlex }) => {
+  const [params] = useSearchParams();
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -25,20 +28,38 @@ const CoursesList: FC<IProps> = ({ count, gridStyles, isFlex }) => {
   if (loading) return <LoadingIndicator />;
   if (error) return <ErrorIndicator />;
 
+  const theme = params.get("theme");
+  const query = params.get("query");
+
+  const filterByTheme = (course: ICourse) => {
+    if (theme && theme.toLowerCase() !== "all") {
+      return course.type.toLowerCase() === theme;
+    }
+    return true;
+  };
+
+  const filterByTitle = (course: ICourse) => {
+    if (query) {
+      return course.title.toLowerCase().includes(query.toLowerCase());
+    }
+    return true;
+  };
+
   return (
-    <div className="py-20">
-      <Container>
-        <div className={`lg:grid gap-8 ${gridStyles}`}>
-          {courses.map((course) => {
+    <Container>
+      <div className={`lg:grid gap-8 ${gridStyles}`}>
+        {courses
+          .filter(filterByTheme)
+          .filter(filterByTitle)
+          .map((course) => {
             if (count) {
               if (course.id > count) return null;
             }
 
             return <Course course={course} key={course.id} isFlex={isFlex} />;
           })}
-        </div>
-      </Container>
-    </div>
+      </div>
+    </Container>
   );
 };
 

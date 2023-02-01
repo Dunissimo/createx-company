@@ -8,17 +8,11 @@ const Subscribe: FC = () => {
       <Container>
         <div className="bg-[#FEDBD3] flex flex-col gap-16 lg:flex-row px-8 py-8 lg:px-20 lg:py-20">
           <div className="lg:w-1/3">
-            <img
-              loading="lazy"
-              src={
-                process.env.PUBLIC_URL + "/images/eventsPage/illustration.png"
-              }
-              alt=""
-            />
+            <img src={"./images/eventsPage/illustration.png"} alt="" />
           </div>
           <div className="lg:w-2/3">
             <h3 className="text-4xl font-black mb-12">
-              Don’t want to miss the best events? <br /> Subscribe to our
+              Don`t want to miss the best events? <br /> Subscribe to our
               newsletter!
             </h3>
             <div className="flex mb-6">

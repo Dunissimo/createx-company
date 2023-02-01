@@ -11,13 +11,7 @@ interface IProps {
 const Registration: FC<IProps> = ({ discount }) => {
   const h3 = `Leave a request now and get ${discount}% off!`;
 
-  const left = (
-    <img
-      loading="lazy"
-      src={process.env.PUBLIC_URL + "/images/coursesPage/illustration-2.png"}
-      alt=""
-    />
-  );
+  const left = <img src={"./images/coursesPage/illustration-2.png"} alt="" />;
 
   const right = (
     <>

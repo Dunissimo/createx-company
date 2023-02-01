@@ -12,7 +12,7 @@ const Curator: FC<IProps> = ({ curator }) => {
   return (
     <Human
       human={{
-        image: "/images/coursesPage/image.png",
+        image: "image.png",
         who: "Course Curator",
         name,
         job,

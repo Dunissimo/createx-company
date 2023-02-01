@@ -10,7 +10,7 @@ interface IProps {
 
 export const types = {
   Marketing: "bg-[#03CEA4]",
-  "HR & Recruting": "bg-[#F89828]",
+  Recruting: "bg-[#F89828]",
   Management: "bg-[#5A87FC]",
   Design: "bg-[#F52F6E]",
   Development: "bg-[#7772F1]",
@@ -51,7 +51,7 @@ const Course: FC<IProps> = ({ isFlex, course, style }) => {
         <div className={isFlex ? flex.imgDiv.div : ""}>
           <img
             className={isFlex ? flex.imgDiv.img : card.imgDiv.img}
-            src={process.env.PUBLIC_URL + `/images/homepage/courses/${imgName}`}
+            src={`./images/homepage/courses/${imgName}`}
             alt={`This is ${author}`}
           />
         </div>

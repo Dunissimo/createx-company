@@ -8,7 +8,6 @@ import Title from "../../components/Title";
 const WhoWeAre: FC = () => {
   const left = (
     <img
-      loading="lazy"
       className="w-full"
       src="./images/homepage/whoWeAre/who.png"
       alt="whoweare"

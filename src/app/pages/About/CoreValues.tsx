@@ -11,44 +11,28 @@ const CoreValues: FC = () => {
         </div>
         <div className="cores w-2/3 mx-auto flex flex-col md:flex-row gap-8 md:gap-0 items-center">
           <div className="cores-item">
-            <img
-              loading="lazy"
-              src="./images/aboutPage/cores/structure.svg"
-              alt=""
-            />
+            <img src="./images/aboutPage/cores/structure.svg" alt="" />
             <h3>Structured Approach</h3>
             <p>
               Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.{" "}
             </p>
           </div>
           <div className="cores-item">
-            <img
-              loading="lazy"
-              src="./images/aboutPage/cores/chat.svg"
-              alt=""
-            />
+            <img src="./images/aboutPage/cores/chat.svg" alt="" />
             <h3>Structured Approach</h3>
             <p>
               Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.{" "}
             </p>
           </div>
           <div className="cores-item">
-            <img
-              loading="lazy"
-              src="./images/aboutPage/cores/target.svg"
-              alt=""
-            />
+            <img src="./images/aboutPage/cores/target.svg" alt="" />
             <h3>Structured Approach</h3>
             <p>
               Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.{" "}
             </p>
           </div>
           <div className="cores-item">
-            <img
-              loading="lazy"
-              src="./images/aboutPage/cores/calendar.svg"
-              alt=""
-            />
+            <img src="./images/aboutPage/cores/calendar.svg" alt="" />
             <h3>Structured Approach</h3>
             <p>
               Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.{" "}

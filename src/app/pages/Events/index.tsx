@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Container from "../../components/Container";
 import EventsList from "../../components/Reuse/EventsList";
 import Footer from "../../components/Reuse/Footer";
@@ -22,7 +22,9 @@ const Events: FC = () => {
         </div>
       </Container>
       <OptionsPanel />
-      <EventsList />
+      <div className="mb-20">
+        <EventsList />
+      </div>
       <Subscribe />
       <Footer />
     </section>
