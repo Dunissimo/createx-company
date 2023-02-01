@@ -169,7 +169,8 @@ button:hover svg {
   background: #424551;
 }
 
-footer .links a:hover {
+footer .links a:hover,
+footer .courses a:hover {
   @apply underline;
 }
 
@@ -408,4 +409,21 @@ footer .links a:hover {
 }
 .search-input {
   @apply border-2 px-4 py-2 rounded min-w-[300px] hover:shadow hover:border-gray-500;
+}
+
+/* alert */
+
+.alert {
+  animation: alertAnim 0.5s;
+}
+
+@keyframes alertAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

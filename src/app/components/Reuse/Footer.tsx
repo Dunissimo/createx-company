@@ -1,9 +1,31 @@
-import React, { FC } from "react";
+import { FC, MouseEventHandler } from "react";
+import { AiOutlineHeart, AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { open, close } from "../../../redux/slices/alertsSlice";
+import { useAppDispatch } from "../../utils/hooks";
 import Container from "../Container";
+import Alert from "../Feedback/Alert";
 import SocialMediaIcons from "../SocialMediaIcons";
+import { FiSmartphone } from "react-icons/fi";
 
 const Footer: FC = () => {
+  const dispatch = useAppDispatch();
+
+  const copyToClipboard: MouseEventHandler<HTMLParagraphElement> = (e) => {
+    const value = e.currentTarget.textContent;
+    if (value) {
+      navigator.clipboard.writeText(value);
+      dispatch(open());
+
+      setTimeout(() => {
+        dispatch(close());
+      }, 3000);
+
+      // INFO: я не придумал как по другому скрывать алерты, только через redux, поэтому так
+      // I did not come up with how to hide the Alerts in another way, only through Redux
+    }
+  };
+
   return (
     <footer className="bg-[#1E212C] text-white">
       <Container>
@@ -30,22 +52,28 @@ const Footer: FC = () => {
           </div>
           <div className="courses mt-6 w-[80%] lg:mt-0 lg:w-1/5 text-center lg:text-left">
             <h3 className="uppercase tracking-[1px]">Courses</h3>
-            <ul className="courses opacity-50 flex lg:flex-col flex-wrap justify-around lg:justify-start gap-4 mt-4">
-              <li>Marketing</li>
-              <li>Management</li>
-              <li>HR & Recruting</li>
-              <li>Design</li>
-              <li>Development</li>
-            </ul>
+            <div className="courses opacity-50 flex lg:flex-col flex-wrap justify-around lg:justify-start gap-4 mt-4">
+              <Link to="/courses?theme=marketing">Marketing</Link>
+              <Link to="/courses?theme=management">Management</Link>
+              <Link to="/courses?theme=recruting">HR & Recruting</Link>
+              <Link to="/courses?theme=design">Design</Link>
+              <Link to="/courses?theme=development">Development</Link>
+            </div>
           </div>
           <div className="contact mt-6 lg:mt-0 lg:w-1/5 text-center lg:text-left">
             <h3 className="uppercase tracking-[1px]">Contact us</h3>
             <div className="opacity-50 flex lg:flex-col gap-12 lg:gap-4 mt-4">
-              <p className="contact-phone before:content-[url(/public/images/homepage/footer/iphone-contact.svg)] before:mr-[5px]">
-                (405) 555-0128
+              <p
+                onClick={copyToClipboard}
+                className="cursor-pointer contact-phone flex items-center"
+              >
+                <FiSmartphone className="mr-1" /> (405) 555-0128
               </p>
-              <p className="contact-mail before:content-[url(/public/images/homepage/footer/mail-contact.svg)] before:mr-[5px]">
-                hello@createx.com
+              <p
+                onClick={copyToClipboard}
+                className="cursor-pointer contact-mail flex items-center"
+              >
+                <AiOutlineMail className="mr-1" /> hello@createx.com
               </p>
             </div>
           </div>
@@ -68,7 +96,7 @@ const Footer: FC = () => {
                 &#8594;
               </button>
             </form>
-            <p className="text-[11px]">
+            <p className="text-[11px] opacity-50">
               *Subscribe to our newsletter to receive communications and early
               updates from Createx SEO Agency.
             </p>
@@ -77,19 +105,15 @@ const Footer: FC = () => {
       </Container>
       <div className="py-4 bg-[#292C37] ">
         <Container>
-          <div className="w-[90%] xl:w-auto flex text-xs lg:text-base items-center justify-between">
+          <div className="w-[90%] pb-2 xl:w-auto flex text-xs lg:text-base items-center justify-between">
             <p className="flex">
               © All rights reserved. Made with
-              <img
-                className="object-contain mx-1"
-                src={"./images/homepage/footer/love.svg"}
-                alt="love"
-              />{" "}
+              <AiOutlineHeart className="mx-1" size="1.2rem" color="red" />
               by Createx Studio
             </p>
             <a href="#top">GO TO TOP</a>
           </div>
-          <div className="text-center opacity-50">
+          <div className="pt-4 text-center opacity-50 border-t-2 border-[gray]">
             Developed by{" "}
             <a
               className="underline hover:no-underline"
@@ -102,6 +126,8 @@ const Footer: FC = () => {
           </div>
         </Container>
       </div>
+
+      <Alert text="Скопировано!" position="right-bottom" type="success" />
     </footer>
   );
 };

@@ -1,4 +1,5 @@
 import { FC, ReactNode, useEffect, useRef, useState } from "react";
+import { FiArrowRightCircle, FiArrowLeftCircle } from "react-icons/fi";
 
 interface IProps {
   children: ReactNode;
@@ -55,12 +56,9 @@ const Slider: FC<IProps> = ({ children, slidesToShow }) => {
         className="circle-btn left z-50"
         onClick={() => changeSlide("prev")}
       >
-        <img
-          className="hover:scale-[1.15] active:scale-95 rotate-90"
-          src="./images/eventsPage/arrow.svg"
-          width={50}
-          height={50}
-          alt=""
+        <FiArrowLeftCircle
+          size="2rem"
+          className="hover:scale-[1.15] active:scale-95"
         />
       </button>
       <div className="slider overflow-hidden py-4">
@@ -73,12 +71,9 @@ const Slider: FC<IProps> = ({ children, slidesToShow }) => {
         </div>
       </div>
       <button className="circle-btn right" onClick={() => changeSlide("next")}>
-        <img
-          className="hover:scale-[1.15] active:scale-95 rotate-[-90deg]"
-          src={"./images/eventsPage/arrow.svg"}
-          width={50}
-          height={50}
-          alt=""
+        <FiArrowRightCircle
+          size="2rem"
+          className="hover:scale-[1.15] active:scale-95"
         />
       </button>
     </div>
