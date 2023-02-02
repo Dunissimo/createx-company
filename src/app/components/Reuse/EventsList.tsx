@@ -60,7 +60,6 @@ const EventsList: FC<IProps> = ({ count }) => {
     >
       {events
         .slice(0, +perPage)
-        // TODO: сделать пагинацию
         .filter((event) => {
           if (theme && theme !== "all") {
             return event.text.p.includes(theme);

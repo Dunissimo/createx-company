@@ -1,33 +1,27 @@
-import { FC } from "react";
+import { FC, MouseEventHandler } from "react";
 import { Link } from "react-router-dom";
-import { useAlert, useAppDispatch, useAppSelector } from "../utils/hooks";
-import { toggleOpenStatus } from "../../redux/slices/modalSlice";
+import { useAlert } from "../utils/hooks";
 import FillButton from "./Buttons/FillButton";
 import SocialMediaIcons from "./SocialMediaIcons";
 import Alert from "./Feedback/Alert";
 
-const Modal: FC = () => {
-  const dispatch = useAppDispatch();
-  const clickHandler = () => {
-    dispatch(toggleOpenStatus());
-  };
-  const { isOpen } = useAppSelector((state) => state.modal);
+interface IProps {
+  close: () => void;
+}
 
-  const { isOpen: alertIsOpen, showAlert } = useAlert(2500);
+const Modal: FC<IProps> = ({ close }) => {
+  const { isOpen, showAlert } = useAlert(2500);
+
+  const clickHandler: MouseEventHandler = () => {
+    close();
+  };
 
   return (
     <>
-      <div
-        onClick={clickHandler}
-        className={`wrapper ${isOpen ? "open" : "close"}`}
-      ></div>
-      <div
-        className={`modal ${
-          isOpen ? "open" : "close"
-        } w-full lg:w-auto absolute z-50 lg:top-[5%] left-[50%] translate-x-[-50%] bg-white`}
-      >
+      <div onClick={clickHandler} className={`wrapper open`}></div>
+      <div className="modal open w-full lg:w-auto absolute z-50 lg:top-[5%] left-[50%] translate-x-[-50%] bg-white">
         <div className="top mb-8 border-b-2 border-gray-300 px-6 py-4 2xlpx-12 2xl:py-12">
-          <div className="modal-container 2xl:max-w-[70%] mx-auto">
+          <div className="modal-container  mx-auto">
             <div className="text-center mb-6 relative">
               <div className="close-modal absolute top-2 right-2">
                 <button className="hover:text-[gray]" onClick={clickHandler}>
@@ -94,7 +88,7 @@ const Modal: FC = () => {
                 text="Эта функция появится позже"
                 position="right-bottom"
                 type="info"
-                isOpen={alertIsOpen}
+                isOpen={isOpen}
               />
             </form>
             <p className="font-normal mt-4">

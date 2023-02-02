@@ -37,3 +37,12 @@ export const useAlert = (delay: number) => {
 
   return { isOpen, showAlert };
 };
+
+export const useModal = () => {
+  const [isOpen, setOpenStatus] = useState(false);
+
+  const openModal = () => setOpenStatus(true);
+  const closeModal = () => setOpenStatus(false);
+
+  return { isOpen, openModal, closeModal };
+};

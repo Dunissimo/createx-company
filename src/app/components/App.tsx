@@ -15,14 +15,13 @@ import NotFound from "./NotFound";
 import SingleCourse from "../pages/SingleCourse";
 import SingleEvent from "../pages/SingleEvent";
 import SinglePost from "../pages/SinglePost";
-import Modal from "./Modal";
 
 function App() {
   return (
+    // TODO: сделать шрифт крупнее на больших экранах. Пагинацию тоже
     <Provider store={store}>
       <BrowserRouter>
         <ScrollToTop />
-        <Modal />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

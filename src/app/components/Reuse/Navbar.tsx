@@ -1,20 +1,21 @@
 import { FC } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { useAppDispatch } from "../../utils/hooks";
-import { toggleOpenStatus } from "../../../redux/slices/modalSlice";
+import { useModal } from "../../utils/hooks";
 
 import FillButton from "../Buttons/FillButton";
 import Container from "../Container";
+import Modal from "../Modal";
 
 const Navbar: FC = () => {
-  const dispatch = useAppDispatch();
+  const { isOpen, openModal, closeModal } = useModal();
 
   const clickHandler = () => {
-    dispatch(toggleOpenStatus());
+    openModal();
   };
   return (
     <nav className="py-[2.25rem]" id="top">
       <Container>
+        {isOpen ? <Modal close={closeModal} /> : null}
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="flex">
             <Link to="/" className="logo mb-8 lg:mb-0 lg:mr-[3.75rem]">
