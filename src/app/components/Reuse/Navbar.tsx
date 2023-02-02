@@ -4,7 +4,7 @@ import { useModal } from "../../utils/hooks";
 
 import FillButton from "../Buttons/FillButton";
 import Container from "../Container";
-import Modal from "../Modal";
+import Modal from "../Modal/Modal";
 
 const Navbar: FC = () => {
   const { isOpen, openModal, closeModal } = useModal();

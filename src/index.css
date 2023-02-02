@@ -384,6 +384,9 @@ footer .courses a:hover {
 .modal.close {
   display: none;
 }
+.top {
+  animation: modalAnim 1s;
+}
 
 .circle-btn {
   position: absolute;
