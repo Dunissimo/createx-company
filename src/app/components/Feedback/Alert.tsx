@@ -1,12 +1,10 @@
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import {
   AiFillCheckCircle,
   AiFillCloseCircle,
   AiFillExclamationCircle,
   AiFillInfoCircle,
 } from "react-icons/ai";
-import { close } from "../../../redux/slices/alertsSlice";
-import { useAppDispatch, useAppSelector } from "../../utils/hooks";
 
 type tPosition = "left-top" | "left-bottom" | "right-top" | "right-bottom";
 type tType = "success" | "info" | "warning" | "error";
@@ -15,11 +13,11 @@ interface IProps {
   text: string;
   position: tPosition;
   type: tType;
+
+  isOpen: boolean;
 }
 
-const Alert: FC<IProps> = ({ text, position, type }) => {
-  const { isOpen } = useAppSelector((state) => state.alerts);
-
+const Alert: FC<IProps> = ({ text, position, type, isOpen }) => {
   const baseStyles = `alert text-[#000] fixed z-50 flex items-center m-6 px-4 py-2 rounded-[10px] font-normal border-2`;
   const options = {
     success: {

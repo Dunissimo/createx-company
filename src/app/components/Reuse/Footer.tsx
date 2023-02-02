@@ -1,30 +1,14 @@
-import { FC, MouseEventHandler } from "react";
+import { FC } from "react";
 import { AiOutlineHeart, AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { open, close } from "../../../redux/slices/alertsSlice";
-import { useAppDispatch } from "../../utils/hooks";
 import Container from "../Container";
 import Alert from "../Feedback/Alert";
 import SocialMediaIcons from "../SocialMediaIcons";
 import { FiSmartphone } from "react-icons/fi";
+import { useClipboardWithAlert } from "../../utils/hooks";
 
 const Footer: FC = () => {
-  const dispatch = useAppDispatch();
-
-  const copyToClipboard: MouseEventHandler<HTMLParagraphElement> = (e) => {
-    const value = e.currentTarget.textContent;
-    if (value) {
-      navigator.clipboard.writeText(value);
-      dispatch(open());
-
-      setTimeout(() => {
-        dispatch(close());
-      }, 3000);
-
-      // INFO: я не придумал как по другому скрывать алерты, только через redux, поэтому так
-      // I did not come up with how to hide the Alerts in another way, only through Redux
-    }
-  };
+  const { isOpen, copyToClipboard } = useClipboardWithAlert();
 
   return (
     <footer className="bg-[#1E212C] text-white">
@@ -127,7 +111,12 @@ const Footer: FC = () => {
         </Container>
       </div>
 
-      <Alert text="Скопировано!" position="right-bottom" type="success" />
+      <Alert
+        text="Скопировано!"
+        position="right-bottom"
+        type="success"
+        isOpen={isOpen}
+      />
     </footer>
   );
 };

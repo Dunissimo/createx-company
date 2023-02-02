@@ -1,9 +1,10 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../utils/hooks";
+import { useAlert, useAppDispatch, useAppSelector } from "../utils/hooks";
 import { toggleOpenStatus } from "../../redux/slices/modalSlice";
 import FillButton from "./Buttons/FillButton";
 import SocialMediaIcons from "./SocialMediaIcons";
+import Alert from "./Feedback/Alert";
 
 const Modal: FC = () => {
   const dispatch = useAppDispatch();
@@ -11,6 +12,8 @@ const Modal: FC = () => {
     dispatch(toggleOpenStatus());
   };
   const { isOpen } = useAppSelector((state) => state.modal);
+
+  const { isOpen: alertIsOpen, showAlert } = useAlert(2500);
 
   return (
     <>
@@ -69,11 +72,30 @@ const Modal: FC = () => {
                     Keep me signed in
                   </label>
                 </div>
-                <Link to="/" className="font-normal text-base text-[#FF3F3A]">
+                <Link
+                  to="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    showAlert();
+                  }}
+                  className="font-normal text-base text-[#FF3F3A]"
+                >
                   Forgot password?
                 </Link>
               </div>
-              <FillButton text="Sign in" />
+              <FillButton
+                text="Sign in"
+                onClick={(e) => {
+                  e.preventDefault();
+                  showAlert();
+                }}
+              />
+              <Alert
+                text="Эта функция появится позже"
+                position="right-bottom"
+                type="info"
+                isOpen={alertIsOpen}
+              />
             </form>
             <p className="font-normal mt-4">
               Don't have an account?{" "}

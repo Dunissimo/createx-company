@@ -3,15 +3,24 @@ import { Link } from "react-router-dom";
 import FillButton from "../../components/Buttons/FillButton";
 import UnFillButton from "../../components/Buttons/UnFillButton";
 import Container from "../../components/Container";
+import Alert from "../../components/Feedback/Alert";
 import Navbar from "../../components/Reuse/Navbar";
 import Row from "../../components/Row";
+import { useAlert } from "../../utils/hooks";
 
 const Header: FC = () => {
+  const { isOpen, showAlert } = useAlert(2500);
   const left = (
     <>
       <div className="showreel flex items-center justify-center lg:justify-start mb-12 ">
+        <Alert
+          text="Пока что недоступно!"
+          type="info"
+          position="left-top"
+          isOpen={isOpen}
+        />
         <button
-          onClick={() => alert("Пока что недоступно!")}
+          onClick={showAlert}
           className="bg-[#FEC8C1] px-3 py-3 rounded-[50%] flex justify-center"
         >
           <img
