@@ -13,22 +13,22 @@ const Speaker: FC<IProps> = ({ speaker }) => {
   return (
     <Human
       human={{
-        image: "/images/eventsPage/image.png",
+        image: "eventsPage/image.png",
         who: "speaker",
         name: speaker.name,
         job: speaker.job,
       }}
       about={speaker.text}
     >
-      <ul className="flex items-center gap-14 mt-10">
+      <ul className="flex items-center gap-14 mt-10 opacity-50">
         <li>
-          <img src={"./images/homepage/certificate/strategy.png"} alt="" />
+          <img src={"../images/homepage/certificate/strategy.png"} alt="" />
         </li>
         <li>
-          <img src={"./images/homepage/certificate/consulting.png"} alt="" />
+          <img src={"../images/homepage/certificate/consulting.png"} alt="" />
         </li>
         <li>
-          <img src={"./images/homepage/certificate/national.png"} alt="" />
+          <img src={"../images/homepage/certificate/national.png"} alt="" />
         </li>
       </ul>
     </Human>

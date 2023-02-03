@@ -176,7 +176,7 @@ footer .courses a:hover {
 .signUp input {
   background-color: rgba(255, 255, 255, 0.12);
 }
-
+/* 
 .social-media.white li svg path {
   fill: gray;
 }
@@ -191,7 +191,7 @@ footer .courses a:hover {
 .social-media.black li:hover svg path,
 .socialMedia a:hover svg path {
   fill: gray;
-}
+} */
 
 /* bug with youtube svg */
 .social-media li.youtube svg path {

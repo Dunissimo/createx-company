@@ -9,7 +9,7 @@ const View: FC = () => {
   if (localView) dispatch(setView(localView));
 
   const clickHandler: MouseEventHandler<HTMLButtonElement> = (e) => {
-    debugger;
+    e.preventDefault();
     dispatch(setView(e.currentTarget.dataset.view!));
     localStorage.setItem("view", e.currentTarget.dataset.view!);
   };

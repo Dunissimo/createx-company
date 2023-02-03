@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import { SiFacebook, SiInstagram, SiTwitter } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiLinkedin, SiTwitter } from "react-icons/si";
 import { Link } from "react-router-dom";
 import Container from "../Container";
 import Row from "../Row";
@@ -22,7 +22,7 @@ const Human: FC<IProps> = ({
 }) => {
   const left = (
     <div className="lg:w-2/3 bg-yellow-300 flex justify-center">
-      <img src={`/images/coursesPage/image.png`} alt="404" />
+      <img src={`../images/${image}`} alt="404" />
     </div>
   );
 
@@ -35,15 +35,30 @@ const Human: FC<IProps> = ({
       </div>
       <p className="my-8 opacity-75">{about}</p>
       {children}
-      <div className="socialMedia flex gap-4 mt-8">
+      <div className="socialMedia human flex gap-4 mt-8">
         <Link to="/">
-          <SiFacebook size="1.2rem" />
+          <SiFacebook
+            className="hover:fill-[red] transition-none"
+            size="1.5rem"
+          />
         </Link>
         <Link to="/">
-          <SiInstagram size="1.2rem" />
+          <SiInstagram
+            className="hover:fill-[red] transition-none"
+            size="1.5rem"
+          />
         </Link>
         <Link to="/">
-          <SiTwitter size="1.2rem" />
+          <SiTwitter
+            className="hover:fill-[red] transition-none"
+            size="1.5rem"
+          />
+        </Link>
+        <Link to="/">
+          <SiLinkedin
+            className="hover:fill-[red] transition-none"
+            size="1.5rem"
+          />
         </Link>
       </div>
     </>

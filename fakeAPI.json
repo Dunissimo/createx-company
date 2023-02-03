@@ -17,7 +17,7 @@
       "id": 8
     },
     {
-      "type": "HR & Recruting",
+      "type": "Recruting",
       "title": "HR  Management and Analytics",
       "price": 200,
       "author": "by Leslie Alexander Li",
@@ -57,7 +57,7 @@
       "id": 3
     },
     {
-      "type": "HR & Recruting",
+      "type": "Recruting",
       "title": "Human Resources – Selection and Recruitment",
       "price": 150,
       "author": "by Kathryn Murphy",
@@ -175,69 +175,74 @@
     {
       "id": 2,
       "data": {
-        "title": "No data yet",
+        "title": "Human Resources – Selection and Recruitment",
         "discount": 0,
         "info": {
-          "date": "No data yet",
-          "duration": "No data yet",
-          "price": 0
+          "date": "Nov 14 - Dec 14",
+          "duration": "1 month - 4 lessons",
+          "price": 150
         },
-        "about": "No data yet",
+        "about": "Praesent diam erat, porta vitae ultricies quis, consequat vitae risus. Donec gravida nunc id metus blandit, et consequat arcu elementum. Nunc ut vehicula tellus. Nam luctus non nunc a eleifend. In hac habitasse platea dictumst. Duis rutrum vehicula laoreet. Sed dapibus eu nibh at blandit. Nunc eros libero, pulvinar in finibus id, semper sit amet augue. ",
         "willLearn": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "In venenatis mattis consectetur. Fusce at dictum nisi, vel consequat metus.",
+          "Aliquam erat volutpat. Nullam efficitur tellus sed nisl posuere.",
+          "Integer fermentum faucibus magna non feugiat. Ut et purus felis.",
+          "Nulla tortor lectus, consequat at facilisis eget, sagittis eget metus."
         ],
         "curator": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "rating": 0,
-          "coursesCount": 0,
-          "studentsCount": 0,
-          "text": "No data yet",
+          "name": "Kathryn Murphy",
+          "job": "Analyst and Marketing specialist in IT company",
+          "rating": 4.6,
+          "coursesCount": 10,
+          "studentsCount": 650,
+          "text": "Nam eu nisl semper, congue libero id, ullamcorper metus. Morbi luctus orci vitae pellentesque volutpat. Mauris tristique cursus magna, vitae pretium orci sollicitudin venenatis. Pellentesque gravida sapien nec tortor tempus, vel ornare justo sagittis. Fusce laoreet erat et feugiat lobortis. Integer pharetra sed sem consequat blandit.",
           "socialMediaLinks": [""]
         },
         "steps": {
           "first": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
           },
           "second": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
           },
           "third": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
           },
           "fourth": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Corrections if needed",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
           }
         },
         "listForWhom": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
         ],
         "whatWillULearn": {
           "lessons": [
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 1",
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 2",
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 3",
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 4",
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             }
           ]
         }
@@ -246,69 +251,114 @@
     {
       "id": 3,
       "data": {
-        "title": "No data yet",
+        "title": "Highload Software Architecture",
         "discount": 0,
         "info": {
-          "date": "No data yet",
-          "duration": "No data yet",
-          "price": 0
+          "date": "Aug 5 - Oct 10",
+          "duration": "3 months - 12 lessons",
+          "price": 600
         },
-        "about": "No data yet",
+        "about": "Morbi odio ligula, varius quis est a, pharetra sagittis turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam at justo vitae est facilisis bibendum eget ut magna. Sed nec viverra purus. Curabitur congue orci felis, in blandit mauris ullamcorper dictum. Cras iaculis tortor et est imperdiet tristique. Suspendisse eget consectetur lectus, vitae dignissim tortor. Praesent ornare cursus dolor id pharetra.",
         "willLearn": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "In venenatis mattis consectetur. Fusce at dictum nisi, vel consequat metus.",
+          "Aliquam erat volutpat. Nullam efficitur tellus sed nisl posuere.",
+          "Integer fermentum faucibus magna non feugiat. Ut et purus felis.",
+          "Nulla tortor lectus, consequat at facilisis eget, sagittis eget metus."
         ],
         "curator": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "rating": 0,
-          "coursesCount": 0,
-          "studentsCount": 0,
-          "text": "No data yet",
+          "name": "Brooklyn Simmons",
+          "job": "Curator of Development Course",
+          "rating": 5,
+          "coursesCount": 20,
+          "studentsCount": 1500,
+          "text": "Donec scelerisque porta nulla, et auctor lacus lacinia eget. Proin vel purus congue, gravida nisl et, semper leo. Ut placerat ante vitae cursus tempor. Aenean dignissim nibh quis viverra auctor. Nullam porttitor consectetur mauris sit amet facilisis. Suspendisse condimentum dapibus imperdiet. Morbi quis ligula consequat, placerat massa sit amet, consectetur sem. Proin quis semper neque, accumsan gravida metus. Donec eu velit libero.",
           "socialMediaLinks": [""]
         },
         "steps": {
           "first": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
           },
           "second": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
           },
           "third": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
           },
           "fourth": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Corrections if needed",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
           }
         },
         "listForWhom": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
         ],
         "whatWillULearn": {
           "lessons": [
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 1",
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 2",
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 3",
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 4",
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 5",
+              "head": "Est, ut tempus id rutrum facilisi.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 6",
+              "head": "Amet nec in pellentesque.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 7",
+              "head": "Massa vel arcu mauris, id vel rhoncus mattis quis.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 8",
+              "head": "Neque, cursus sapien nullam id.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 9",
+              "head": "Vestibulum tempor dignissim ante et eleifend.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 10",
+              "head": "Ut fermentum sed dui sit amet vestibulum.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 11",
+              "head": "Vivamus leo diam, fringilla eget velit et.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 12",
+              "head": "Vestibulum consequat mollis nibh.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             }
           ]
         }
@@ -317,69 +367,89 @@
     {
       "id": 4,
       "data": {
-        "title": "No data yet",
+        "title": "Business Development Management",
         "discount": 0,
         "info": {
-          "date": "No data yet",
-          "duration": "No data yet",
-          "price": 0
+          "date": "Apr 17 - Jun 5",
+          "duration": "2 months - 7 lessons",
+          "price": 400
         },
-        "about": "No data yet",
+        "about": "Mauris magna velit, feugiat ac augue tempus, semper blandit ante. Sed suscipit erat ante, a venenatis justo placerat nec. Curabitur molestie leo elit, sed luctus odio tincidunt lacinia. Vestibulum aliquam non mauris eu ullamcorper. Morbi vulputate felis nulla, at euismod diam condimentum sed. Praesent lacinia malesuada blandit. Vivamus placerat purus sed orci consectetur, ut bibendum neque faucibus.",
         "willLearn": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "In venenatis mattis consectetur. Fusce at dictum nisi, vel consequat metus.",
+          "Aliquam erat volutpat. Nullam efficitur tellus sed nisl posuere.",
+          "Integer fermentum faucibus magna non feugiat. Ut et purus felis.",
+          "Nulla tortor lectus, consequat at facilisis eget, sagittis eget metus."
         ],
         "curator": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "rating": 0,
-          "coursesCount": 0,
-          "studentsCount": 0,
-          "text": "No data yet",
+          "name": "Dianne Russell",
+          "job": "Founder and CEO",
+          "rating": 4.8,
+          "coursesCount": 2,
+          "studentsCount": 50,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu purus non lorem ultrices euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tristique purus quis mauris posuere dapibus. Maecenas eu turpis mollis, tristique urna sit amet, bibendum tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
           "socialMediaLinks": [""]
         },
         "steps": {
           "first": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
           },
           "second": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
           },
           "third": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
           },
           "fourth": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Corrections if needed",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
           }
         },
         "listForWhom": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
         ],
         "whatWillULearn": {
           "lessons": [
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 1",
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 2",
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 3",
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 4",
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 5",
+              "head": "Est, ut tempus id rutrum facilisi.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 6",
+              "head": "Amet nec in pellentesque.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 7",
+              "head": "Massa vel arcu mauris, id vel rhoncus mattis quis.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             }
           ]
         }
@@ -388,69 +458,74 @@
     {
       "id": 5,
       "data": {
-        "title": "No data yet",
+        "title": "Graphic Design Basic",
         "discount": 0,
         "info": {
-          "date": "No data yet",
-          "duration": "No data yet",
-          "price": 0
+          "date": "Feb 10 - Feb 28",
+          "duration": "3 weeks - 4 lessons",
+          "price": 500
         },
-        "about": "No data yet",
+        "about": "Vivamus eu efficitur odio, at aliquet ligula. Ut ac sem faucibus neque varius ultricies sollicitudin id lorem. Sed facilisis arcu euismod urna tincidunt, sed venenatis sapien hendrerit. Pellentesque auctor porta augue ac eleifend. Maecenas luctus ullamcorper turpis, sed viverra nisi placerat id. Quisque finibus, est nec iaculis commodo, massa nulla iaculis enim, id aliquet orci diam a nulla.",
         "willLearn": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "In venenatis mattis consectetur. Fusce at dictum nisi, vel consequat metus.",
+          "Aliquam erat volutpat. Nullam efficitur tellus sed nisl posuere.",
+          "Integer fermentum faucibus magna non feugiat. Ut et purus felis.",
+          "Nulla tortor lectus, consequat at facilisis eget, sagittis eget metus."
         ],
         "curator": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "rating": 0,
-          "coursesCount": 0,
-          "studentsCount": 0,
-          "text": "No data yet",
+          "name": "Guy Hawkins",
+          "job": "Lead graphic designer.",
+          "rating": 4.5,
+          "coursesCount": 10,
+          "studentsCount": 1000,
+          "text": "Nunc quis mi vitae massa scelerisque sagittis quis et lectus. Donec tempor, diam a aliquet imperdiet, ante diam pharetra ex, nec ultrices arcu augue et libero. Nunc sollicitudin diam non pellentesque tristique. Etiam non elit luctus, lobortis arcu at, tempus nibh. Integer neque nulla, faucibus vitae auctor et, tincidunt et justo.",
           "socialMediaLinks": [""]
         },
         "steps": {
           "first": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
           },
           "second": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
           },
           "third": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
           },
           "fourth": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Corrections if needed",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
           }
         },
         "listForWhom": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
         ],
         "whatWillULearn": {
           "lessons": [
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 1",
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 2",
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 3",
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 4",
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             }
           ]
         }
@@ -459,69 +534,79 @@
     {
       "id": 6,
       "data": {
-        "title": "No data yet",
+        "title": "Brand Management & PR Communications",
         "discount": 0,
         "info": {
-          "date": "No data yet",
-          "duration": "No data yet",
-          "price": 0
+          "date": "Dec 20 - Jan 14",
+          "duration": "1 month - 5 lessons",
+          "price": 530
         },
-        "about": "No data yet",
+        "about": "Proin porta, ex ac cursus volutpat, nisl enim lacinia purus, sed semper arcu dui ac justo. Curabitur sed consequat purus. Suspendisse sem ipsum, hendrerit id molestie in, molestie in turpis. Nulla volutpat fermentum nunc a feugiat. Cras condimentum quam ac nibh maximus mattis.",
         "willLearn": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "In venenatis mattis consectetur. Fusce at dictum nisi, vel consequat metus.",
+          "Aliquam erat volutpat. Nullam efficitur tellus sed nisl posuere.",
+          "Integer fermentum faucibus magna non feugiat. Ut et purus felis.",
+          "Nulla tortor lectus, consequat at facilisis eget, sagittis eget metus."
         ],
         "curator": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "rating": 0,
-          "coursesCount": 0,
-          "studentsCount": 0,
-          "text": "No data yet",
+          "name": "Kristin Watson",
+          "job": "Marketer, Curator of Marketing Course",
+          "rating": 4.9,
+          "coursesCount": 4,
+          "studentsCount": 250,
+          "text": "Pellentesque nec risus mattis, commodo mauris quis, pretium sem. Nam id vehicula turpis. Pellentesque ac posuere nisl. Nam pharetra neque vel facilisis aliquam. Aenean sodales sodales faucibus. Etiam viverra vehicula tellus quis venenatis. Cras ut libero nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
           "socialMediaLinks": [""]
         },
         "steps": {
           "first": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
           },
           "second": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
           },
           "third": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
           },
           "fourth": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Corrections if needed",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
           }
         },
         "listForWhom": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
         ],
         "whatWillULearn": {
           "lessons": [
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 1",
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 2",
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 3",
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 4",
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 5",
+              "head": "Est, ut tempus id rutrum facilisi.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             }
           ]
         }
@@ -530,69 +615,89 @@
     {
       "id": 7,
       "data": {
-        "title": "No data yet",
+        "title": "HR  Management and Analytics",
         "discount": 0,
         "info": {
-          "date": "No data yet",
-          "duration": "No data yet",
-          "price": 0
+          "date": "Jun 02 - Jul 18",
+          "duration": "2 months - 7 lessons",
+          "price": 200
         },
-        "about": "No data yet",
+        "about": "Donec varius nisl at accumsan porttitor. Donec condimentum purus et dolor condimentum, elementum hendrerit metus pulvinar. Ut a magna nec justo luctus euismod. Sed eu tempor elit, eget dictum felis. Phasellus eleifend vestibulum nibh a sodales. Integer vitae ultricies leo. Aliquam ornare dapibus venenatis. Integer maximus convallis neque, aliquam sollicitudin mauris varius et. Etiam id pretium justo, in tincidunt leo. Nullam non mauris consectetur, dictum ex eu, volutpat justo.",
         "willLearn": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "In venenatis mattis consectetur. Fusce at dictum nisi, vel consequat metus.",
+          "Aliquam erat volutpat. Nullam efficitur tellus sed nisl posuere.",
+          "Integer fermentum faucibus magna non feugiat. Ut et purus felis.",
+          "Nulla tortor lectus, consequat at facilisis eget, sagittis eget metus."
         ],
         "curator": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "rating": 0,
-          "coursesCount": 0,
-          "studentsCount": 0,
-          "text": "No data yet",
+          "name": "Leslie Alexander Li",
+          "job": "Curator of HR & Recruting Course",
+          "rating": 4.7,
+          "coursesCount": 10,
+          "studentsCount": 750,
+          "text": "Vestibulum id ipsum hendrerit, varius leo egestas, sagittis magna. Nulla iaculis turpis et blandit tristique. Quisque et lectus vitae lacus posuere faucibus. Etiam accumsan, felis in molestie fringilla, nulla lorem tempus velit, eget gravida ante nulla sit amet quam. Quisque interdum sit amet lacus porttitor imperdiet. Sed justo lorem, condimentum quis vulputate nec, bibendum et libero. Sed viverra metus erat, nec pretium arcu sagittis facilisis. Mauris a nibh eu est dapibus facilisis eu sed ex. Morbi sodales id ex sed congue. In tellus risus, aliquam ac sem in, condimentum porta ipsum. Praesent at orci erat. ",
           "socialMediaLinks": [""]
         },
         "steps": {
           "first": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
           },
           "second": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
           },
           "third": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
           },
           "fourth": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Corrections if needed",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
           }
         },
         "listForWhom": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
         ],
         "whatWillULearn": {
           "lessons": [
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 1",
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 2",
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 3",
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 4",
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 5",
+              "head": "Est, ut tempus id rutrum facilisi.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 6",
+              "head": "Amet nec in pellentesque.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 7",
+              "head": "Massa vel arcu mauris, id vel rhoncus mattis quis.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             }
           ]
         }
@@ -601,69 +706,104 @@
     {
       "id": 8,
       "data": {
-        "title": "No data yet",
+        "title": "Product Management Fundamentals",
         "discount": 0,
         "info": {
-          "date": "No data yet",
-          "duration": "No data yet",
-          "price": 0
+          "date": "Jan 28 - March 25",
+          "duration": "2 months – 10 lessons",
+          "price": 480
         },
-        "about": "No data yet",
+        "about": "Aliquam porta odio nec enim blandit fermentum. Etiam imperdiet consectetur metus sit amet dictum. Donec consectetur elit eget dapibus consequat. Nulla ex velit, pharetra quis sollicitudin eget, porta in mi. Duis tristique lorem at dolor feugiat euismod. Ut vel consequat diam, id vulputate sem. Etiam interdum elit lacus, vitae finibus tortor fermentum sollicitudin. Morbi tempus quis nulla at sollicitudin. Phasellus dapibus velit justo, at iaculis leo ultrices non.",
         "willLearn": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "In venenatis mattis consectetur. Fusce at dictum nisi, vel consequat metus.",
+          "Aliquam erat volutpat. Nullam efficitur tellus sed nisl posuere.",
+          "Integer fermentum faucibus magna non feugiat. Ut et purus felis.",
+          "Nulla tortor lectus, consequat at facilisis eget, sagittis eget metus."
         ],
         "curator": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "rating": 0,
-          "coursesCount": 0,
-          "studentsCount": 0,
-          "text": "No data yet",
+          "name": "Marvin McKinney",
+          "job": "PM, Curator of Management Course",
+          "rating": 4.8,
+          "coursesCount": 5,
+          "studentsCount": 500,
+          "text": "Maecenas sit amet urna quis augue varius pulvinar sit amet quis erat. Quisque eget nisi felis. Proin nibh arcu, gravida eu augue sit amet, fringilla euismod eros. Aenean feugiat dolor libero, eu posuere dolor luctus vel. Quisque facilisis nisl eu euismod feugiat. Nulla in mollis sem. Donec dignissim massa id ultrices tempus. Vivamus in tortor ipsum. Praesent lacus nulla, vehicula feugiat consectetur porttitor, consectetur id ipsum.",
           "socialMediaLinks": [""]
         },
         "steps": {
           "first": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
           },
           "second": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
           },
           "third": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
           },
           "fourth": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Corrections if needed",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
           }
         },
         "listForWhom": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
         ],
         "whatWillULearn": {
           "lessons": [
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 1",
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 2",
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 3",
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 4",
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 5",
+              "head": "Est, ut tempus id rutrum facilisi.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 6",
+              "head": "Amet nec in pellentesque.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 7",
+              "head": "Massa vel arcu mauris, id vel rhoncus mattis quis.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 8",
+              "head": "Neque, cursus sapien nullam id.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 9",
+              "head": "Vestibulum tempor dignissim ante et eleifend.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 10",
+              "head": "Ut fermentum sed dui sit amet vestibulum.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             }
           ]
         }
@@ -672,69 +812,84 @@
     {
       "id": 9,
       "data": {
-        "title": "No data yet",
+        "title": "The Ultimate Google Ads Training Course",
         "discount": 0,
         "info": {
-          "date": "No data yet",
-          "duration": "No data yet",
-          "price": 0
+          "date": "Oct 14 - Nov 18",
+          "duration": "1 month - 6 lessons",
+          "price": 100
         },
-        "about": "No data yet",
+        "about": "Aliquam nec mi sed ipsum auctor bibendum. Quisque libero sem, molestie pretium pretium ullamcorper, pellentesque at odio. Praesent magna ex, vehicula sed leo a, porttitor bibendum tellus. Pellentesque gravida est sed massa varius, eget rhoncus tellus ornare. Morbi iaculis tempus ligula, ac ultrices erat porttitor sit amet. Vivamus ornare urna metus, eget euismod erat lacinia quis. Nulla nec sodales enim, eget congue nisi. Praesent tempus sem a volutpat sodales.",
         "willLearn": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "In venenatis mattis consectetur. Fusce at dictum nisi, vel consequat metus.",
+          "Aliquam erat volutpat. Nullam efficitur tellus sed nisl posuere.",
+          "Integer fermentum faucibus magna non feugiat. Ut et purus felis.",
+          "Nulla tortor lectus, consequat at facilisis eget, sagittis eget metus."
         ],
         "curator": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "rating": 0,
-          "coursesCount": 0,
-          "studentsCount": 0,
-          "text": "No data yet",
+          "name": "Jerome Bell",
+          "job": "Founder and Program Director",
+          "rating": 5,
+          "coursesCount": 10,
+          "studentsCount": 1000,
+          "text": "Cras congue magna ac aliquam interdum. Praesent accumsan condimentum dolor non lobortis. Nullam blandit suscipit justo ut porta. Phasellus vitae est sit amet felis tincidunt mollis. Integer laoreet sodales ipsum, a consequat purus interdum semper. Etiam sapien neque, interdum vel massa ut, mollis feugiat enim. Vestibulum eu cursus nunc.",
           "socialMediaLinks": [""]
         },
         "steps": {
           "first": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Watching online video lectures",
+            "p": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt."
           },
           "second": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Passing test",
+            "p": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea."
           },
           "third": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Curator’s feedback",
+            "p": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt."
           },
           "fourth": {
-            "head": "No data yet",
-            "p": "No data yet"
+            "head": "Corrections if needed",
+            "p": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."
           }
         },
         "listForWhom": [
-          "No data yet",
-          "No data yet",
-          "No data yet",
-          "No data yet"
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX",
+          "Specialists who would like to structure their knowledge, fill in the gaps"
         ],
         "whatWillULearn": {
           "lessons": [
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 1",
+              "head": "Aliquet lectus urna viverra in odio.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 2",
+              "head": "Orci commodo, viverra orci mollis ut euismod.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             },
             {
-              "numberOfItem": "Lesson #",
-              "head": "No data yet",
-              "text": "No data yet"
+              "numberOfItem": "Lesson 3",
+              "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 4",
+              "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 5",
+              "head": "Est, ut tempus id rutrum facilisi.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
+            },
+            {
+              "numberOfItem": "Lesson 6",
+              "head": "Amet nec in pellentesque.",
+              "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
             }
           ]
         }
@@ -855,6 +1010,7 @@
     {
       "id": 1,
       "data": {
+        "type": "Online master-class",
         "title": "Formation of the organizational structure of the company in the face of uncertainty",
         "info": {
           "date": "August 5, 11:00 – 14:00",
@@ -897,305 +1053,345 @@
     {
       "id": 2,
       "data": {
-        "title": "No data yet",
+        "type": "Online lecture",
+        "title": "Building a customer service department. Best Practices.",
         "info": {
-          "date": "No data yet",
+          "date": "24 July, 11:00 - 12:30",
           "price": "Free"
         },
         "themes": [
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 1",
+            "head": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 2",
+            "head": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 3",
+            "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 4",
+            "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           }
         ],
         "speaker": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "text": "No data yet"
+          "name": "Dianne Russell",
+          "job": "Founder and CEO",
+          "text": "Suspendisse feugiat quis massa in tempus. Morbi vestibulum neque odio. Nulla laoreet fermentum sapien, nec vehicula leo cursus vitae. Nulla libero ante, pharetra vel lacinia ac, volutpat a neque. In eget quam id ligula commodo venenatis. Aliquam placerat laoreet lacus at placerat. Quisque consectetur vestibulum felis, eget placerat turpis volutpat in. In luctus faucibus risus ut placerat. Maecenas non odio magna. Morbi sed odio eleifend erat iaculis vehicula."
         },
-        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
       }
     },
     {
       "id": 3,
       "data": {
-        "title": "No data yet",
+        "type": "Online workshop",
+        "title": "How to apply methods of speculative design in practice. Worldbuilding prototyping.",
         "info": {
-          "date": "No data yet",
+          "date": "16 July, 10:00 - 13:00",
           "price": "Free"
         },
         "themes": [
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 1",
+            "head": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 2",
+            "head": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 3",
+            "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 4",
+            "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           }
         ],
         "speaker": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "text": "No data yet"
+          "name": "Jerome Bell",
+          "job": "Founder and Program Director",
+          "text": "Proin vitae ipsum eget ante iaculis luctus. Donec congue ipsum at vulputate pharetra. Praesent euismod ut eros sed vehicula. Nullam a lobortis elit. Aliquam eu erat eu enim pellentesque posuere. Mauris feugiat maximus eros sed porttitor. Curabitur eget hendrerit arcu, non dapibus lacus. Aliquam dui odio, interdum sit amet faucibus id, pretium eu lectus. Pellentesque a nibh elementum, imperdiet urna sit amet, pharetra libero."
         },
-        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
       }
     },
     {
       "id": 4,
       "data": {
-        "title": "No data yet",
+        "type": "Online workshop",
+        "title": "Find and evaluate: search and assessment tools for candidates.",
         "info": {
-          "date": "No data yet",
+          "date": "10 July, 9:00 - 14:00",
           "price": "Free"
         },
         "themes": [
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 1",
+            "head": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 2",
+            "head": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 3",
+            "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 4",
+            "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           }
         ],
         "speaker": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "text": "No data yet"
+          "name": "Kristin Watson",
+          "job": "Marketer, Curator of Marketing Course",
+          "text": "Vestibulum interdum tincidunt sem, in pulvinar leo tristique quis. Pellentesque non quam eget neque dictum commodo. Sed sodales diam nunc, sed ultricies arcu fermentum vitae. Donec libero sapien, sodales ac elit vel, fermentum molestie elit. Morbi neque libero, fringilla vitae velit nec, efficitur pretium velit. In tempus iaculis consequat. Aenean tempor diam arcu, at sodales turpis finibus ac."
         },
-        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
       }
     },
     {
       "id": 5,
       "data": {
-        "title": "No data yet",
+        "type": "Online master-class",
+        "title": "Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.",
         "info": {
-          "date": "No data yet",
+          "date": "27 June, 15:00 - 19:00",
           "price": "Free"
         },
         "themes": [
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 1",
+            "head": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 2",
+            "head": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 3",
+            "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 4",
+            "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           }
         ],
         "speaker": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "text": "No data yet"
+          "name": "Marvin McKinney",
+          "job": "PM, Curator of Management Course",
+          "text": "Duis iaculis velit nec sapien vehicula, in interdum tortor imperdiet. Ut vel egestas nibh. Quisque scelerisque laoreet lacus, ac pulvinar sem facilisis ut. Sed a erat dui. Fusce mi massa, facilisis id magna et, cursus varius felis. Praesent sed porta nibh. Phasellus euismod condimentum diam, eget sollicitudin sem ultrices id. Morbi ut nisi id ante ultrices auctor ut a eros."
         },
-        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
       }
     },
     {
       "id": 6,
       "data": {
-        "title": "No data yet",
+        "type": "Online lecture",
+        "title": "Marketing or growth hacking: main differences and what business needs.",
         "info": {
-          "date": "No data yet",
+          "date": "15 June, 10:00 - 12:00",
           "price": "Free"
         },
         "themes": [
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 1",
+            "head": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 2",
+            "head": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 3",
+            "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 4",
+            "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           }
         ],
         "speaker": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "text": "No data yet"
+          "name": "Leslie Alexander Li",
+          "job": "Curator of HR & Recruting Course",
+          "text": "Praesent maximus gravida metus eu pellentesque. Cras tincidunt vulputate nisi, vel ornare massa placerat eget. Vestibulum rhoncus augue elementum arcu cursus, vel egestas risus egestas. Proin ultricies eros quis est fermentum ornare. Aliquam imperdiet, enim sed ullamcorper consectetur, lectus urna fringilla ipsum, quis mollis arcu lectus quis purus. Pellentesque mattis suscipit massa, quis venenatis metus vulputate a. "
         },
-        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
       }
     },
     {
       "id": 7,
       "data": {
-        "title": "No data yet",
+        "type": "Online lecture",
+        "title": "How to brief a client and present your design to approve it from the first show.",
         "info": {
-          "date": "No data yet",
+          "date": "02 June, 11:00 - 13:00",
           "price": "Free"
         },
         "themes": [
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 1",
+            "head": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 2",
+            "head": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 3",
+            "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 4",
+            "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           }
         ],
         "speaker": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "text": "No data yet"
+          "name": "Brooklyn Simmons",
+          "job": "Curator of Development Course",
+          "text": "Sed at viverra eros. Donec euismod lorem ut elementum cursus. Sed tincidunt vestibulum dolor ac facilisis. In id gravida ipsum. Curabitur imperdiet nisl nec orci ornare, molestie varius velit porttitor. Maecenas sollicitudin fringilla ipsum, sit amet bibendum dui tempus nec. Sed euismod euismod risus, a tincidunt enim. Ut bibendum mi nec pharetra tempus. Mauris faucibus mauris risus, non eleifend erat condimentum nec."
         },
-        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
       }
     },
     {
       "id": 8,
       "data": {
-        "title": "No data yet",
+        "type": "Online lecture",
+        "title": "Who is a project manager and do I want to be PM?",
         "info": {
-          "date": "No data yet",
+          "date": "29 May, 11:00 - 12:00",
           "price": "Free"
         },
         "themes": [
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 1",
+            "head": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 2",
+            "head": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 3",
+            "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 4",
+            "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           }
         ],
         "speaker": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "text": "No data yet"
+          "name": "Cody Fisher",
+          "job": "UX Designer, Curator of Design Course",
+          "text": "Maecenas nisi ipsum, tempor eget dictum at, ultrices imperdiet metus. Proin at ornare ante. Fusce ut leo elementum, ornare tellus vitae, pretium ante. Sed vel laoreet velit, vitae dapibus erat. Vivamus ultrices purus ac bibendum elementum. Nulla augue nulla, commodo et lobortis quis, vehicula vestibulum leo. Integer et interdum libero. Aliquam varius, mauris non elementum ornare, nunc augue scelerisque purus, ac volutpat dui ligula vitae arcu."
         },
-        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
       }
     },
     {
       "id": 9,
       "data": {
-        "title": "No data yet",
+        "type": "Online lecture",
+        "title": "The company's business page as an additional tool to support the announcement of vacancies.",
         "info": {
-          "date": "No data yet",
+          "date": "18 May, 10:00 - 12:00",
           "price": "Free"
         },
         "themes": [
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 1",
+            "head": "Aliquet lectus urna viverra in odio.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 2",
+            "head": "Orci commodo, viverra orci mollis ut euismod.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 3",
+            "head": "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           },
           {
-            "numberOfItem": "Theme #",
-            "head": "No data yet",
-            "text": "No data yet"
+            "numberOfItem": "Theme 4",
+            "head": "In id dolor quis nunc, urna hendrerit pharetra.",
+            "text": "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id."
           }
         ],
         "speaker": {
-          "name": "No data yet",
-          "job": "No data yet",
-          "text": "No data yet"
+          "name": "Kathryn Murphy",
+          "job": "Analyst and Marketing specialist in IT company",
+          "text": "Quisque mollis nisi et nunc vestibulum cursus. Nulla neque est, maximus nec lacinia sed, tincidunt interdum dolor. Nulla tempus vestibulum ex, vel rhoncus massa sagittis id. Vivamus mollis, eros vitae lacinia porta, lorem mi dapibus nibh, id porta quam est a magna. Sed sagittis consectetur lacinia. Vivamus aliquet, odio eu maximus mollis, massa justo semper metus, eget congue nisl neque porttitor mauris. Fusce sit amet nulla sagittis, fermentum enim vitae, blandit magna. Aliquam nec erat vitae lectus faucibus consequat. Praesent mauris augue, aliquam lacinia faucibus et, ornare vitae ex."
         },
-        "listForWhom": ["No data yet", "No data yet", "No data yet"]
+        "listForWhom": [
+          "Specialists with more than 1 year of active work experience",
+          "Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces",
+          "Professional designers who want to feel more confident in UX"
+        ]
       }
     }
   ],
@@ -1233,7 +1429,7 @@
     {
       "imgName": "image-6.png",
       "name": "Kathryn Murphy",
-      "job": "Kathryn Murphy",
+      "job": "Analyst and Marketing specialist in IT company",
       "id": 6
     },
     {
